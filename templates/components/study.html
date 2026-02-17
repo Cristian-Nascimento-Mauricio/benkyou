@@ -1,0 +1,130 @@
+<div class="relative flex flex-row-reverse w-full h-10 px-12">
+    <button id="btn-open-config" class="w-10 h-10 flex items-center justify-center
+                transition-transform duration-150 hover:scale-105">
+        <img src="/static/SVG/config.svg" class="w-6 h-6">
+    </button>
+    <span id="popup-config" class="flex flex-col hidden p-2 w-48 h-64 gap-3 rounded-md shadow-xl absolute top-12 ">
+        <label class="flex items-center gap-2 select-none text-sm font-medium text-heading">
+            <input 
+                data-level="N5"
+                type="checkbox"
+                class="button-level w-4 h-4 accent-green-600 border-default-medium rounded-xs focus:ring-green-500 dark:focus:ring-green-600 ring-offset-neutral-primary focus:ring-2">
+            Vocabulário - N5
+        </label>
+        <label class="flex items-center gap-2 select-none text-sm font-medium text-heading">
+            <input 
+                data-level="N4"
+                type="checkbox"
+                class="button-level w-4 h-4 accent-green-600  border-default-medium rounded-xs focus:ring-green-500 dark:focus:ring-green-600 ring-offset-neutral-primary focus:ring-2">
+            Vocabulário - N4
+        </label>
+        <label class="flex items-center gap-2 select-none text-sm font-medium text-heading">
+            <input 
+                data-level="N3"
+                type="checkbox"
+                class="button-level w-4 h-4 accent-green-600 border-default-medium rounded-xs focus:ring-green-500 dark:focus:ring-green-600 ring-offset-neutral-primary focus:ring-2">      
+            Vocabulário - N3
+        </label>
+        <label class="flex items-center gap-2 select-none text-sm font-medium text-heading">
+            <input 
+                data-level="N2"
+                type="checkbox"
+                class="button-level w-4 h-4 accent-green-600 border-default-medium rounded-xs focus:ring-green-500 dark:focus:ring-green-600 ring-offset-neutral-primary focus:ring-2">
+            Vocabulário - N2
+        </label>
+        <label class="flex items-center gap-2 select-none text-sm font-medium text-heading">
+            <input 
+                data-level="N1"
+                type="checkbox"
+                class="button-level w-4 h-4 accent-green-600  border-default-medium rounded-xs focus:ring-green-500 dark:focus:ring-green-600 ring-offset-neutral-primary focus:ring-2">
+            Vocabulário - N1
+        </label>
+
+        <span class="flex items-center w-full gap-2">
+            <p>Filtro:</p>
+            <input
+                id="ratio-range"
+                type="range"
+                min="0"
+                max="1"
+                step="0.01"
+                value="0.75"
+                class="w-full h-1 accent-red-600 cursor-pointer"
+                oninput="
+                if (this.value < 0.5) {
+                    this.value = 0.5;
+                }
+                valueLabel.textContent = Number(this.value).toFixed(2)"
+            >
+            <small id="valueLabel" class="text-xs text-slate-600">0.75</small>
+        </span>
+
+    </span>
+
+</div>
+
+<h1 class="text-center text-3xl mb-4">
+    Area de estudo
+</h1>
+
+<div class="flex flex-col p-12 items-center w-full h-full">
+    <p id="word" class="text-center mb-3 text-5xl">
+
+    </p>
+    <p id="correct-answer" class="text-center mb-3 text-lg">
+        <br>
+    </p>
+    <span class="items-center">
+        <p id="type-answer" class="text-center m-1"><br></p>
+        <span class="flex gap-2">
+            <button id="btn-validate-answer" class="w-8 bg-gray-300 shadow-lg rounded-md">✓</button>
+            <input id="in-answer" autocomplete="off" class="shadow-lg text-center w-48 pl-1 h-8" />
+            <button id="btn-send" class="w-8 bg-blue-300 shadow-lg rounded-md">></button>
+        </span>
+    </span>
+
+
+</div>
+
+<div id="popup-modal" tabindex="-1"
+    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 left-0 right-0 bottom-0 z-50 w-full h-full max-h-full">
+
+    <!-- Overlay de fundo -->
+    <div class="fixed inset-0 bg-black/75"></div>
+
+    <!-- Container do modal - CENTRALIZADO -->
+    <div class="relative p-2 w-full h-full flex items-center justify-center">
+        <!-- Conteúdo do modal -->
+        <div
+            class="relative bg-white rounded-md border border-default rounded-base shadow-sm p-4 md:p-4 max-w-md w-full mx-auto">
+
+            <!-- Botão de fechar -->
+            <button id="btn-close" type="button"
+                class="absolute top-3 right-2.5 text-body  hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center">
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="{{ url_for('static', filename='SVG/x.svg') }}" width="24"
+                    height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M6 18 17.94 6M18 18 6.06 6" />
+                </svg>
+            </button>
+
+            <!-- Conteúdo do modal -->
+            <div class="p-4 grid gap-4 md:p-5 text-center">
+
+                <h3 class="text-body">Deseja adicionar a sua resposta como certa ? </h3>
+
+                <input id="in-new-answer" type="text" class="mx-12 px-1 rounded-md text-center shadow-md">
+
+                <div class="flex justify-between items-center">
+                    <button id="btn-confirm" type="button" class="p-1 px-2 bg-green-300 mx-auto rounded-md">
+                        Confirmar
+                    </button>
+                    <button id="btn-cancel" type="button" class="p-1 px-2 bg-red-300 mx-auto rounded-md">
+                        Cancelar
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

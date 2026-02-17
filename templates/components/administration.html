@@ -1,0 +1,241 @@
+<h1 class="text-center text-3xl mb-4">
+    Administração
+</h1>
+
+<div style="min-width: 500px;" class="max-w-md mx-auto p-6 bg-white rounded-xl shadow space-y-6">
+
+    <div>
+        <label class="block text-sm font-medium text-gray-700 mb-2">
+            Palavra (Word)
+        </label>
+        <input id="input-word" type="text" name="word"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            placeholder="例: 日本">
+    </div>
+
+    <div>
+        <label class="block text-sm font-medium text-gray-700 mb-2">
+            Leituras (Reading)
+        </label>
+        <div class="space-y-3">
+            <div class="flex gap-2">
+                <input id="input-reading" type="text" class="flex-1 px-4 py-2 border border-gray-300 rounded 
+                              focus:ring-2 focus:ring-blue-500" placeholder="例: にほん">
+                <button id="btn-reading-add" type="button"
+                    class="px-4 py-2 bg-green-100 text-green-700 rounded hover:bg-green-200 transition">
+                    +
+                </button>
+            </div>
+            <div class="flex flex-wrap gap-2 p-1" id="list-reading">
+
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <label class="block text-sm font-medium text-gray-700 mb-2">
+            Significados (Meaning)
+        </label>
+        <div class="space-y-3">
+            <div class="flex gap-2">
+                <input id="input-meaning" type="text" class="flex-1 px-4 py-2 border border-gray-300 rounded 
+                              focus:ring-2 focus:ring-blue-500" placeholder="例: Japão">
+                <button id="btn-meaning-add" type="button" class="px-4 py-2 bg-green-100 text-green-700 rounded 
+                               hover:bg-green-200 transition">
+                    +
+                </button>
+            </div>
+            <div id="list-meaning" class="flex flex-wrap gap-2">
+
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <label class="block text-sm font-medium text-gray-700 mb-2">
+            Categoria (Category)
+        </label>
+        <select id="select-category" de name="category" class="w-full px-4 py-3 border border-gray-300 rounded-lg 
+                       focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+            <option value="N1">N1</option>
+            <option value="N2">N2</option>
+            <option value="N3">N3</option>
+            <option value="N4">N4</option>
+            <option value="N5">N5</option>
+        </select>
+    </div>
+
+    <div class="flex gap-4 pt-4">
+        <button id="btn-send" type="submit" class="flex-1 px-6 py-3 bg-blue-600 text-white rounded-lg 
+                       hover:bg-blue-700 transition font-medium">
+            Adicionar
+        </button>
+        <button id="btn-cancel" type="button" class="flex-1 px-6 py-3 bg-gray-200 text-gray-800 rounded-lg 
+                       hover:bg-gray-300 transition font-medium">
+            Cancelar
+        </button>
+    </div>
+
+    <div id="toast" class="w-full">
+
+    </div>
+
+
+</div>
+
+
+<h1 class="text-center text-3xl m-4">
+    Palavras já cadrastadas
+</h1>
+
+<div class="md:px-3 mb-6">
+    <div class="w-full mb-4 flex flex-col sm:flex-row gap-2">
+        <span class="flex w-2/3 p-1 gap-2">
+            <input type="text" placeholder="Digite para filtrar..." class="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm
+            focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+            <button type="button" class="w-full sm:w-auto bg-blue-500 text-white px-6 py-2 text-sm font-medium
+            rounded-lg hover:bg-blue-600 transition-colors">
+                Filtrar
+            </button>
+        </span>
+        <span class="flex w-1/3 p-1 gap-2 justify-center">
+            <details class="relative inline-block w-48" id="dropdown-category"  >
+                <summary
+                    class="flex cursor-pointer list-none items-center justify-between rounded-md border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 hover:bg-gray-50">
+                    Categória
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </summary>
+
+                <ul id="options-category" class="absolute left-0 z-10 mt-2 w-full rounded-md border border-gray-200 bg-white shadow-lg">
+                    <li data-category="ALL" onClick="document.getElementById('dropdown-category').open = false"  onclick="" class="cursor-pointer px-3 py-2 text-sm hover:bg-gray-100">Todos</li>
+                    <li data-category="N5"  onClick="document.getElementById('dropdown-category').open = false" class="cursor-pointer px-3 py-2 text-sm hover:bg-gray-100">Vocabulário - N5</li>
+                    <li data-category="N4"  onClick="document.getElementById('dropdown-category').open = false" class="cursor-pointer px-3 py-2 text-sm hover:bg-gray-100">Vocabulário - N4</li>
+                    <li data-category="N3"  onClick="document.getElementById('dropdown-category').open = false" class="cursor-pointer px-3 py-2 text-sm hover:bg-gray-100">Vocabulário - N3</li>
+                    <li data-category="N2"  onClick="document.getElementById('dropdown-category').open = false" class="cursor-pointer px-3 py-2 text-sm hover:bg-gray-100">Vocabulário - N2</li>
+                    <li data-category="N1"  onClick="document.getElementById('dropdown-category').open = false" class="cursor-pointer px-3 py-2 text-sm hover:bg-gray-100">Vocabulário - N1</li>
+                </ul>
+            </details>
+
+
+        </span>
+
+    </div>
+
+    <table class=" w-full border border-gray-200 rounded-lg overflow-hidden">
+        <thead class="bg-gray-100">
+            <tr class="text-left text-sm font-semibold text-gray-700">
+                <th class="px-4 py-2 border-b">ID</th>
+                <th class="px-4 py-2 border-b">Palavra</th>
+                <th class="px-4 py-2 border-b">Categoria</th>
+                <th class="px-4 py-2 border-b">Significados</th>
+                <th class="px-4 py-2 border-b">Leituras</th>
+                <th class="px-4 py-2 border-b text-center">Ações</th>
+            </tr>
+        </thead>
+
+        <tbody id="cards-table-body" class="px-6 text-sm text-gray-800">
+
+
+        </tbody>
+    </table>
+
+
+</div>
+
+<div id="popup-modal" tabindex="-1"
+    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 left-0 right-0 bottom-0 z-50 w-full h-full max-h-full">
+
+    <!-- Overlay de fundo -->
+    <div class="fixed inset-0 bg-black/75"></div>
+
+    <!-- Container do modal - CENTRALIZADO -->
+    <div class="relative p-2 w-full h-full flex items-center justify-center">
+        <!-- Conteúdo do modal -->
+        <div
+            class="relative bg-white rounded-md border border-default rounded-base shadow-sm p-4 md:p-4 max-w-md w-full mx-auto">
+
+            <!-- Botão de fechar -->
+            <button id="btn-close-modal" type="button"
+                class="absolute top-3 right-2.5 text-body  hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center">
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="{{ url_for('static', filename='SVG/x.svg') }}" width="24"
+                    height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M6 18 17.94 6M18 18 6.06 6" />
+                </svg>
+            </button>
+
+            <!-- Conteúdo do modal -->
+            <div class="p-4 grid gap-4 md:p-5 text-center">
+
+                <h3 class="text-body">Atualizar card</h3>
+
+                <div id="card-form-container" class="p-6">
+                    <form id="card-form" class="space-y-6">
+
+                        <!-- Campo Palavra -->
+                        <div class="mb-4">
+                            <label for="word" class="block text-sm font-medium text-gray-700 mb-1">Palavra</label>
+                            <input type="text" id="in-update-word" name="word"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+
+                        <!-- Campo Categoria -->
+                        <div class="mb-4">
+                            <label for="category" class="block text-sm font-medium text-gray-700 mb-1">Categoria</label>
+                            <select id="select-update-category" name="category" class="w-full px-4 py-3 border border-gray-300 rounded-lg 
+                       focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option value="N1">N1</option>
+                                <option value="N2">N2</option>
+                                <option value="N3">N3</option>
+                                <option value="N4">N4</option>
+                                <option value="N5">N5</option>
+                            </select>
+                        </div>
+
+                        <!-- Leituras (Reading) - com botão para adicionar -->
+                        <div class="mb-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <label class="block text-sm font-medium text-gray-700">Leituras (Reading)</label>
+                                <button id="btn-add-new-reading" type="button"
+                                    class="text-sm px-3 py-1 bg-green-100 text-green-700 rounded-md hover:bg-green-200 transition">
+                                    + Adicionar leitura
+                                </button>
+                            </div>
+                            <div id="reading-fields" class="space-y-2">
+
+                            </div>
+                        </div>
+
+                        <!-- Significados (Meaning) - com botão para adicionar -->
+                        <div class="mb-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <label class="block text-sm font-medium text-gray-700">Significados (Meaning)</label>
+                                <button type="button" id="btn-add-new-meaning"
+                                    class="text-sm px-3 py-1 bg-green-100 text-green-700 rounded-md hover:bg-green-200 transition">
+                                    + Adicionar significado
+                                </button>
+                            </div>
+                            <div id="meaning-fields" class="space-y-2">
+
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="flex justify-between items-center">
+                    <button id="btn-update-confirm" type="button" class="p-1 px-2 bg-green-300 mx-auto rounded-md">
+                        Confirmar
+                    </button>
+                    <button id="btn-update-cancel" type="button" class="p-1 px-2 bg-red-300 mx-auto rounded-md">
+                        Cancelar
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
