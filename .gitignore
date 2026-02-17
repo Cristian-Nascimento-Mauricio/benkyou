@@ -1,0 +1,5 @@
+**/database/
+
+*.db
+*.sqlite
+*.sqlite3
