@@ -22,7 +22,7 @@ class configManager:
         return [range, levels]    
     
     def get_range(self):
-        return self.configRepository.get_by_key("range-select-card")["value"]
+        return float(self.configRepository.get_by_key("range-select-card")["value"])
 
     def get_levels(self):
 

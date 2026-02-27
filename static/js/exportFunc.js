@@ -138,16 +138,16 @@ export async function triggerAlert(message, category = "INFO", time = -1) {
   }
 }
 
-export async function requestAPI(url, method, body, time=5000) {
+export async function requestAPI(url, method, body, time = 5000) {
   try {
     const response = await fetch(url, {
       method: method,
       headers: {
         "Content-Type": "application/json",
-      }, 
+      },
       ...(method !== "GET" && method !== "HEAD"
-      ? { body: JSON.stringify(body) }
-      : {}),
+        ? { body: JSON.stringify(body) }
+        : {}),
     });
     const status = response.status;
     const data = await response.json();
@@ -235,4 +235,205 @@ export async function requestAPI(url, method, body, time=5000) {
     console.log(e);
     return null;
   }
+}
+
+export function convertRomajiToJapanCaracter(keyboard, text) {
+
+  if(keyboard.trim() == "romaji")
+    return text
+
+  const romajiToHiraganaMap = {
+    // vogais
+    a: "あ",
+    i: "い",
+    u: "う",
+    e: "え",
+    o: "お",
+
+    // k
+    ka: "か",
+    ki: "き",
+    ku: "く",
+    ke: "け",
+    ko: "こ",
+    kya: "きゃ",
+    kyu: "きゅ",
+    kyo: "きょ",
+
+    // s
+    sa: "さ",
+    shi: "し",
+    si: "し", 
+    su: "す",
+    se: "せ",
+    so: "そ",
+    sha: "しゃ",
+    shu: "しゅ",
+    sho: "しょ",
+
+    // t
+    ta: "た",
+    chi: "ち",
+    tsu: "つ",
+    te: "て",
+    to: "と",
+    cha: "ちゃ",
+    chu: "ちゅ",
+    cho: "ちょ",
+
+    // n
+    na: "な",
+    ni: "に",
+    nu: "ぬ",
+    ne: "ね",
+    no: "の",
+    nya: "にゃ",
+    nyu: "にゅ",
+    nyo: "にょ",
+
+    // h
+    ha: "は",
+    hi: "ひ",
+    fu: "ふ",
+    he: "へ",
+    ho: "ほ",
+    hya: "ひゃ",
+    hyu: "ひゅ",
+    hyo: "ひょ",
+
+    // m
+    ma: "ま",
+    mi: "み",
+    mu: "む",
+    me: "め",
+    mo: "も",
+    mya: "みゃ",
+    myu: "みゅ",
+    myo: "みょ",
+
+    // y
+    ya: "や",
+    yu: "ゆ",
+    yo: "よ",
+
+    // r
+    ra: "ら",
+    ri: "り",
+    ru: "る",
+    re: "れ",
+    ro: "ろ",
+    rya: "りゃ",
+    ryu: "りゅ",
+    ryo: "りょ",
+
+    // w
+    wa: "わ",
+    wo: "を", // "wo" é usado como partícula (を)
+    nn: "ん",
+
+    // g (dakuten)
+    ga: "が",
+    gi: "ぎ",
+    gu: "ぐ",
+    ge: "げ",
+    go: "ご",
+    gya: "ぎゃ",
+    gyu: "ぎゅ",
+    gyo: "ぎょ",
+
+    // z / j
+    za: "ざ",
+    ji: "じ",
+    zu: "ず",
+    ze: "ぜ",
+    zo: "ぞ",
+    ja: "じゃ",
+    ju: "じゅ",
+    jo: "じょ",
+
+    // d
+    da: "だ",
+    di: "ぢ",
+    du: "づ",
+    de: "で",
+    do: "ど",
+    // formas comuns: "ji"->じ, "zu"->ず; "di"/"du" são menos usados mas incluídos
+
+    // b
+    ba: "ば",
+    bi: "び",
+    bu: "ぶ",
+    be: "べ",
+    bo: "ぼ",
+    bya: "びゃ",
+    byu: "びゅ",
+    byo: "びょ",
+
+    // p (handakuten)
+    pa: "ぱ",
+    pi: "ぴ",
+    pu: "ぷ",
+    pe: "ぺ",
+    po: "ぽ",
+    pya: "ぴゃ",
+    pyu: "ぴゅ",
+    pyo: "ぴょ",
+
+    // extras / modernas
+    fa: "ふぁ",
+    fi: "ふぃ",
+    fe: "ふぇ",
+    fo: "ふぉ",
+    va: "ゔぁ",
+    vi: "ゔぃ",
+    vu: "ゔ",
+    ve: "ゔぇ",
+    vo: "ゔぉ",
+    wi: "うぃ",
+    we: "うぇ",
+    wo: "を",
+
+    // pequenas vogais e tsu (usadas em escrita estendida ou para katakana-like forms)
+    ltsu: "っ",
+    xtsu: "っ",
+    la: "ぁ",
+    li: "ぃ",
+    lu: "ぅ",
+    le: "ぇ",
+    lo: "ぉ",
+
+    // marcas de pontuação japonesas (opcional)
+    ",": "、",
+    ".": "。",
+  };
+
+  text = text
+    .split(/([a-z]+)/i)
+    .map((part) => {
+      const p = part.toLowerCase();
+
+      // ✅ só dispara se for kka, ssa, tta, ppa... (C C + vogal)
+      const m = p.match(/^([bcdfghjklmpqrstvwxyz])\1[aiueo]/);
+
+      if (m && p[0] !== "n") {
+        const rest = p.slice(1); // kka -> ka
+        return "っ" + (romajiToHiraganaMap[rest] || rest);
+      }
+
+      return romajiToHiraganaMap[p] || part;
+    })
+    .join("");
+
+  if(keyboard.trim() == "hiragana")
+    return text
+  
+  if(keyboard.trim() == "katakana"){
+    // Converter hiragana para katakana
+    return text.replace(/[\u3040-\u309F]/g, (char) =>
+      String.fromCharCode(char.charCodeAt(0) + 0x60),
+    );
+  }
+
+
+
 }

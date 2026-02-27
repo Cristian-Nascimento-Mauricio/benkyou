@@ -25,8 +25,6 @@ class cardAPI:
             else:
                 return jsonify({"error": "Falha ao salvar card"}), 500
 
-        @app.route("/api/card/statistic", methods=['GET'])
-        def test():
             list = self.cardManager.cardStasticAll()
 
 

@@ -50,6 +50,40 @@ class attemptRepository:
             print(f"Erro de banco de dados: {e}")
             return None
     
+
+    def get_cout(self):
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute("SELECT COUNT(*) FROM attempt")
+                count = cursor.fetchone()[0]
+                return count
+        except sqlite3.Error as e:
+            print(f"Erro ao contar tentativas: {e}")
+            return 0
+
+    def get_all_attempts_statistics(self):
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute(
+                    """
+                    SELECT
+                        (
+                            SUM(attempt.mean)
+                            + SUM(COALESCE(attempt.read, attempt.mean))
+                        ) / (COUNT(attempt.id) * 2.0) AS percent
+                    FROM attempt
+                    """
+                )
+                result = cursor.fetchone()
+                print(result)
+                return result[0] if result else None
+                
+        except sqlite3.Error as e:
+            print(f"Erro ao buscar estatísticas: {e}")
+            return {}
+
     # READ - Buscar tentativa por ID
     def get_attempt_by_id(self, attempt_id: int) -> Optional[Dict[str, Any]]:
         """Busca uma tentativa pelo seu ID"""

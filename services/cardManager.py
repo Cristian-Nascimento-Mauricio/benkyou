@@ -19,6 +19,7 @@ class cardManager:
 
         if cardId is not None:
             myCard = self.repoCurrentCard.get_already_learned(cardId)
+            print(myCard)
             if myCard["count"] >= 10 and myCard["porcent"] >= range:
                 self.repoCurrentCard.delete(cardId)
                 return
@@ -35,7 +36,6 @@ class cardManager:
 
         range = self.configManager.get_range()
         categories = self.configManager.get_levels()
-        print("categories: ", categories)
         listId = self.repoCard.selectCards((10 - count),categories, range)
         
         for id in listId:
@@ -60,7 +60,7 @@ class cardManager:
         return self.getCardToStudy(cardId)
     
     def selectCard(self,amount, category, range):
-        return self.repoCard.selectCards(amount)
+        return self.repoCard.selectCards(amount,category, range)
  
     def getCardToStudy(self,lastID):
         count = self.repoCurrentCard.len_current()
@@ -120,5 +120,8 @@ class cardManager:
             
 
 
-    def cardStasticAll(self):
-        return self.repoCard.card_stastic_all()
+    def attempt_static(self,category):
+        if category == "ALL":
+            return self.repoCard.card_stastic_all()
+        
+        return self.repoCard.card_stastic_by_category(category)

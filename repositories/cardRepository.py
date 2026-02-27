@@ -121,6 +121,51 @@ class cardRepository:
             print(f"Errro ao buscar estaticas: {e}")
             return None
 
+
+    def card_stastic_by_category(self,category):
+        try:
+            with self._get_connection() as conn:
+                conn.row_factory = sqlite3.Row
+                cursor = conn.cursor()
+                
+                rows = cursor.execute("""SELECT 
+                                    card.id, 
+                                    card.word, 
+                                    card.category,
+                                    t.c_attempt  AS c_attempt,
+                                    t.c_read AS c_read,
+                                    t.c_mean AS c_mean
+                                FROM card
+                                LEFT JOIN (
+                                    SELECT 
+                                        attempt.card_id,
+                                        COUNT(attempt.id) AS c_attempt,
+                                        SUM(attempt.read) AS c_read,
+                                        SUM(attempt.mean) AS c_mean
+                                    FROM attempt
+                                    GROUP BY attempt.card_id
+                                ) t ON t.card_id = card.id
+                                WHERE card.category = ?
+
+                                ORDER BY c_attempt DESC;""",(category,)
+                )
+
+                list = []
+                for row in rows:
+                    list.append({
+                        "id":row["id"],
+                        "word":row["word"],
+                        "category":row["category"],
+                        "countRead":row["c_read"],
+                        "countMean":row["c_mean"],
+                        "countAttempt":row["c_attempt"]
+                    })
+                return list
+                
+        except sqlite3.Error as e:
+            print(f"Errro ao buscar estaticas: {e}")
+            return None
+
     # READ - Buscar card por ID com readings e meanings
     def get_card_by_id(self, card_id: int) -> Optional[Dict[str, Any]]:
         """Busca um card pelo ID com todas as readings e meanings"""

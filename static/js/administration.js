@@ -1,15 +1,7 @@
-import { requestAPI } from "./exportFunc.js";
+import { convertRomajiToJapanCaracter, requestAPI, triggerAlert } from "./exportFunc.js";
 
 
-function selectCategory(popupModal, tableBody, options) {
-  options.querySelectorAll("li").forEach((item) => {
-    item.addEventListener("click", () => {
-      loadCards(popupModal, tableBody, item.dataset.category);
-    });
-  });
-}
-
-async function loadCards(popupModal, tableBody, category = "ALL") {
+async function loadCards(popupModal, tableBody, category = "ALL", listCard) {
   const data = await requestAPI(
     `api/cards?category=${category}`,
     "GET",
@@ -17,6 +9,7 @@ async function loadCards(popupModal, tableBody, category = "ALL") {
     5000,
   );
   renderCards(popupModal, tableBody,data);
+  listCard.splice(0, listCard.length, ...data);
 }
 async function renderCards(popupModal, tableBody, cards) {
   tableBody.innerHTML = cards.map(card => `
@@ -96,7 +89,7 @@ async function renderCards(popupModal, tableBody, cards) {
 
 }
 
-  function openModal(popupModal, rendCard) {
+function openModal(popupModal, rendCard) {
     const modalElements = {
       inUpdateWord: document.getElementById("in-update-word"),
       selectUpdateCategory: document.getElementById("select-update-category"),
@@ -245,7 +238,6 @@ async function renderCards(popupModal, tableBody, cards) {
         }).then((res) => {
           if (res.status === 200) {
             closeModal();
-            loadCards(); // Recarrega lista
           }
         });
       });
@@ -276,10 +268,39 @@ async function renderCards(popupModal, tableBody, cards) {
     );
 
     setupModalEventListeners();
-  }
+}
+
+function filterCards( popupModal, tableBody, inFilter, listCard) {
+
+  const filterText = inFilter.value.trim().toLowerCase();
+
+  const list = listCard.filter(item => {
+      return item.word
+      .trim()
+      .toLowerCase()
+      .includes(filterText
+        .trim()
+        .toLowerCase()) || 
+      item.category
+      .trim()
+      .toLowerCase()
+      .includes(filterText
+        .trim()
+        .toLowerCase()) || 
+      item.meaning.some(m => m.trim().toLowerCase().includes(filterText)) ||
+      item.reading.some(r => r.trim().toLowerCase().includes(filterText));
+  })
+
+  console.log("Filtro aplicado:", filterText, list);
+  renderCards(popupModal, tableBody, list );
+
+}
 
 
 export async function init() {
+
+  let listCard = []
+
   const elements = {
     inWord: document.getElementById("input-word"),
     inReading: document.getElementById("input-reading"),
@@ -292,17 +313,31 @@ export async function init() {
     btnSend: document.getElementById("btn-send"),
     btnCancel: document.getElementById("btn-cancel"),
     toast: document.getElementById("toast"),
-    popupModal: document.getElementById("popup-modal"),
     cardsTableBody: document.getElementById("cards-table-body"),
   };
+
+
+  const btnFilter = document.getElementById("btn-filter");
+  const inFilter = document.getElementById("in-filter");
   const tableBody = document.getElementById("cards-table-body")
   const optionsCategory = document.getElementById("options-category");
+  const optionsKeyboard = document.getElementById("options-keyboard");
   const popupModal = document.getElementById("popup-modal");
 
-  selectCategory(popupModal, tableBody, optionsCategory);
+  btnFilter.addEventListener("click", () => {
+    filterCards( popupModal,tableBody, inFilter, listCard);
+  })
+
+  inFilter.addEventListener("input", (event) => { 
+    event.target.value = convertRomajiToJapanCaracter(optionsKeyboard.value, event.target.value);
+
+  })
+
+  optionsCategory.addEventListener("change", async (event) => {
+      await loadCards(popupModal, tableBody, event.target.value, listCard);
+  })
 
   for (const [key, element] of Object.entries(elements)) {
-    console.log(`- ${key}:`, !!element);
     if (!element && key !== "popupModal") {
       // popupModal pode ser opcional
       console.error(`❌ Elemento não encontrado: ${key}`);
@@ -529,18 +564,14 @@ export async function init() {
         setTimeout(() => elements.toast.replaceChildren(), 5 * 1000);
 
         // Recarrega a lista de cards
-        loadCards();
       })
       .catch((error) => {
         console.error("Erro ao criar card:", error);
       });
   });
 
-  // ====================
-  // 6. INICIALIZAÇÃO
-  // ====================
+
   try {
-    // Configura categoria padrão
     const defaultCategory = localStorage.getItem("default-category");
     if (defaultCategory) {
       card.category = defaultCategory;
@@ -550,30 +581,17 @@ export async function init() {
       card.category = elements.selectCategory.value;
     }
 
-    // Carrega cards iniciais
-    await loadCards();
 
     console.log("✅ Módulo administration inicializado com sucesso");
   } catch (error) {
     console.error("❌ Erro na inicialização:", error);
   }
 
-  // ====================
-  // 7. FUNÇÃO DE LIMPEZA (DESTROY)
-  // ====================
   return {
     destroy: async function () {
-      console.log("🧹 Destruindo módulo administration");
 
-      // Remove event listeners
-      elements.inWord.removeEventListener("input", arguments.callee);
-      elements.btnReadingAdd.removeEventListener("click", arguments.callee);
-      elements.btnMeaningAdd.removeEventListener("click", arguments.callee);
-      elements.selectCategory.removeEventListener("change", arguments.callee);
-      elements.btnCancel.removeEventListener("click", arguments.callee);
-      elements.btnSend.removeEventListener("click", arguments.callee);
-
-      // Limpa estado
+      listCard = [];
+      console.log("✅ Listas limpas");
       card = {
         word: null,
         reading: [],
@@ -581,7 +599,6 @@ export async function init() {
         category: null,
       };
 
-      // Limpa listas
       elements.listReading.replaceChildren();
       elements.listMeaning.replaceChildren();
       elements.cardsTableBody.replaceChildren();
@@ -591,7 +608,6 @@ export async function init() {
   };
 }
 
-// Exportação opcional para uso sem init
 export function createAdministrationModule() {
   return {
     init: init,

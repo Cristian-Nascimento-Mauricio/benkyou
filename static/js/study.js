@@ -1,4 +1,4 @@
-import { requestAPI } from "./exportFunc.js";
+import { convertRomajiToJapanCaracter, requestAPI, triggerAlert } from "./exportFunc.js";
 
 
 function normalizeText(text) {
@@ -10,6 +10,9 @@ function normalizeText(text) {
     .replace(/[\u0300-\u036f]/g, "");
 }
 
+function convertRomajiToHiragana(event) {
+  event.target.value = convertRomajiToJapanCaracter('hiragana',event.target.value);
+}
 
 
 export async function init(content) {
@@ -21,7 +24,6 @@ export async function init(content) {
   const btnValidateAnswer = document.getElementById("btn-validate-answer");
   const ratioRange = document.getElementById("ratio-range");
   const buttonsLevel = document.querySelectorAll(".button-level");
-
 
   const btnOpenConfig = document.getElementById("btn-open-config");
   const popupConfig = document.getElementById("popup-config");  
@@ -72,6 +74,7 @@ export async function init(content) {
       typeAnswer.textContent = "significado";
       state.push("READING", "CHECK-READING");
     } else {
+      inAnswer.addEventListener("input",convertRomajiToHiragana)
       typeAnswer.textContent = "leitura";
     }
 
@@ -87,8 +90,11 @@ export async function init(content) {
   async function handleSendClick() {
     const myWord = normalizeText(inAnswer.value);
 
+
     if (!state.includes("READING")) {
       // Verifica leitura
+      inAnswer.removeEventListener("input", convertRomajiToHiragana)
+
       let existMyAnswerInCorrectList = false;
       for (const item of card.reading) {
         if (myWord === normalizeText(item)) {
@@ -115,6 +121,7 @@ export async function init(content) {
       state.push("READING");
     } else if (!state.includes("CHECK-READING")) {
       // Transição para significado
+
       btnSend.classList.remove("bg-red-300", "bg-green-300");
       btnSend.classList.add("bg-blue-300");
 
@@ -133,6 +140,7 @@ export async function init(content) {
       state.push("CHECK-READING");
     } else if (!state.includes("MEANING")) {
       // Verifica significado
+
       let existMyAnswerInCorrectList = false;
       for (const item of card.meaning) {
         if (myWord === normalizeText(item)) {
@@ -316,8 +324,10 @@ export async function init(content) {
 
     if (card.reading.length <= 0) {
       typeAnswer.textContent = "significado";
+      inAnswer.removeEventListener("input",convertRomajiToHiragana)
       state.push("READING", "CHECK-READING");
     } else {
+      inAnswer.addEventListener("input",convertRomajiToHiragana)
       typeAnswer.textContent = "leitura";
     }
 

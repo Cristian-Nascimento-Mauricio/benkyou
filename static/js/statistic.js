@@ -1,8 +1,8 @@
-import { requestAPI, triggerAlert } from "./exportFunc.js";
+import { convertRomajiToJapanCaracter, requestAPI, triggerAlert } from "./exportFunc.js";
 
 function renderTable(table, rows, batchSize = 50) {
   let index = 0;
-
+  table.replaceChildren();
   function work(deadline) {
     const fragment = document.createDocumentFragment();
 
@@ -54,14 +54,6 @@ function renderTable(table, rows, batchSize = 50) {
   }
 
   requestIdleCallback(work);
-}
-
-async function toggle(table) {
-  if (table.children.length <= 0) {
-    const rows = await requestAPI("/api/card/statistic", "GET", null, 10000);
-
-    renderTable(table, rows);
-  }
 }
 
 async function renderGrafic(canvas, ctx, tooltip) {
@@ -348,18 +340,64 @@ export async function init(content) {
     createDualLineChart("dualChart", arry, arr2);
   });
 
-  
-  // NÂO APAGAR - TABELA DE ESTATÍSTICAS DAS CARTAS
-  const tableBodyCardsStatistic = document.getElementById(
-    "cards-statistic-table-body",
-  );
-  const accordionStatistcAllCards = document.getElementById(
-    "accordion-statistc-all-cards",
-  );
 
-  accordionStatistcAllCards.addEventListener("toggle", (e) => {
-    toggle(tableBodyCardsStatistic);
-  });
+  const tableBodyCardsStatistic = document.getElementById("cards-statistic-table-body");
+
+  const optionsCategory = document.getElementById('options-category')
+  const optionsKeyboard = document.getElementById('options-keyboard')
+  const optionsCategoryStatistic = document.getElementById('options-category-statistic')
+
+  const inFilter = document.getElementById('in-filter')
+  const btnFilter = document.getElementById('btn-filter')
+
+  const outPercentCorrect = document.getElementById('out-percent-correct')
+  const outQuantityAttempts = document.getElementById('out-quantity-attempts')
+
+
+  let data = []
+
+  btnFilter.addEventListener('click',()=> {
+
+    triggerAlert('okay','INFOR',1000)
+    renderTable(
+      tableBodyCardsStatistic,
+      data.filter(item =>
+        item.word
+          .toLowerCase()
+          .includes(inFilter.value.trim().toLowerCase())
+      )
+    );  
+  })
+
+  inFilter.addEventListener('input', (event) => {
+    event.target.value = convertRomajiToJapanCaracter(optionsKeyboard.value, event.target.value)
+  })
+
+  optionsCategoryStatistic.addEventListener('change', async (event)=> {
+    const dataStatic = await requestAPI('/api/statistic/attempt?category=ALL',"GET",null,10000)
+    const numberFormat = (dataStatic.percent * 100).toFixed(1)
+    const quantityFormat = dataStatic.count.toLocaleString('pt-br')
+
+
+    outQuantityAttempts.textContent = quantityFormat
+
+    if(numberFormat >= 75){
+      outPercentCorrect.classList.add('text-green-600')
+    } else if (numberFormat < 75 || numberFormat >= 50){
+      outPercentCorrect.classList.add('text-yellow-600')
+    } else if (numberFormat < 50){
+      outPercentCorrect.classList.add('text-red-600')
+    } else {
+      outPercentCorrect.classList.add('text-gray-600')
+      return
+    }
+    outPercentCorrect.textContent = `${numberFormat}%`
+  })
+
+  optionsCategory.addEventListener('change', async (event)=> {
+    data = await requestAPI(`/api/statistic/card?category=${event.target.value}`,"GET",null,10000)
+    renderTable(tableBodyCardsStatistic,data)
+  })
 
   return {
     destroy: async function () {},

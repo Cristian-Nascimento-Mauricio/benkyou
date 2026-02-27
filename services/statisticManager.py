@@ -9,6 +9,15 @@ class statisticManager:
         self.repoCurrentCard = currentCardRepository(path)
         self.repoAttempt = attemptRepository(path)
 
+    def get_statistics(self,category):
+        if category == 'ALL':
+            return { 
+                "percent":self.repoAttempt.get_all_attempts_statistics(), 
+                "count":self.repoAttempt.get_cout()
+            }
+        else:
+            return None    
+
     def lastActivity(self, days):
 
         today = datetime.strptime(
