@@ -1,18 +1,600 @@
 {
-    "name": "Vocabulary - N5",
-    "version": "1.0.0",
-    "description": "Todo conteúdo relacionado ao N5 do JLPT. fonte do conteúdo: https://jisho.org/search/%23jlpt-n5",
-    "category": "N5",
-    "content":[
-        {
-            "word": "学校",
-            "reading": [
-                "がっこう"
-            ],
-            "meaning": [
-                "Escola"
-            ]
-        }
-    ]
+  "name": "Vocabulary - N5",
+  "version": "1.0.0",
+  "description": "Todo conteúdo relacionado ao N5 do JLPT. fonte do conteúdo: https://jisho.org/search/%23jlpt-n5",
+  "category": "N5",
+  "content": [
+    {
+      "word": "学校",
+      "reading": ["がっこう"],
+      "meaning": ["Escola"]
+    },
+    {
+      "word": "川",
+      "reading": ["かわ"],
+      "meaning": ["Rio", "Córrego"]
+    },
+    {
+      "word": "手",
+      "reading": ["て"],
+      "meaning": ["Mão"]
+    },
+    {
+      "word": "戸",
+      "reading": ["と"],
+      "meaning": ["Porta","Porta de estilo japonês"]
+    },
+    {
+      "word": "メガネ",
+      "reading": [],
+      "meaning": ["Óculos, Óculos de grau"]
+    },
+    {
+      "word": "タバコ",
+      "reading": [],
+      "meaning": ["Tabaco", "Cigarro"]
+    },
+    {
+      "word": "赤",
+      "reading": ["あか"],
+      "meaning": ["Vermelho"]
+    },
+    {
+      "word": "仕事",
+      "reading": ["しごと"],
+      "meaning": ["Trabalho", "Emprego"]
+    },
 
+    {
+      "word": "英語",
+      "reading": ["えいご"],
+      "meaning": ["Inglês", "Idioma inglês"]
+    },
+    {
+      "word": "問題",
+      "reading": ["もんだい"],
+      "meaning": ["Problema", "Questão"]
+    },
+    {
+      "word": "部屋",
+      "reading": ["へや"],
+      "meaning": ["Quarto", "Sala"]
+    },
+    {
+      "word": "子供",
+      "reading": ["こども"],
+      "meaning": ["Criança","Filho"]
+    },
+    {
+      "word": "時間",
+      "reading": ["じかん"],
+      "meaning": ["Tempo", "Hora"]
+    },
+
+    {
+      "word": "雨",
+      "reading": ["あめ"],
+      "meaning": ["Chuva"]
+    },
+    {
+      "word": "先生",
+      "reading": ["せんせい"],
+      "meaning": ["Professor", "Mestre","Instrutor","Doutor"]
+    },
+    {
+      "word": "年",
+      "reading": ["とし","ねん"],
+      "meaning": ["Ano", "Idade"]
+    },
+    {
+      "word": "手紙",
+      "reading": ["てがみ"],
+      "meaning": ["Carta", "Carta escrita"]
+    },
+    {
+      "word": "電話",
+      "reading": ["でんわ"],
+      "meaning": ["Telefone"]
+    },
+    {
+      "word": "水",
+      "reading": ["みず"],
+      "meaning": ["Água"]
+    },
+    {
+      "word": "病気",
+      "reading": ["びょうき"],
+      "meaning": ["Doença"]
+    },
+    {
+      "word": "会社",
+      "reading": ["かいしゃ"],
+      "meaning": ["Empresa", "Companhia"]
+    },
+    {
+      "word": "結婚",
+      "reading": ["けっこん"],
+      "meaning": ["Casamento", "Matrimônio"]
+    },
+
+    {
+      "word": "言葉",
+      "reading": ["ことば"],
+      "meaning": ["Palavra", "Língua", "Idioma"]
+    },
+    {
+      "word": "目",
+      "reading": ["め"],
+      "meaning": ["Olho", "Visão"]
+    },
+    {
+      "word": "走る",
+      "reading": ["はしる"],
+      "meaning": ["Correr"]
+    },
+    {
+      "word": "名前",
+      "reading": ["なまえ"],
+      "meaning": ["Nome"]
+    },
+    {
+      "word": "旅行",
+      "reading": ["りょこう"],
+      "meaning": ["Viagem", "Turismo"]
+    },
+    {
+      "word": "道",
+      "reading": ["みち"],
+      "meaning": ["Caminho", "Estrada", "Via"]
+    },
+    {
+      "word": "飛行機",
+      "reading": ["ひこうき"],
+      "meaning": ["Aeronave", "Avião"]
+    },
+    {
+      "word": "映画",
+      "reading": ["えいが"],
+      "meaning": ["Filme", "Cinema"]
+    },
+    {
+      "word": "音楽",
+      "reading": ["おんがく"],
+      "meaning": ["Música"]
+    },
+
+    {
+      "word": "木",
+      "reading": ["き"],
+      "meaning": ["Arvore", "Madeira"]
+    },
+    {
+      "word": "大学",
+      "reading": ["だいがく"],
+      "meaning": ["Universidade", "Faculdade"]
+    },
+    {
+      "word": "時計",
+      "reading": ["とけい"],
+      "meaning": ["Relogio"]
+    },
+    {
+      "word": "家族",
+      "reading": ["かぞく"],
+      "meaning": ["Família"]
+    },
+    {
+      "word": "花",
+      "reading": ["はな"],
+      "meaning": ["Flor","Pétola"]
+    },
+    {
+      "word": "猫",
+      "reading": ["ねこ"],
+      "meaning": ["Gato"]
+    },
+    {
+      "word": "毎日",
+      "reading": ["まいにち"],
+      "meaning": ["Todo dia", "Diariamente"]
+    },
+    {
+      "word": "宿題",
+      "reading": ["しゅくだい"],
+      "meaning": ["Lição de casa", "Tarefa de casa"]
+    },
+    {
+      "word": "雪",
+      "reading": ["ゆき"],
+      "meaning": ["Neve"]
+    },
+
+    {
+      "word": "山",
+      "reading": ["やま"],
+      "meaning": ["Montanha"]
+    },
+    {
+      "word": "窓",
+      "reading": ["まど"],
+      "meaning": ["Janela"]
+    },
+    {
+      "word": "動物",
+      "reading": ["どうぶつ"],
+      "meaning": ["Animal"]
+    },
+    {
+      "word": "夜",
+      "reading": ["よる"],
+      "meaning": ["Noite", "À noite"]
+    },
+
+    {
+      "word": "料理",
+      "reading": ["りょうり"],
+      "meaning": ["Culinária", "Cozinha", "Prato"]
+    },
+    {
+      "word": "夏",
+      "reading": ["なつ"],
+      "meaning": ["Verão"]
+    },
+    {
+      "word": "新聞",
+      "reading": ["しんぶん"],
+      "meaning": ["Jornal", "Notícia"]
+    },
+    {
+      "word": "公園",
+      "reading": ["こうえん"],
+      "meaning": ["Parque", "Jardim público"]
+    },
+    {
+      "word": "意味",
+      "reading": ["いみ"],
+      "meaning": ["Significado", "Sentido"]
+    },
+    {
+      "word": "自転車",
+      "reading": ["じてんしゃ"],
+      "meaning": ["Bicicleta","Bike"]
+    },
+
+    {
+      "word": "足",
+      "reading": ["あし"],
+      "meaning": ["Pé","Perna"]
+    },
+    {
+      "word": "電車",
+      "reading": ["でんしゃ"],
+      "meaning": ["Trem", "Comboio","Trem eletrônico"]
+    },
+    {
+      "word": "散歩",
+      "reading": ["さんぽ"],
+      "meaning": ["Caminhada"]
+    },
+    {
+      "word": "声",
+      "reading": ["こえ"],
+      "meaning": ["Voz"]
+    },
+    {
+      "word": "朝",
+      "reading": ["あさ"],
+      "meaning": ["Manhã", "De manhã"]
+    },
+    {
+      "word": "歌",
+      "reading": ["うた"],
+      "meaning": ["Canção"]
+    },
+
+    {
+      "word": "靴",
+      "reading": ["くつ"],
+      "meaning": ["Sapato", "Calçado"]
+    },
+    {
+      "word": "箱",
+      "reading": ["はこ"],
+      "meaning": ["Caixa", "Caixote"]
+    },
+    {
+      "word": "机",
+      "reading": ["つくえ"],
+      "meaning": ["Mesa", "Escrivaninha"]
+    },
+    {
+      "word": "帽子",
+      "reading": ["ぼうし"],
+      "meaning": ["Chapéu"]
+    },
+    {
+      "word": "海",
+      "reading": ["うみ"],
+      "meaning": ["Mar", "Oceano"]
+    },
+    {
+      "word": "授業",
+      "reading": ["じゅぎょう"],
+      "meaning": ["Aula", "Lição"]
+    },
+    {
+      "word": "銀行",
+      "reading": ["ぎんこう"],
+      "meaning": ["Banco", "Instituição financeira"]
+    },
+    {
+      "word": "写真",
+      "reading": ["しゃしん"],
+      "meaning": ["Fotografia", "Foto","Retrato"]
+    },
+    {
+      "word": "冬",
+      "reading": ["ふゆ"],
+      "meaning": ["Inverno"]
+    },
+
+    {
+      "word": "村",
+      "reading": ["むら"],
+      "meaning": ["Vila", "Aldeia"]
+    },
+    {
+      "word": "傘",
+      "reading": ["かさ"],
+      "meaning": ["Guarda-chuva", "Sombrinha"]
+    },
+    {
+      "word": "口",
+      "reading": ["くち"],
+      "meaning": ["Abertura", "Boca"]
+    },
+
+    {
+      "word": "橋",
+      "reading": ["はし"],
+      "meaning": ["Ponte"]
+    },
+    {
+      "word": "病院",
+      "reading": ["びょういん"],
+      "meaning": ["Hospital", "Clínica"]
+    },
+    {
+      "word": "春",
+      "reading": ["はる"],
+      "meaning": ["Primavera"]
+    },
+    {
+      "word": "図書館",
+      "reading": ["としょかん"],
+      "meaning": ["Biblioteca"]
+    },
+    {
+      "word": "買い物",
+      "reading": ["かいもの"],
+      "meaning": ["Compras", "Fazer compras"]
+    },
+    {
+      "word": "椅子",
+      "reading": ["いす"],
+      "meaning": ["Cadeira", "Assento"]
+    },
+    {
+      "word": "自動車",
+      "reading": ["じどうしゃ"],
+      "meaning": ["Carro", "Automóvel"]
+    },
+    {
+      "word": "色",
+      "reading": ["いろ"],
+      "meaning": ["Cor"]
+    },
+    {
+      "word": "卵",
+      "reading": ["たまご"],
+      "meaning": ["Ovo"]
+    },
+    {
+      "word": "肉",
+      "reading": ["にく"],
+      "meaning": ["Carne"]
+    },
+    {
+      "word": "風邪",
+      "reading": ["かぜ"],
+      "meaning": ["Gripe", "Resfriado"]
+    },
+    {
+      "word": "掃除",
+      "reading": ["そうじ"],
+      "meaning": ["Limpeza"]
+    },
+
+    {
+      "word": "紙",
+      "reading": ["かみ"],
+      "meaning": ["Papel", "Folha de papel"]
+    },
+    {
+      "word": "鍵",
+      "reading": ["かぎ"],
+      "meaning": ["Chave"]
+    },
+
+    {
+      "word": "雑誌",
+      "reading": ["ざっし"],
+      "meaning": ["Revista"]
+    },
+    {
+      "word": "切符",
+      "reading": ["きっぷ"],
+      "meaning": ["Ingresso", "Bilhete", "Passagem"]
+    },
+    {
+      "word": "外国人",
+      "reading": ["がいこくじん"],
+      "meaning": ["Estrangeiro"]
+    },
+    {
+      "word": "財布",
+      "reading": ["さいふ"],
+      "meaning": ["Carteira"]
+    },
+    {
+      "word": "鉛筆",
+      "reading": ["えんぴつ"],
+      "meaning": ["lápis"]
+    },
+    {
+      "word": "",
+      "reading": [],
+      "meaning": []
+    },
+
+    {
+      "word": "大人",
+      "reading": ["おとな"],
+      "meaning": ["Adulto"]
+    },
+    {
+      "word": "塩",
+      "reading": ["しお"],
+      "meaning": ["Sal"]
+    },
+    {
+      "word": "地図",
+      "reading": ["ちず"],
+      "meaning": ["Mapa"]
+    },
+    {
+      "word": "砂糖",
+      "reading": ["さとう"],
+      "meaning": ["Açucar"]
+    },
+    {
+      "word": "夏休み",
+      "reading": [],
+      "meaning": []
+    },
+    {
+      "word": "夏休み",
+      "reading": ["なつやすみ"],
+      "meaning": ["Férias de verão"]
+    },
+
+    {
+      "word": "池",
+      "reading": ["いけ"],
+      "meaning": ["Lago"]
+    },
+    {
+      "word": "郵便局",
+      "reading": ["ゆうびんきょく"],
+      "meaning": ["Agência dos Correios", "Correios"]
+    },
+    {
+      "word": "教室",
+      "reading": ["きょうしつ"],
+      "meaning": ["Sala de aula"]
+    },
+    {
+      "word": "耳",
+      "reading": ["みみ"],
+      "meaning": ["Olho"]
+    },
+    {
+      "word": "切手",
+      "reading": ["きって"],
+      "meaning": ["Selo"]
+    },
+
+    {
+      "word": "台所",
+      "reading": ["だいどころ"],
+      "meaning": ["Cozinha"]
+    },
+    {
+      "word": "電気",
+      "reading": ["でんき"],
+      "meaning": ["Eletricidade"]
+    },
+    {
+      "word": "",
+      "reading": [],
+      "meaning": []
+    },
+    {
+      "word": "歯",
+      "reading": ["は"],
+      "meaning": ["Dente"]
+    },
+    {
+      "word": "",
+      "reading": [],
+      "meaning": []
+    },
+
+    {
+      "word": "",
+      "reading": [],
+      "meaning": []
+    },
+    {
+      "word": "",
+      "reading": [],
+      "meaning": []
+    },
+    {
+      "word": "",
+      "reading": [],
+      "meaning": []
+    },
+    {
+      "word": "",
+      "reading": [],
+      "meaning": []
+    },
+    {
+      "word": "",
+      "reading": [],
+      "meaning": []
+    },
+
+    {
+      "word": "",
+      "reading": [],
+      "meaning": []
+    },
+    {
+      "word": "",
+      "reading": [],
+      "meaning": []
+    },
+    {
+      "word": "",
+      "reading": [],
+      "meaning": []
+    },
+    {
+      "word": "",
+      "reading": [],
+      "meaning": []
+    },
+    {
+      "word": "",
+      "reading": [],
+      "meaning": []
+    },
+    {
+      "word": "",
+      "reading": [],
+      "meaning": []
+    }
+  ]
 }
