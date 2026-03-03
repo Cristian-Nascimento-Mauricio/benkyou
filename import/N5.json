@@ -535,15 +535,25 @@
       "meaning": ["Dente"]
     },
     {
-      "word": "",
-      "reading": [],
-      "meaning": []
+      "word": "紅茶",
+      "reading": ["こうちゃ"],
+      "meaning": ["Chá preto","Chá"]
     },
 
     {
-      "word": "",
-      "reading": [],
-      "meaning": []
+      "word": "家庭",
+      "reading": ["かてい"],
+      "meaning": ["Casa", "Lar", "Família"]
+    },
+    {
+      "word": "野菜",
+      "reading": ["やさい"],
+      "meaning": ["Vegetal"]
+    },
+    {
+      "word": "風呂",
+      "reading": ["ふろ"],
+      "meaning": ["Banheiro" ]
     },
     {
       "word": "",
@@ -551,25 +561,25 @@
       "meaning": []
     },
     {
-      "word": "",
-      "reading": [],
-      "meaning": []
-    },
-    {
-      "word": "",
-      "reading": [],
-      "meaning": []
-    },
-    {
-      "word": "",
-      "reading": [],
-      "meaning": []
+      "word": "玄関",
+      "reading": ["げんかん"],
+      "meaning": ["Hall de entrada", "Entrada da casa"]
     },
 
     {
-      "word": "",
-      "reading": [],
-      "meaning": []
+      "word": "地下鉄",
+      "reading": ["ちかてつ"],
+      "meaning": ["Metro"]
+    },
+    {
+      "word": "鼻",
+      "reading": ["はな"],
+      "meaning": ["Nariz"]
+    },
+    {
+      "word": "緑",
+      "reading": ["みどり"],
+      "meaning": ["Verde"]
     },
     {
       "word": "",
@@ -577,24 +587,681 @@
       "meaning": []
     },
     {
-      "word": "",
-      "reading": [],
-      "meaning": []
+      "word": "昼",
+      "reading": ["ひる"],
+      "meaning": ["Meio-dia"]
     },
     {
-      "word": "",
-      "reading": [],
-      "meaning": []
+      "word": "西",
+      "reading": ["にし"],
+      "meaning": ["Oeste"]
     },
     {
-      "word": "",
-      "reading": [],
-      "meaning": []
+      "word": "白",
+      "reading": ["しろ"],
+      "meaning": ["Branco"]
     },
     {
-      "word": "",
+      "word": "洗濯",
+      "reading": ["せんたく"],
+      "meaning": ["Lavagem", "Lavar roupa"]
+    },
+    {
+      "word": "冷蔵庫",
+      "reading": ["れいぞうこ"],
+      "meaning": ["Geladeira", "Frigorífico"]
+    },
+    {
+      "word": "火曜日",
+      "reading": ["かようび"],
+      "meaning": ["Terça-feira",  "Terça"]
+    },
+    {
+      "word": "南",
+      "reading": ["みなみ"],
+      "meaning": ["Sul"]
+    },
+    {
+      "word": "北",
+      "reading": ["きた"],
+      "meaning": ["Norte"]
+    },
+    {
+      "word": "茶色",
+      "reading": ["ちゃいろ"],
+      "meaning": ["Marrom", "Castanho"]
+    },
+    {
+      "word": "喫茶店",
+      "reading": ["きっさてん"],
+      "meaning": ["Cafeteria"]
+    },
+    {
+      "word": "黒",
+      "reading": ["くろ"],
+      "meaning": ["Preto", "Negro"]
+    },
+    {
+      "word": "青",
+      "reading": ["あお"],
+      "meaning": ["Azul"]
+    },
+    {
+      "word": "靴下",
+      "reading": ["くつした"],
+      "meaning": ["Meia","Par de meias"]
+    },
+    {
+      "word": "封筒",
+      "reading": ["ふうとう"],
+      "meaning": ["Envelope"]
+    },
+    {
+      "word": "辺",
+      "reading": ["へん"],
+      "meaning": ["Área"]
+    },
+    {
+      "word": "黄色",
+      "reading": ["きいろ"],
+      "meaning": ["Amarelo"]
+    },
+    {
+      "word": "映画館",
+      "reading": ["えいがかん"],
+      "meaning": ["Cinema", "Sala de cinema"]
+    },
+    {
+      "word": "箸",
+      "reading": ["はし"],
+      "meaning": ["Hashi", "Palitinhos"]
+    },
+    {
+      "word": "食堂",
+      "reading": ["しょくどう"],
+      "meaning": ["Cantina", "Refeitório"]
+    },
+    {
+      "word": "牛肉",
+      "reading": ["ぎゅうにく"],
+      "meaning": ["Bife", "Carne de vaca"]
+    },
+    {
+      "word": "交差点",
+      "reading": ["こうさてん"],
+      "meaning": ["Interseção", "Cruzamento"]
+    },
+    {
+      "word": "茶碗",
+      "reading": ["ちゃわん"],
+      "meaning": ["Tigela", "Bacia de chá"]
+    },
+    {
+      "word": "漢字",
+      "reading": ["かんじ"],
+      "meaning": ["Kanji", "Caracteres chineses"]
+    },
+    {
+      "word": "曇り",
+      "reading": ["くもり"],
+      "meaning": ["Tempo nublado"]
+    },
+    {
+      "word": "背広",
+      "reading": ["せびろ"],
+      "meaning": ["Terno"]
+    },
+    {
+      "word": "万年筆",
+      "reading": ["まんねんひつ"],
+      "meaning": ["Caneta tinteiro", "Caneta"]
+    },
+    {
+      "word": "灰皿",
+      "reading": ["はいざら"],
+      "meaning": ["Cinzeiro"]
+    },
+    {
+      "word": "大使館",
+      "reading": ["たいしかん"],
+      "meaning": ["Embaixada"]
+    },
+    {
+      "word": "豚肉",
+      "reading": ["ぶたにく"],
+      "meaning": ["Carne de porco", "Carne suína"]
+    },
+    {
+      "word": "交番",
+      "reading": ["こうばん"],
+      "meaning": ["Posto policial"]
+    },
+    {
+      "word": "飲む",
+      "reading": ["のむ"],
+      "meaning": ["Beber", "Tomar"]
+    },
+    {
+      "word": "上げる",
+      "reading": ["あげる"],
+      "meaning": ["Levantar", "Elevar", "Aumentar"]
+    },
+    {
+      "word": "頭",
+      "reading": ["あたま"],
+      "meaning": ["Cabeça"]
+    },
+    {
+      "word": "日曜日",
+      "reading": ["にちようび"],
+      "meaning": ["Domingo"]
+    },
+    {
+      "word": "誕生日",
+      "reading": ["たんじょうび"],
+      "meaning": ["Aniversário", "Data de nascimento"]
+    },
+    {
+      "word": "可愛い",
+      "reading": ["かわいい"],
+      "meaning": ["Fofo","Bonitinho","Adoravel","Fofinho"]
+    },
+    {
+      "word": "鞄",
+      "reading": ["かばん"],
+      "meaning": ["Bolsa"]
+    },
+    {
+      "word": "土曜日",
+      "reading": ["どようび"],
+      "meaning": ["Sábado"]
+    },
+    {
+      "word": "月曜日",
+      "reading": ["げつようび"],
+      "meaning": ["Segunda-feira", "Segunda"]
+    },
+    {
+      "word": "金曜日",
+      "reading": ["きんようび"],
+      "meaning": ["Sexta-feira", "Sexta"]
+    },
+    {
+      "word": "花瓶",
+      "reading": ["かびん"],
+      "meaning": ["Vaso","Vaso de flor"]
+    },
+    {
+      "word": "木曜日",
+      "reading": ["もくようび"],
+      "meaning": ["Quinta-feira", "Quinta"]
+    },
+    {
+      "word": "本棚",
+      "reading": ["ほんだな"],
+      "meaning": ["Prateleira", "Estante"]
+    },
+    {
+      "word": "石鹸",
+      "reading": ["せっけん"],
+      "meaning": ["Sabão", "Sabonete"]
+    },
+    {
+      "word": "水曜日",
+      "reading": ["すいようび"],
+      "meaning": ["Quarta-feira", "Quarta"]
+    },
+    {
+      "word": "飴",
+      "reading": ["あめ"],
+      "meaning": ["Doce"]
+    },
+    {
+      "word": "八百屋",
+      "reading": ["やおや"],
+      "meaning": ["Feira","Verdureiro","Mercado de frutas e verduras"]
+    },
+    {
+      "word": "成る",
+      "reading": ["なる"],
+      "meaning": ["Tornar-se", "Tornar"]
+    },
+    {
+      "word": "より",
       "reading": [],
-      "meaning": []
-    }
+      "meaning": ["Mais", "Mais que","Do que"]
+    },
+    {
+      "word": "一番",
+      "reading": ["いちばん"],
+      "meaning": ["Primeiro","O melhor","Número um"]
+    },
+    {
+      "word": "私",
+      "reading": ["わたし"],
+      "meaning": ["Eu","Privado","Particular"]
+    },
+    {
+      "word": "外",
+      "reading": ["そと"],
+      "meaning": ["Lado de fora", "Exterior"]
+    },
+    {
+      "word": "姉",
+      "reading": ["あね"],
+      "meaning": ["Irmã mais velha"]
+    },
+    {
+      "word": "百",
+      "reading": ["ひゃく"],
+      "meaning": ["Cem","100"]
+    },
+    {
+      "word": "有る",
+      "reading": ["ある"],
+      "meaning": ["Tem","Existir","Haver"]
+    },
+    {
+      "word": "その",
+      "reading": [],
+      "meaning": ["Esse","Essa"]
+    },
+    {
+      "word": "言う",
+      "reading": ["いう"],
+      "meaning": ["Falar","Dizer","Exclamar"]
+    },
+    {
+      "word": "できる",
+      "reading": [],
+      "meaning": ["Ser capaz", "Poder", "Ser possível"]
+    },
+    {
+      "word": "良い",
+      "reading": ["いい","よい"],
+      "meaning": ["Bom", "Ótimo", "Execelente"]
+    },
+    {
+      "word": "ください",
+      "reading": [],
+      "meaning": ["Por favor"]
+    },
+    {
+      "word": "見る",
+      "reading": ["みる"],
+      "meaning": ["Ver", "Olhar", "Assistir"]
+    },
+    {
+      "word": "この",
+      "reading": [],
+      "meaning": ["Este","Esta"]
+    },
+    {
+      "word": "自分",
+      "reading": ["じぶん"],
+      "meaning": ["Eu mesmo", "Si mesmo"]
+    },
+    {
+      "word": "知る",
+      "reading": ["しる"],
+      "meaning": ["Saber", "Conhecer","Aprender"]
+    },
+    {
+      "word": "持つ",
+      "reading": ["もつ"],
+      "meaning": ["Segurar"]
+    },
+    {
+      "word": "何",
+      "reading": ["なに","なん"],
+      "meaning": ["O que","Qual"]
+    },
+    {
+      "word": "車",
+      "reading": ["くるま"],
+      "meaning": ["Carro","Automóvel"]
+    },
+    {
+      "word": "話す",
+      "reading": ["はなす"],
+      "meaning": ["Contar", "Falar", "Conversar"]
+    },
+    {
+      "word": "今",
+      "reading": ["いま"],
+      "meaning": ["Agora", "Neste momento"]
+    },
+    {
+      "word": "今日",
+      "reading": ["きょう"],
+      "meaning": ["Hoje"]
+    },
+    {
+      "word": "買う",
+      "reading": ["かう"],
+      "meaning": ["Comprar"]
+    },
+    {
+      "word": "読む",
+      "reading": ["よむ"],
+      "meaning": ["Ler"]
+    },
+    {
+      "word": "皆",
+      "reading": ["みんな"],
+      "meaning": ["Pessoal","Todo mundo","Todos"]
+    },
+    {
+      "word": "新しい",
+      "reading": ["あたらしい"],
+      "meaning": ["Novo","Recente","Inédito"]
+    },
+    {
+      "word": "話",
+      "reading": ["はなし"],
+      "meaning": ["Conversa"]
+    },
+    {
+      "word": "明日",
+      "reading": ["あした"],
+      "meaning": ["Amanhã"]
+    },
+    {
+      "word": "昨日",
+      "reading": ["きのう"],
+      "meaning": ["Ontem"]
+    },
+    {
+      "word": "出る",
+      "reading": ["でる"],
+      "meaning": ["Sair"]
+    },
+    {
+      "word": "勉強",
+      "reading": ["べんきょう"],
+      "meaning": ["Estudo", "Aprendizagem"]
+    },
+    {
+      "word": "取る",
+      "reading": ["とる"],
+      "meaning": ["Pegar"]
+    },
+    {
+      "word": "誰",
+      "reading": ["だれ"],
+      "meaning": ["Quem"]
+    },
+    {
+      "word": "お金",
+      "reading": ["おかね"],
+      "meaning": ["Dinheiro"]
+    },
+    {
+      "word": "男",
+      "reading": ["おとこ"],
+      "meaning": ["Homem","Macho"]
+    },
+    {
+      "word": "犬",
+      "reading": ["いぬ"],
+      "meaning": ["Cão","Cachorro"]
+    },
+    {
+      "word": "使う",
+      "reading": ["つかう"],
+      "meaning": ["Usar","Utilizar"]
+    },
+    {
+      "word": "大変",
+      "reading": ["たいへん"],
+      "meaning": ["Terrivel","Muito difícil","Complicado"]
+    },
+    {
+      "word": "待つ",
+      "reading": ["まつ"],
+      "meaning": ["Esperar"]
+    },
+    {
+      "word": "作る",
+      "reading": ["つくる"],
+      "meaning": ["Fazer"]
+    },
+    {
+      "word": "後ろ",
+      "reading": ["うしろ"],
+      "meaning": ["Costas","Atrás"]
+    },
+    {
+      "word": "町",
+      "reading": ["まち"],
+      "meaning": ["Cidade"]
+    },
+    {
+      "word": "駅",
+      "reading": ["えき"],
+      "meaning": ["Estação"]
+    },
+    {
+      "word": "少し",
+      "reading": ["すこし"],
+      "meaning": ["Pouco","Pequena quantidade"]
+    },
+    {
+      "word": "あなた",
+      "reading": [],
+      "meaning": ["Você","Tú"]
+    },
+    {
+      "word": "欲しい",
+      "reading": ["ほしい"],
+      "meaning": ["Querer"]
+    },
+    {
+      "word": "行く",
+      "reading": ["いく"],
+      "meaning": ["Ir"]
+    },
+    {
+      "word": "乗る",
+      "reading": ["のる"],
+      "meaning": ["Embarcar","Montar"]
+    },
+    {
+      "word": "大きな",
+      "reading": ["おおきな"],
+      "meaning": ["Grande"]
+    },
+  {
+    "word": "終わる",
+    "reading": ["おわる"],
+    "meaning": ["terminar", "acabar"]
+  },
+  {
+    "word": "学生",
+    "reading": ["がくせい"],
+    "meaning": ["estudante"]
+  },
+  {
+    "word": "長い",
+    "reading": ["ながい"],
+    "meaning": ["longo", "comprido"]
+  },
+  {
+    "word": "何の",
+    "reading": ["なんの"],
+    "meaning": ["de que", "que (tipo de) — usado antes de substantivo: \"que ...\""]
+  },
+  {
+    "word": "国",
+    "reading": ["くに"],
+    "meaning": ["país", "nação"]
+  },
+  {
+    "word": "又",
+    "reading": ["また"],
+    "meaning": ["novamente", "além disso", "também", "ou (em alguns contextos)"]
+  },
+  {
+    "word": "高い",
+    "reading": ["たかい"],
+    "meaning": ["alto", "caro"]
+  },
+  {
+    "word": "余り",
+    "reading": ["あまり"],
+    "meaning": ["demais", "resto; sobra", "nem muito (quando usado com forma negativa)"]
+  },
+  {
+    "word": "難しい",
+    "reading": ["むずかしい"],
+    "meaning": ["difícil"]
+  },
+  {
+    "word": "友達",
+    "reading": ["ともだち"],
+    "meaning": ["amigo", "amiga"]
+  },
+  {
+    "word": "一つ",
+    "reading": ["ひとつ"],
+    "meaning": ["um (contador genérico)", "uma unidade"]
+  },
+  {
+    "word": "本当",
+    "reading": ["ほんとう"],
+    "meaning": ["verdade", "real", "de verdade"]
+  },
+  {
+    "word": "寝る",
+    "reading": ["ねる"],
+    "meaning": ["dormir", "deitar-se"]
+  },
+  {
+    "word": "終わる",
+    "reading": ["おわる"],
+    "meaning": ["Terminar", "Acabar"]
+  },
+  {
+    "word": "学生",
+    "reading": ["がくせい"],
+    "meaning": ["Estudante"]
+  },
+  {
+    "word": "長い",
+    "reading": ["ながい"],
+    "meaning": ["Longo", "Comprido"]
+  },
+  {
+    "word": "何の",
+    "reading": ["なんの"],
+    "meaning": ["De que", "Que (tipo de) — usado antes de substantivo"]
+  },
+  {
+    "word": "国",
+    "reading": ["くに"],
+    "meaning": ["País", "Nação"]
+  },
+  {
+    "word": "又",
+    "reading": ["また"],
+    "meaning": ["Novamente", "Além disso", "Também", "Ou (em alguns contextos)"]
+  },
+  {
+    "word": "高い",
+    "reading": ["たかい"],
+    "meaning": ["Alto", "Caro"]
+  },
+  {
+    "word": "余り",
+    "reading": ["あまり"],
+    "meaning": ["Demais", "Resto; sobra", "Nem muito (quando usado com forma negativa)"]
+  },
+  {
+    "word": "難しい",
+    "reading": ["むずかしい"],
+    "meaning": ["Difícil"]
+  },
+  {
+    "word": "友達",
+    "reading": ["ともだち"],
+    "meaning": ["Amigo", "Amiga"]
+  },
+  {
+    "word": "一つ",
+    "reading": ["ひとつ"],
+    "meaning": ["Um (contador genérico)", "Uma unidade"]
+  },
+  {
+    "word": "本当",
+    "reading": ["ほんとう"],
+    "meaning": ["Verdade", "Real", "De verdade"]
+  },
+  {
+    "word": "寝る",
+    "reading": ["ねる"],
+    "meaning": ["Dormir", "Deitar-se"]
+  },
+  { "word": "生徒", "reading": ["せいと"], "meaning": ["Estudante", "Aluno"] },
+  { "word": "忙しい", "reading": ["いそがしい"], "meaning": ["Ocupado", "Atarefado"] },
+  { "word": "両親", "reading": ["りょうしん"], "meaning": ["Pais"] },
+  { "word": "泳ぐ", "reading": ["およぐ"], "meaning": ["Nadar"] },
+  { "word": "出す", "reading": ["だす"], "meaning": ["Tirar", "Enviar", "Colocar para fora"] },
+  { "word": "立つ", "reading": ["たつ"], "meaning": ["Levantar-se", "Ficar de pé"] },
+  { "word": "早い", "reading": ["はやい"], "meaning": ["Cedo", "Rápido"] },
+  { "word": "楽しい", "reading": ["たのしい"], "meaning": ["Divertido", "Agradável"] },
+  { "word": "面白い", "reading": ["おもしろい"], "meaning": ["Interessante", "Engraçado"] },
+  { "word": "絵", "reading": ["え"], "meaning": ["Desenho", "Quadro", "Ilustração"] },
+  { "word": "女の子", "reading": ["おんなのこ"], "meaning": ["Menina"] },
+  { "word": "着る", "reading": ["きる"], "meaning": ["Vestir", "Usar (roupa)"] },
+  { "word": "上手", "reading": ["じょうず"], "meaning": ["Hábil", "Bom em (algo)"] },
+  { "word": "古い", "reading": ["ふるい"], "meaning": ["Velho", "Antigo"] },
+  { "word": "強い", "reading": ["つよい"], "meaning": ["Forte", "Poderoso"] },
+  { "word": "全部", "reading": ["ぜんぶ"], "meaning": ["Tudo", "Inteiro"] },
+  { "word": "呼ぶ", "reading": ["よぶ"], "meaning": ["Chamar", "Convocar"] },
+  { "word": "午後", "reading": ["ごご"], "meaning": ["Tarde (período da tarde)", "P.M."] },
+  { "word": "掛ける", "reading": ["かける"], "meaning": ["Colocar (sobre)", "Pendurar", "Ligar (telefone)"] },
+  { "word": "辞書", "reading": ["じしょ"], "meaning": ["Dicionário"] },
+    { "word": "天気", "reading": ["てんき"], "meaning": ["Tempo"] },
+  { "word": "体", "reading": ["からだ"], "meaning": ["Corpo"] },
+  { "word": "大きい", "reading": ["おおきい"], "meaning": ["Grande"] },
+  { "word": "質問", "reading": ["しつもん"], "meaning": ["Pergunta"] },
+  { "word": "昨夜", "reading": ["さくや"], "meaning": ["Ontem à noite"] },
+  { "word": "有名", "reading": ["ゆうめい"], "meaning": ["Famoso"] },
+  { "word": "兄", "reading": ["あに"], "meaning": ["Irmão (mais velho)"] },
+  { "word": "歌う", "reading": ["うたう"], "meaning": ["Cantar"] },
+  { "word": "上る", "reading": ["のぼる"], "meaning": ["Subir"] },
+  { "word": "服", "reading": ["ふく"], "meaning": ["Roupa"] },
+  { "word": "鳥", "reading": ["とり"], "meaning": ["Pássaro"] },
+  { "word": "時々", "reading": ["ときどき"], "meaning": ["Às vezes"] },
+  { "word": "妹", "reading": ["いもうと"], "meaning": ["Irmã (mais nova)"] },
+  { "word": "二つ", "reading": ["ふたつ"], "meaning": ["Dois (contador genérico)"] },
+  { "word": "頼む", "reading": ["たのむ"], "meaning": ["Pedir"] },
+  { "word": "お父さん", "reading": ["おとうさん"], "meaning": ["Pai"] },
+  { "word": "今朝", "reading": ["けさ"], "meaning": ["Esta manhã"] },
+  { "word": "遅い", "reading": ["おそい"], "meaning": ["Tarde", "Lento"] },
+  { "word": "借りる", "reading": ["かりる"], "meaning": ["Pegar emprestado"] },
+  { "word": "薬", "reading": ["くすり"], "meaning": ["Remédio"] },
+    { "word": "庭", "reading": ["にわ"], "meaning": ["Jardim"] },
+  { "word": "外国", "reading": ["がいこく"], "meaning": ["País estrangeiro"] },
+  { "word": "小さい", "reading": ["ちいさい"], "meaning": ["Pequeno"] },
+  { "word": "元気", "reading": ["げんき"], "meaning": ["Animado", "Saudável"] },
+  { "word": "弟", "reading": ["おとうと"], "meaning": ["Irmão (mais novo)"] },
+  { "word": "魚", "reading": ["さかな"], "meaning": ["Peixe"] },
+  { "word": "今年", "reading": ["ことし"], "meaning": ["Este ano"] },
+  { "word": "お母さん", "reading": ["おかあさん"], "meaning": ["Mãe"] },
+  { "word": "男の子", "reading": ["おとこのこ"], "meaning": ["Menino"] },
+  { "word": "飛ぶ", "reading": ["とぶ"], "meaning": ["Voar"] },
+  { "word": "売る", "reading": ["うる"], "meaning": ["Vender"] },
+  { "word": "静か", "reading": ["しずか"], "meaning": ["Silencioso", "Calmo"] },
+  { "word": "休む", "reading": ["やすむ"], "meaning": ["Descansar", "Ausentar-se"] },
+  { "word": "食べ物", "reading": ["たべもの"], "meaning": ["Comida"] },
+  { "word": "大切", "reading": ["たいせつ"], "meaning": ["Importante"] },
+  { "word": "警官", "reading": ["けいかん"], "meaning": ["Policial"] },
+  { "word": "来週", "reading": ["らいしゅう"], "meaning": ["Próxima semana"] },
+  { "word": "建物", "reading": ["たてもの"], "meaning": ["Edifício"] },
+  { "word": "暖かい", "reading": ["あたたかい"], "meaning": ["Quente", "Aconchegante"] },
+  { "word": "降りる", "reading": ["おりる"], "meaning": ["Descer"] }
+  
+    
   ]
 }
