@@ -18,6 +18,12 @@ class statisticManager:
         else:
             return None    
 
+    def get_attempt(self,category):
+        if category == "ALL":
+            return self.repoCard.card_stastic_all()
+        
+        return self.repoCard.card_stastic_by_category(category)
+
     def lastActivity(self, days):
 
         today = datetime.strptime(

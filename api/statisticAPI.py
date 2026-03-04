@@ -22,7 +22,7 @@ class statisticAPI:
         @app.route("/api/statistic/attempt", methods=['GET'])
         def get_attempt_statistic():
             category = request.args.get("category")
-            data = self.statisticManager.get_statistics(category)
+            data = self.statisticManager.get_att(category)
 
             if list is None:
                 return jsonify({
@@ -39,7 +39,7 @@ class statisticAPI:
         @app.route("/api/statistic/card", methods=['GET'])
         def test():
             category = request.args.get("category")
-            list = self.cardManager.cardStasticAll(category)
+            list = self.statisticManager.get_attempt(category)
 
 
             if list is None:

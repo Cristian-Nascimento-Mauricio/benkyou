@@ -303,6 +303,8 @@ async function renderGrafic(canvas, ctx, tooltip) {
 }
 
 export async function init(content) {
+
+
   const canvas = document.getElementById("dualChart");
   const ctx = canvas.getContext("2d");
   const tooltip = document.getElementById("tooltip");
@@ -396,6 +398,7 @@ export async function init(content) {
 
   optionsCategory.addEventListener('change', async (event)=> {
     data = await requestAPI(`/api/statistic/card?category=${event.target.value}`,"GET",null,10000)
+    console.log(data)
     renderTable(tableBodyCardsStatistic,data)
   })
 

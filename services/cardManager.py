@@ -119,9 +119,3 @@ class cardManager:
         return self.repoCard.delete_card(cardId)
             
 
-
-    def attempt_static(self,category):
-        if category == "ALL":
-            return self.repoCard.card_stastic_all()
-        
-        return self.repoCard.card_stastic_by_category(category)
