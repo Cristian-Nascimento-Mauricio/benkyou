@@ -5,6 +5,7 @@ from api.configAPI import configAPI
 from repositories.databaseCreator import databaseCreator
 from services.cardManager import cardManager
 from services.statisticManager import statisticManager
+from utils.defaultVocabularyRegister import defaultVocabularyRegister
 
 app = Flask(__name__)
 
@@ -16,6 +17,9 @@ creater = databaseCreator("../db/database.db")
 creater.create_database()
 cardManager = cardManager("./db/database.db")
 statisticManager = statisticManager("./db/database.db")
+
+n = defaultVocabularyRegister("./import","./db/database.db")
+n.openJsonFile()
 
 @app.route("/")
 @app.route("/study")

@@ -1,6 +1,6 @@
 {
    "name":"Vocabulary - N5",
-   "version":"1.0.0",
+   "version":"1.0.1",
    "description":"Todo conteúdo relacionado ao N5 do JLPT. fonte do conteúdo: https://jisho.org/search/%23jlpt-n5",
    "category":"N5",
    "content":[
@@ -314,7 +314,7 @@
             "き"
          ],
          "meaning":[
-            "Arvore",
+            "Árvore",
             "Madeira"
          ]
       },
@@ -334,7 +334,7 @@
             "とけい"
          ],
          "meaning":[
-            "Relogio"
+            "Relógio"
          ]
       },
       {
@@ -352,8 +352,7 @@
             "はな"
          ],
          "meaning":[
-            "Flor",
-            "Pétola"
+            "Flor"
          ]
       },
       {
@@ -457,8 +456,7 @@
             "しんぶん"
          ],
          "meaning":[
-            "Jornal",
-            "Notícia"
+            "Jornal"
          ]
       },
       {
@@ -2046,7 +2044,7 @@
          ],
          "meaning":[
             "De que",
-            "Que (tipo de) — usado antes de substantivo"
+            "Que"
          ]
       },
       {
@@ -2057,8 +2055,7 @@
          "meaning":[
             "Novamente",
             "Além disso",
-            "Também",
-            "Ou (em alguns contextos)"
+            "Também"
          ]
       },
       {
@@ -2068,8 +2065,9 @@
          ],
          "meaning":[
             "Demais",
-            "Resto; sobra",
-            "Nem muito (quando usado com forma negativa)"
+            "Resto",
+            "Sobra",
+            "Nem muito"
          ]
       },
       {
@@ -2097,7 +2095,7 @@
             "ひとつ"
          ],
          "meaning":[
-            "Um (contador genérico)",
+            "Um",
             "Uma unidade"
          ]
       },
@@ -2238,7 +2236,7 @@
          ],
          "meaning":[
             "Vestir",
-            "Usar (roupa)"
+            "Usar"
          ]
       },
       {
@@ -2248,7 +2246,7 @@
          ],
          "meaning":[
             "Hábil",
-            "Bom em (algo)"
+            "Ser bom"
          ]
       },
       {
@@ -2297,7 +2295,7 @@
             "ごご"
          ],
          "meaning":[
-            "Tarde (período da tarde)",
+            "Tarde",
             "P.M."
          ]
       },
@@ -2307,9 +2305,9 @@
             "かける"
          ],
          "meaning":[
-            "Colocar (sobre)",
+            "Colocar",
             "Pendurar",
-            "Ligar (telefone)"
+            "Ligar"
          ]
       },
       {
@@ -2381,7 +2379,7 @@
             "あに"
          ],
          "meaning":[
-            "Irmão (mais velho)"
+            "Irmão mais velho, Irmãozão"
          ]
       },
       {
@@ -2435,7 +2433,7 @@
             "いもうと"
          ],
          "meaning":[
-            "Irmã (mais nova)"
+            "Irmã mais nova, Irmãzinha"
          ]
       },
       {
@@ -2444,7 +2442,8 @@
             "ふたつ"
          ],
          "meaning":[
-            "Dois (contador genérico)"
+            "Dois",
+            "Duas"
          ]
       },
       {
@@ -2545,7 +2544,7 @@
             "おとうと"
          ],
          "meaning":[
-            "Irmão (mais novo)"
+            "Irmão mais novo, Irmãzinho"
          ]
       },
       {
@@ -3147,7 +3146,7 @@
             "みなさん"
          ],
          "meaning":[
-            "Todos (forma educada)",
+            "Todos",
             "Pessoal"
          ]
       },
@@ -3167,7 +3166,7 @@
             "つとめる"
          ],
          "meaning":[
-            "Trabalhar (para uma empresa)",
+            "Trabalhar",
             "Servir"
          ]
       },
@@ -3177,7 +3176,7 @@
             "あつい"
          ],
          "meaning":[
-            "Quente (objeto, comida, bebida)"
+            "Quente"
          ]
       },
       {
@@ -3186,7 +3185,8 @@
             "みっつ"
          ],
          "meaning":[
-            "Três (contador genérico)"
+            "Três",
+            "Trás unidades"
          ]
       },
       {
@@ -3261,7 +3261,7 @@
          "meaning":[
             "Esticar",
             "Colar",
-            "Colocar (ex.: cartaz, selo)"
+            "Colocar"
          ]
       },
       {
@@ -3281,7 +3281,7 @@
          ],
          "meaning":[
             "Baixo",
-            "Baixa (altura, volume, valor)"
+            "Baixa"
          ]
       },
       {
@@ -3328,7 +3328,7 @@
          ],
          "meaning":[
             "Entregar",
-            "Passar (algo a alguém)"
+            "Passar"
          ]
       },
       {
@@ -3376,8 +3376,8 @@
             "あびる"
          ],
          "meaning":[
-            "Tomar (banho)",
-            "Receber (luz, vento, etc.)"
+            "Tomar banho",
+            "Banhar-se"
          ]
       },
       {
@@ -3395,8 +3395,8 @@
             "ようふく"
          ],
          "meaning":[
-            "Roupa (ocidental)",
-            "Roupas"
+            "Roupa",
+            "Roupa ocidental"
          ]
       },
       {
@@ -3405,7 +3405,8 @@
             "とる"
          ],
          "meaning":[
-            "Tirar (foto, vídeo)"
+            "Tirar",
+            "Fotografar"
          ]
       },
       {
@@ -3436,7 +3437,7 @@
          ],
          "meaning":[
             "Fino",
-            "Fraco (cor, sabor)",
+            "Fraco",
             "Claro"
          ]
       },
@@ -3465,7 +3466,8 @@
             "よっつ"
          ],
          "meaning":[
-            "Quatro (contador genérico)"
+            "Quatro",
+            "Quatro unidades"
          ]
       },
       {
@@ -3512,7 +3514,8 @@
             "いつつ"
          ],
          "meaning":[
-            "Cinco (contador genérico)"
+            "Cinco",
+            "Cinco unidades"
          ]
       },
       {
@@ -3578,7 +3581,8 @@
             "ななつ"
          ],
          "meaning":[
-            "Sete (contador genérico)"
+            "Sete",
+            "Sete unidades"
          ]
       },
       {
@@ -3587,7 +3591,8 @@
             "ここのつ"
          ],
          "meaning":[
-            "Nove (contador genérico)"
+            "Nove",
+            "Nove unidades"
          ]
       },
       {
@@ -3614,7 +3619,9 @@
             "いる"
          ],
          "meaning":[
-            "Estar (pessoas, animais)"
+            "Estar",
+            "Ter",
+            "Existir"
          ]
       },
       {
@@ -3875,7 +3882,9 @@
             "ふる"
          ],
          "meaning":[
-            "Cair (chuva, neve)"
+            "Cair",
+            "Chuver",
+            "Nevar"
          ]
       },
       {
@@ -3893,8 +3902,9 @@
             "かえる"
          ],
          "meaning":[
-            "Voltar (para casa)",
-            "Retornar"
+            "Voltar",
+            "Retornar",
+            "Voltar para casa"
          ]
       },
       {
@@ -3932,9 +3942,9 @@
             "かかる"
          ],
          "meaning":[
-            "Levar (tempo)",
+            "Levar",
             "Custar",
-            "Estar pendurado"
+            "Ser necessário"
          ]
       },
       {
@@ -4066,7 +4076,7 @@
          ],
          "meaning":[
             "Por que",
-            "Como (por que)"
+            "Como"
          ]
       },
       {
@@ -4076,7 +4086,7 @@
          ],
          "meaning":[
             "Colocar",
-            "Ligar (aparelho)"
+            "Ligar"
          ]
       },
       {
@@ -4180,7 +4190,7 @@
             "いくら"
          ],
          "meaning":[
-            "Quanto (preço)"
+            "Quanto"
          ]
       },
       {
@@ -4198,8 +4208,8 @@
             "ひく"
          ],
          "meaning":[
-            "Tocar (instrumento)",
-            "Rebater"
+            "Tocar instrumento de corda",
+            "Tocar instrumento com corda"
          ]
       },
       {
@@ -4208,7 +4218,8 @@
             "あつい"
          ],
          "meaning":[
-            "Quente (clima)"
+            "Quente",
+            "Calor"
          ]
       },
       {
@@ -4276,7 +4287,7 @@
          "meaning":[
             "Aqui",
             "Este lado",
-            "Esta pessoa (forma educada)"
+            "Esta pessoa"
          ]
       },
       {
@@ -4407,7 +4418,7 @@
             "つめたい"
          ],
          "meaning":[
-            "Frio (ao toque)",
+            "Frio",
             "Gelado"
          ]
       },
@@ -4446,7 +4457,7 @@
          ],
          "meaning":[
             "Esposa",
-            "Senhora (de outra pessoa)"
+            "Senhora"
          ]
       },
       {
@@ -4513,7 +4524,7 @@
             "ぬぐ"
          ],
          "meaning":[
-            "Tirar (roupa)"
+            "Tirar"
          ]
       },
       {
@@ -4563,7 +4574,7 @@
             "しまる"
          ],
          "meaning":[
-            "Fechar-se (intransitivo)"
+            "Fechar"
          ]
       },
       {
@@ -4632,7 +4643,7 @@
          "meaning":[
             "Aí",
             "Esse lado",
-            "Essa pessoa (forma educada)"
+            "Essa pessoa"
          ]
       },
       {
@@ -4651,7 +4662,7 @@
             "おにいさん"
          ],
          "meaning":[
-            "Irmão mais velho (de outra pessoa)"
+            "Irmão mais velho"
          ]
       },
       {
@@ -4660,7 +4671,7 @@
             "おねえさん"
          ],
          "meaning":[
-            "Irmã mais velha (de outra pessoa)"
+            "Irmã mais velha"
          ]
       },
       {
@@ -4776,7 +4787,7 @@
             "なく"
          ],
          "meaning":[
-            "Cantar (animal)",
+            "Cantar",
             "Chiar"
          ]
       },
@@ -4813,7 +4824,8 @@
             "むっつ"
          ],
          "meaning":[
-            "Seis (contador genérico)"
+            "Seis",
+            "Seis unidades"
          ]
       },
       {
@@ -4832,7 +4844,7 @@
             "おまわりさん"
          ],
          "meaning":[
-            "Policial (forma informal)"
+            "Policial"
          ]
       },
       {
@@ -4853,7 +4865,7 @@
          "meaning":[
             "Apontar",
             "Estender",
-            "Segurar (guarda-chuva)"
+            "Segurar um guarda-chuva"
          ]
       },
       {
@@ -4862,8 +4874,9 @@
             "はつか"
          ],
          "meaning":[
-            "Vinte (dias)",
-            "Dia vinte"
+            "Vinte dias",
+            "Dia vinte",
+            "Vigésimo dia"
          ]
       },
       {
@@ -4881,7 +4894,8 @@
             "やっつ"
          ],
          "meaning":[
-            "Oito (contador genérico)"
+            "Oito",
+            "Oito unidades"
          ]
       },
       {
@@ -4976,7 +4990,8 @@
          ],
          "meaning":[
             "Costas",
-            "Altura (estatura)"
+            "Altura",
+            "Estratura"
          ]
       },
       {
@@ -5235,7 +5250,8 @@
             "こめ"
          ],
          "meaning":[
-            "Arroz (cru)"
+            "Arroz",
+            "Arroz japonês"
          ]
       },
       {
@@ -5309,7 +5325,7 @@
             "ようばかま"
          ],
          "meaning":[
-            "Calça (estilo ocidental)"
+            "Calça"
          ]
       },
       {
@@ -5636,7 +5652,7 @@
             "おばさん"
          ],
          "meaning":[
-            "Tia (mais velha que o pai ou a mãe)"
+            "Tia"
          ]
       },
       {
@@ -5729,7 +5745,7 @@
             "かた"
          ],
          "meaning":[
-            "Pessoa (forma educada)",
+            "Pessoa",
             "Modo",
             "Maneira"
          ]
@@ -5807,7 +5823,7 @@
             "どなた"
          ],
          "meaning":[
-            "Quem (forma educada)"
+            "Quem"
          ]
       },
       {
@@ -5826,8 +5842,7 @@
             "ひらく"
          ],
          "meaning":[
-            "Abrir (intransitivo)",
-            "Abrir (algo, realizar)"
+            "Abrir"
          ]
       },
       {
@@ -5995,7 +6010,7 @@
          "meaning":[
             "Algum dia",
             "Em breve",
-            "Qual (entre vários)"
+            "Qual"
          ]
       },
       {
@@ -6014,7 +6029,7 @@
          ],
          "meaning":[
             "Lá",
-            "Aquele lado (forma educada)"
+            "Aquele lado"
          ]
       },
       {
@@ -6033,7 +6048,9 @@
             "フィルム"
          ],
          "meaning":[
-            "Filme (fotográfico, película)"
+            "Filme",
+            "fotográfico",
+            "Rolo de filme"
          ]
       },
       {
@@ -6125,7 +6142,8 @@
             "あの"
          ],
          "meaning":[
-            "Aquele(a) (determinante)"
+            "Aquele",
+            "Aquela"
          ]
       },
       {
@@ -6208,7 +6226,7 @@
          ],
          "meaning":[
             "Taça",
-            "Copo (estilo ocidental)"
+            "Copo"
          ]
       },
       {

@@ -51,6 +51,21 @@ class configRepository:
             print(f"Erro ao buscar config {key}: {e}")
             return None
 
+    def add(self, context: str, key: str, value: str) -> bool:
+
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute(
+                    "INSERT INTO config (context, key, value) VALUES (?, ?, ?)",
+                    (context, key, value)
+                )
+                conn.commit()
+                return cursor.lastrowid is not None
+        except sqlite3.Error as e:
+            print(f"Erro ao inserir config {key}: {e}")
+            return False
+    
     def get_all_by_context(self, context: str) -> List[Dict[str, Any]]:
         """
         Retorna todas as configs do context (ordenadas por key).

@@ -47,6 +47,80 @@ class cardRepository:
             print(f"Erro ao criar card: {e}")
             return None
     
+    def create_or_update_card(self, word: str, category: str, readings: List[str], meanings: List[str]):
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+
+                cursor.execute(
+                    "SELECT id, category FROM card WHERE word = ?",
+                    (word,)
+                )
+                row = cursor.fetchone()
+
+                if row is None:
+                    cursor.execute(
+                        "INSERT INTO card (word, category) VALUES (?, ?)",
+                        (word, category)
+                    )
+                    card_id = cursor.lastrowid
+                else:
+                    card_id = row[0]
+                    if row[1] != category:
+                        cursor.execute(
+                            "UPDATE card SET category=? WHERE id=?",
+                            (category, card_id)
+                        )
+
+                # -------- READINGS --------
+                cursor.execute(
+                    "SELECT id, read FROM reading WHERE card_id=?",
+                    (card_id,)
+                )
+                existing_readings = {r[1]: r[0] for r in cursor.fetchall()}
+
+                for r in readings:
+                    if r not in existing_readings:
+                        cursor.execute(
+                            "INSERT INTO reading (read, card_id) VALUES (?, ?)",
+                            (r, card_id)
+                        )
+
+                for read_value, read_id in existing_readings.items():
+                    if read_value not in readings:
+                        cursor.execute(
+                            "DELETE FROM reading WHERE id=?",
+                            (read_id,)
+                        )
+
+                # -------- MEANINGS --------
+                cursor.execute(
+                    "SELECT id, mean FROM meaning WHERE card_id=?",
+                    (card_id,)
+                )
+                existing_meanings = {m[1]: m[0] for m in cursor.fetchall()}
+
+                for m in meanings:
+                    if m not in existing_meanings:
+                        cursor.execute(
+                            "INSERT INTO meaning (mean, card_id) VALUES (?, ?)",
+                            (m, card_id)
+                        )
+
+                for mean_value, mean_id in existing_meanings.items():
+                    if mean_value not in meanings:
+                        cursor.execute(
+                            "DELETE FROM meaning WHERE id=?",
+                            (mean_id,)
+                        )
+
+                conn.commit()
+                return self.get_card_by_id(card_id)
+
+        except Exception as e:
+            print(e)
+            return None
+
     def create_reading(self,cardId,read):
         try:
             with self._get_connection() as conn:
