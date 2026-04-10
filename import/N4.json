@@ -1,0 +1,5368 @@
+{
+   "name": "Vocabulary - N4",
+   "version": "1.0.0",
+   "description": "Todo conteúdo relacionado ao N5 do JLPT. fonte do conteúdo: https:,,jisho.org,search,%23jlpt-n5",
+   "category": "N4",
+   "content": [
+      {
+         "word": "上げる",
+         "reading": [
+            "あげる"
+         ],
+         "meaning": [
+            "levantar",
+            "erguer",
+            "subir"
+         ]
+      },
+      {
+         "word": "腕",
+         "reading": [
+            "うで"
+         ],
+         "meaning": [
+            "braço"
+         ]
+      },
+      {
+         "word": "人形",
+         "reading": [
+            "にんぎょう"
+         ],
+         "meaning": [
+            "boneca",
+            "boneco"
+         ]
+      },
+      {
+         "word": "文化",
+         "reading": [
+            "ぶんか"
+         ],
+         "meaning": [
+            "cultura"
+         ]
+      },
+      {
+         "word": "海岸",
+         "reading": [
+            "かいがん"
+         ],
+         "meaning": [
+            "litoral",
+            "costa"
+         ]
+      },
+      {
+         "word": "産業",
+         "reading": [
+            "さんぎょう"
+         ],
+         "meaning": [
+            "indústria"
+         ]
+      },
+      {
+         "word": "動物園",
+         "reading": [
+            "どうぶつえん"
+         ],
+         "meaning": [
+            "zoológico"
+         ]
+      },
+      {
+         "word": "美術館",
+         "reading": [
+            "びじゅつかん"
+         ],
+         "meaning": [
+            "museu de arte"
+         ]
+      },
+      {
+         "word": "水道",
+         "reading": [
+            "すいどう"
+         ],
+         "meaning": [
+            "água encanada",
+            "rede de água"
+         ]
+      },
+      {
+         "word": "飛行場",
+         "reading": [
+            "ひこうじょう"
+         ],
+         "meaning": [
+            "campo de aviação",
+            "aeroporto"
+         ]
+      },
+      {
+         "word": "葡萄",
+         "reading": [
+            "ぶどう"
+         ],
+         "meaning": [
+            "uva"
+         ]
+      },
+      {
+         "word": "事故",
+         "reading": [
+            "じこ"
+         ],
+         "meaning": [
+            "acidente"
+         ]
+      },
+      {
+         "word": "息子",
+         "reading": [
+            "むすこ"
+         ],
+         "meaning": [
+            "filho"
+         ]
+      },
+      {
+         "word": "生活",
+         "reading": [
+            "せいかつ"
+         ],
+         "meaning": [
+            "vida cotidiana",
+            "modo de vida"
+         ]
+      },
+      {
+         "word": "注意",
+         "reading": [
+            "ちゅうい"
+         ],
+         "meaning": [
+            "atenção",
+            "cuidado"
+         ]
+      },
+      {
+         "word": "女性",
+         "reading": [
+            "じょせい"
+         ],
+         "meaning": [
+            "mulher",
+            "feminino"
+         ]
+      },
+      {
+         "word": "生きる",
+         "reading": [
+            "いきる"
+         ],
+         "meaning": [
+            "viver"
+         ]
+      },
+      {
+         "word": "船",
+         "reading": [
+            "ふね"
+         ],
+         "meaning": [
+            "barco",
+            "navio"
+         ]
+      },
+      {
+         "word": "説明",
+         "reading": [
+            "せつめい"
+         ],
+         "meaning": [
+            "explicação",
+            "esclarecer"
+         ]
+      },
+      {
+         "word": "警察",
+         "reading": [
+            "けいさつ"
+         ],
+         "meaning": [
+            "polícia"
+         ]
+      },
+      {
+         "word": "危険",
+         "reading": [
+            "きけん"
+         ],
+         "meaning": [
+            "perigo",
+            "arriscado"
+         ]
+      },
+      {
+         "word": "世界",
+         "reading": [
+            "せかい"
+         ],
+         "meaning": [
+            "mundo"
+         ]
+      },
+      {
+         "word": "戦争",
+         "reading": [
+            "せんそう"
+         ],
+         "meaning": [
+            "guerra"
+         ]
+      },
+      {
+         "word": "小説",
+         "reading": [
+            "しょうせつ"
+         ],
+         "meaning": [
+            "romance",
+            "novela"
+         ]
+      },
+      {
+         "word": "関係",
+         "reading": [
+            "かんけい"
+         ],
+         "meaning": [
+            "relação",
+            "ligação"
+         ]
+      },
+      {
+         "word": "研究",
+         "reading": [
+            "けんきゅう"
+         ],
+         "meaning": [
+            "pesquisa",
+            "estudo"
+         ]
+      },
+      {
+         "word": "会議",
+         "reading": [
+            "かいぎ"
+         ],
+         "meaning": [
+            "reunião",
+            "conferência"
+         ]
+      },
+      {
+         "word": "音",
+         "reading": [
+            "おと"
+         ],
+         "meaning": [
+            "som"
+         ]
+      },
+      {
+         "word": "普通",
+         "reading": [
+            "ふつう"
+         ],
+         "meaning": [
+            "comum",
+            "normal"
+         ]
+      },
+      {
+         "word": "湖",
+         "reading": [
+            "みずうみ"
+         ],
+         "meaning": [
+            "lago"
+         ]
+      },
+      {
+         "word": "夢",
+         "reading": [
+            "ゆめ"
+         ],
+         "meaning": [
+            "sonho"
+         ]
+      },
+      {
+         "word": "空港",
+         "reading": [
+            "くうこう"
+         ],
+         "meaning": [
+            "aeroporto"
+         ]
+      },
+      {
+         "word": "数学",
+         "reading": [
+            "すうがく"
+         ],
+         "meaning": [
+            "matemática"
+         ]
+      },
+      {
+         "word": "教育",
+         "reading": [
+            "きょういく"
+         ],
+         "meaning": [
+            "educação"
+         ]
+      },
+      {
+         "word": "赤ちゃん",
+         "reading": [
+            "あかちゃん"
+         ],
+         "meaning": [
+            "bebê"
+         ]
+      },
+      {
+         "word": "自由",
+         "reading": [
+            "じゆう"
+         ],
+         "meaning": [
+            "liberdade"
+         ]
+      },
+      {
+         "word": "火",
+         "reading": [
+            "ひ"
+         ],
+         "meaning": [
+            "fogo"
+         ]
+      },
+      {
+         "word": "森",
+         "reading": [
+            "もり"
+         ],
+         "meaning": [
+            "floresta"
+         ]
+      },
+      {
+         "word": "法律",
+         "reading": [
+            "ほうりつ"
+         ],
+         "meaning": [
+            "lei",
+            "legislação"
+         ]
+      },
+      {
+         "word": "気分",
+         "reading": [
+            "きぶん"
+         ],
+         "meaning": [
+            "humor",
+            "disposição"
+         ]
+      },
+      {
+         "word": "壁",
+         "reading": [
+            "かべ"
+         ],
+         "meaning": [
+            "parede"
+         ]
+      },
+      {
+         "word": "田舎",
+         "reading": [
+            "いなか"
+         ],
+         "meaning": [
+            "interior",
+            "campo"
+         ]
+      },
+      {
+         "word": "気",
+         "reading": [
+            "き"
+         ],
+         "meaning": [
+            "ânimo",
+            "espírito",
+            "energia"
+         ]
+      },
+      {
+         "word": "男性",
+         "reading": [
+            "だんせい"
+         ],
+         "meaning": [
+            "homem",
+            "masculino"
+         ]
+      },
+      {
+         "word": "地震",
+         "reading": [
+            "じしん"
+         ],
+         "meaning": [
+            "terremoto"
+         ]
+      },
+      {
+         "word": "人口",
+         "reading": [
+            "じんこう"
+         ],
+         "meaning": [
+            "população"
+         ]
+      },
+      {
+         "word": "故障",
+         "reading": [
+            "こしょう"
+         ],
+         "meaning": [
+            "pane",
+            "defeito",
+            "quebra"
+         ]
+      },
+      {
+         "word": "残念",
+         "reading": [
+            "ざんねん"
+         ],
+         "meaning": [
+            "lamentável",
+            "que pena"
+         ]
+      },
+      {
+         "word": "島",
+         "reading": [
+            "しま"
+         ],
+         "meaning": [
+            "ilha"
+         ]
+      },
+      {
+         "word": "教会",
+         "reading": [
+            "きょうかい"
+         ],
+         "meaning": [
+            "igreja"
+         ]
+      },
+      {
+         "word": "歴史",
+         "reading": [
+            "れきし"
+         ],
+         "meaning": [
+            "história"
+         ]
+      },
+      {
+         "word": "社会",
+         "reading": [
+            "しゃかい"
+         ],
+         "meaning": [
+            "sociedade"
+         ]
+      },
+      {
+         "word": "住所",
+         "reading": [
+            "じゅうしょ"
+         ],
+         "meaning": [
+            "endereço"
+         ]
+      },
+      {
+         "word": "工場",
+         "reading": [
+            "こうじょう"
+         ],
+         "meaning": [
+            "fábrica"
+         ]
+      },
+      {
+         "word": "趣味",
+         "reading": [
+            "しゅみ"
+         ],
+         "meaning": [
+            "hobby",
+            "passatempo"
+         ]
+      },
+      {
+         "word": "経済",
+         "reading": [
+            "けいざい"
+         ],
+         "meaning": [
+            "economia"
+         ]
+      },
+      {
+         "word": "台風",
+         "reading": [
+            "たいふう"
+         ],
+         "meaning": [
+            "tufão"
+         ]
+      },
+      {
+         "word": "卒業",
+         "reading": [
+            "そつぎょう"
+         ],
+         "meaning": [
+            "formatura",
+            "graduação"
+         ]
+      },
+      {
+         "word": "雲",
+         "reading": [
+            "くも"
+         ],
+         "meaning": [
+            "nuvem"
+         ]
+      },
+      {
+         "word": "贈り物",
+         "reading": [
+            "おくりもの"
+         ],
+         "meaning": [
+            "presente",
+            "oferta"
+         ]
+      },
+      {
+         "word": "光",
+         "reading": [
+            "ひかり"
+         ],
+         "meaning": [
+            "luz"
+         ]
+      },
+      {
+         "word": "科学",
+         "reading": [
+            "かがく"
+         ],
+         "meaning": [
+            "ciência"
+         ]
+      },
+      {
+         "word": "政治",
+         "reading": [
+            "せいじ"
+         ],
+         "meaning": [
+            "política"
+         ]
+      },
+      {
+         "word": "特別",
+         "reading": [
+            "とくべつ"
+         ],
+         "meaning": [
+            "especial"
+         ]
+      },
+      {
+         "word": "水泳",
+         "reading": [
+            "すいえい"
+         ],
+         "meaning": [
+            "natação"
+         ]
+      },
+      {
+         "word": "講義",
+         "reading": [
+            "こうぎ"
+         ],
+         "meaning": [
+            "aula",
+            "palestra"
+         ]
+      },
+      {
+         "word": "指",
+         "reading": [
+            "ゆび"
+         ],
+         "meaning": [
+            "dedo"
+         ]
+      },
+      {
+         "word": "生産",
+         "reading": [
+            "せいさん"
+         ],
+         "meaning": [
+            "produção"
+         ]
+      },
+      {
+         "word": "会話",
+         "reading": [
+            "かいわ"
+         ],
+         "meaning": [
+            "conversa",
+            "diálogo"
+         ]
+      },
+      {
+         "word": "季節",
+         "reading": [
+            "きせつ"
+         ],
+         "meaning": [
+            "estação do ano"
+         ]
+      },
+      {
+         "word": "玩具",
+         "reading": [
+            "おもちゃ"
+         ],
+         "meaning": [
+            "brinquedo"
+         ]
+      },
+      {
+         "word": "翻訳",
+         "reading": [
+            "ほんやく"
+         ],
+         "meaning": [
+            "tradução"
+         ]
+      },
+      {
+         "word": "貿易",
+         "reading": [
+            "ぼうえき"
+         ],
+         "meaning": [
+            "comércio"
+         ]
+      },
+      {
+         "word": "文学",
+         "reading": [
+            "ぶんがく"
+         ],
+         "meaning": [
+            "literatura"
+         ]
+      },
+      {
+         "word": "葉",
+         "reading": [
+            "は"
+         ],
+         "meaning": [
+            "folha"
+         ]
+      },
+      {
+         "word": "交通",
+         "reading": [
+            "こうつう"
+         ],
+         "meaning": [
+            "trânsito",
+            "transporte"
+         ]
+      },
+      {
+         "word": "遊び",
+         "reading": [
+            "あそび"
+         ],
+         "meaning": [
+            "brincadeira",
+            "diversão"
+         ]
+      },
+      {
+         "word": "道具",
+         "reading": [
+            "どうぐ"
+         ],
+         "meaning": [
+            "ferramenta",
+            "utensílio"
+         ]
+      },
+      {
+         "word": "背中",
+         "reading": [
+            "せなか"
+         ],
+         "meaning": [
+            "costas"
+         ]
+      },
+      {
+         "word": "背中",
+         "reading": [
+            "せなか"
+         ],
+         "meaning": [
+            "costas"
+         ]
+      },
+      {
+         "word": "発音",
+         "reading": [
+            "はつおん"
+         ],
+         "meaning": [
+            "pronúncia"
+         ]
+      },
+      {
+         "word": "指輪",
+         "reading": [
+            "ゆびわ"
+         ],
+         "meaning": [
+            "anel"
+         ]
+      },
+      {
+         "word": "医学",
+         "reading": [
+            "いがく"
+         ],
+         "meaning": [
+            "medicina"
+         ]
+      },
+      {
+         "word": "漫画",
+         "reading": [
+            "まんが"
+         ],
+         "meaning": [
+            "mangá",
+            "gibi"
+         ]
+      },
+      {
+         "word": "鏡",
+         "reading": [
+            "かがみ"
+         ],
+         "meaning": [
+            "espelho"
+         ]
+      },
+      {
+         "word": "電報",
+         "reading": [
+            "でんぽう"
+         ],
+         "meaning": [
+            "telegrama"
+         ]
+      },
+      {
+         "word": "校長",
+         "reading": [
+            "こうちょう"
+         ],
+         "meaning": [
+            "diretor da escola"
+         ]
+      },
+      {
+         "word": "郊外",
+         "reading": [
+            "こうがい"
+         ],
+         "meaning": [
+            "subúrbio"
+         ]
+      },
+      {
+         "word": "市民",
+         "reading": [
+            "しみん"
+         ],
+         "meaning": [
+            "cidadão",
+            "moradores"
+         ]
+      },
+      {
+         "word": "国際",
+         "reading": [
+            "こくさい"
+         ],
+         "meaning": [
+            "internacional"
+         ]
+      },
+      {
+         "word": "砂",
+         "reading": [
+            "すな"
+         ],
+         "meaning": [
+            "areia"
+         ]
+      },
+      {
+         "word": "手袋",
+         "reading": [
+            "てぶくろ"
+         ],
+         "meaning": [
+            "luvas"
+         ]
+      },
+      {
+         "word": "絹",
+         "reading": [
+            "きぬ"
+         ],
+         "meaning": [
+            "seda"
+         ]
+      },
+      {
+         "word": "日記",
+         "reading": [
+            "にっき"
+         ],
+         "meaning": [
+            "diário"
+         ]
+      },
+      {
+         "word": "文法",
+         "reading": [
+            "ぶんぽう"
+         ],
+         "meaning": [
+            "gramática"
+         ]
+      },
+      {
+         "word": "糸",
+         "reading": [
+            "いと"
+         ],
+         "meaning": [
+            "fio",
+            "linha"
+         ]
+      },
+      {
+         "word": "神社",
+         "reading": [
+            "じんじゃ"
+         ],
+         "meaning": [
+            "santuário xintoísta"
+         ]
+      },
+      {
+         "word": "展覧会",
+         "reading": [
+            "てんらんかい"
+         ],
+         "meaning": [
+            "exposição"
+         ]
+      },
+      {
+         "word": "駐車場",
+         "reading": [
+            "ちゅうしゃじょう"
+         ],
+         "meaning": [
+            "estacionamento"
+         ]
+      },
+      {
+         "word": "展覧会",
+         "reading": [
+            "てんらんかい"
+         ],
+         "meaning": [
+            "exposição"
+         ]
+      },
+      {
+         "word": "先輩",
+         "reading": [
+            "せんぱい"
+         ],
+         "meaning": [
+            "veterano",
+            "colega mais velho"
+         ]
+      },
+      {
+         "word": "西洋",
+         "reading": [
+            "せいよう"
+         ],
+         "meaning": [
+            "Ocidente"
+         ]
+      },
+      {
+         "word": "坂",
+         "reading": [
+            "さか"
+         ],
+         "meaning": [
+            "ladeira",
+            "inclinação"
+         ]
+      },
+      {
+         "word": "注射",
+         "reading": [
+            "ちゅうしゃ"
+         ],
+         "meaning": [
+            "injeção"
+         ]
+      },
+      {
+         "word": "乗り物",
+         "reading": [
+            "のりもの"
+         ],
+         "meaning": [
+            "veículo",
+            "condução"
+         ]
+      },
+      {
+         "word": "旅館",
+         "reading": [
+            "りょかん"
+         ],
+         "meaning": [
+            "pousada tradicional"
+         ]
+      },
+      {
+         "word": "林",
+         "reading": [
+            "はやし"
+         ],
+         "meaning": [
+            "bosque",
+            "mata"
+         ]
+      },
+      {
+         "word": "布団",
+         "reading": [
+            "ふとん"
+         ],
+         "meaning": [
+            "futon"
+         ]
+      },
+      {
+         "word": "柔道",
+         "reading": [
+            "じゅうどう"
+         ],
+         "meaning": [
+            "judô"
+         ]
+      },
+      {
+         "word": "中学校",
+         "reading": [
+            "ちゅうがっこう"
+         ],
+         "meaning": [
+            "ensino fundamental II",
+            "ginásio"
+         ]
+      },
+      {
+         "word": "研究室",
+         "reading": [
+            "けんきゅうしつ"
+         ],
+         "meaning": [
+            "laboratório",
+            "sala de pesquisa"
+         ]
+      },
+      {
+         "word": "会議室",
+         "reading": [
+            "かいぎしつ"
+         ],
+         "meaning": [
+            "sala de reunião"
+         ]
+      },
+      {
+         "word": "高等学校",
+         "reading": [
+            "こうとうがっこう"
+         ],
+         "meaning": [
+            "ensino médio",
+            "colégio"
+         ]
+      },
+      {
+         "word": "花見",
+         "reading": [
+            "はなみ"
+         ],
+         "meaning": [
+            "passeio para ver as flores de cerejeira"
+         ]
+      },
+      {
+         "word": "公務員",
+         "reading": [
+            "こうむいん"
+         ],
+         "meaning": [
+            "funcionário público"
+         ]
+      },
+      {
+         "word": "辞典",
+         "reading": [
+            "じてん"
+         ],
+         "meaning": [
+            "dicionário"
+         ]
+      },
+      {
+         "word": "心",
+         "reading": [
+            "こころ"
+         ],
+         "meaning": [
+            "coração",
+            "mente"
+         ]
+      },
+      {
+         "word": "力",
+         "reading": [
+            "ちから"
+         ],
+         "meaning": [
+            "força",
+            "poder"
+         ]
+      },
+      {
+         "word": "喧嘩",
+         "reading": [
+            "けんか"
+         ],
+         "meaning": [
+            "briga",
+            "discussão"
+         ]
+      },
+      {
+         "word": "天気予報",
+         "reading": [
+            "てんきよほう"
+         ],
+         "meaning": [
+            "previsão do tempo"
+         ]
+      },
+      {
+         "word": "髭",
+         "reading": [
+            "ひげ"
+         ],
+         "meaning": [
+            "barba",
+            "bigode"
+         ]
+      },
+      {
+         "word": "押入れ",
+         "reading": [
+            "おしいれ"
+         ],
+         "meaning": [
+            "armário embutido"
+         ]
+      },
+      {
+         "word": "味噌",
+         "reading": [
+            "みそ"
+         ],
+         "meaning": [
+            "missô"
+         ]
+      },
+      {
+         "word": "皆",
+         "reading": [
+            "みな"
+         ],
+         "meaning": [
+            "todos"
+         ]
+      },
+      {
+         "word": "明日",
+         "reading": [
+            "あした"
+         ],
+         "meaning": [
+            "amanhã"
+         ]
+      },
+      {
+         "word": "掛ける",
+         "reading": [
+            "かける"
+         ],
+         "meaning": [
+            "pendurar",
+            "colocar",
+            "ligar"
+         ]
+      },
+      {
+         "word": "降りる",
+         "reading": [
+            "おりる"
+         ],
+         "meaning": [
+            "descer",
+            "sair"
+         ]
+      },
+      {
+         "word": "彼",
+         "reading": [
+            "かれ"
+         ],
+         "meaning": [
+            "ele",
+            "namorado"
+         ]
+      },
+      {
+         "word": "客",
+         "reading": [
+            "きゃく"
+         ],
+         "meaning": [
+            "cliente",
+            "visitante"
+         ]
+      },
+      {
+         "word": "祖父",
+         "reading": [
+            "そふ"
+         ],
+         "meaning": [
+            "avô"
+         ]
+      },
+      {
+         "word": "高校",
+         "reading": [
+            "こうこう"
+         ],
+         "meaning": [
+            "escola de ensino médio"
+         ]
+      },
+      {
+         "word": "近所",
+         "reading": [
+            "きんじょ"
+         ],
+         "meaning": [
+            "vizinhança"
+         ]
+      },
+      {
+         "word": "番組",
+         "reading": [
+            "ばんぐみ"
+         ],
+         "meaning": [
+            "programa"
+         ]
+      },
+      {
+         "word": "見物",
+         "reading": [
+            "けんぶつ"
+         ],
+         "meaning": [
+            "visita",
+            "passeio para ver algo"
+         ]
+      },
+      {
+         "word": "亜米利加",
+         "reading": [
+            "あめりか"
+         ],
+         "meaning": [
+            "América"
+         ]
+      },
+      {
+         "word": "彼女",
+         "reading": [
+            "かのじょ"
+         ],
+         "meaning": [
+            "ela",
+            "namorada"
+         ]
+      },
+      {
+         "word": "思う",
+         "reading": [
+            "おもう"
+         ],
+         "meaning": [
+            "pensar",
+            "achar"
+         ]
+      },
+      {
+         "word": "僕",
+         "reading": [
+            "ぼく"
+         ],
+         "meaning": [
+            "pensar",
+            "achar"
+         ]
+      },
+      {
+         "word": "必要",
+         "reading": [
+            "ひつよう"
+         ],
+         "meaning": [
+            "necessário"
+         ]
+      },
+      {
+         "word": "見える",
+         "reading": [
+            "みえる"
+         ],
+         "meaning": [
+            "poder ver",
+            "parecer"
+         ]
+      },
+      {
+         "word": "考える",
+         "reading": [
+            "かんがえる"
+         ],
+         "meaning": [
+            "pensar",
+            "considerar"
+         ]
+      },
+      {
+         "word": "為",
+         "reading": [
+            "ため"
+         ],
+         "meaning": [
+            "para",
+            "por causa de"
+         ]
+      },
+      {
+         "word": "始める",
+         "reading": [
+            "はじめる"
+         ],
+         "meaning": [
+            "começar"
+         ]
+      },
+      {
+         "word": "受ける",
+         "reading": [
+            "うける"
+         ],
+         "meaning": [
+            "receber",
+            "fazer prova"
+         ]
+      },
+      {
+         "word": "美しい",
+         "reading": [
+            "うつくしい"
+         ],
+         "meaning": [
+            "bonito",
+            "belo"
+         ]
+      },
+      {
+         "word": "試験",
+         "reading": [
+            "しけん"
+         ],
+         "meaning": [
+            "prova",
+            "exame"
+         ]
+      },
+      {
+         "word": "親切",
+         "reading": [
+            "しんせつ"
+         ],
+         "meaning": [
+            "gentil",
+            "amável"
+         ]
+      },
+      {
+         "word": "失敗",
+         "reading": [
+            "しっぱい"
+         ],
+         "meaning": [
+            "fracasso",
+            "erro"
+         ]
+      },
+      {
+         "word": "以上",
+         "reading": [
+            "いじょう"
+         ],
+         "meaning": [
+            "mais de",
+            "acima de"
+         ]
+      },
+      {
+         "word": "意見",
+         "reading": [
+            "いけん"
+         ],
+         "meaning": [
+            "opinião"
+         ]
+      },
+      {
+         "word": "決して",
+         "reading": [
+            "けっして"
+         ],
+         "meaning": [
+            "nunca"
+         ]
+      },
+      {
+         "word": "十分",
+         "reading": [
+            "じゅうぶん"
+         ],
+         "meaning": [
+            "suficiente"
+         ]
+      },
+      {
+         "word": "試合",
+         "reading": [
+            "しあい"
+         ],
+         "meaning": [
+            "jogo",
+            "partida"
+         ]
+      },
+      {
+         "word": "一生懸命",
+         "reading": [
+            "いっしょうけんめい"
+         ],
+         "meaning": [
+            "com muito esforço"
+         ]
+      },
+      {
+         "word": "子",
+         "reading": [
+            "こ"
+         ],
+         "meaning": [
+            "criança"
+         ]
+      },
+      {
+         "word": "探す",
+         "reading": [
+            "さがす"
+         ],
+         "meaning": [
+            "procurar"
+         ]
+      },
+      {
+         "word": "急ぐ",
+         "reading": [
+            "いそぐ"
+         ],
+         "meaning": [
+            "apressar-se"
+         ]
+      },
+      {
+         "word": "選ぶ",
+         "reading": [
+            "えらぶ"
+         ],
+         "meaning": [
+            "escolher"
+         ]
+      },
+      {
+         "word": "送る",
+         "reading": [
+            "おくる"
+         ],
+         "meaning": [
+            "enviar"
+         ]
+      },
+      {
+         "word": "必ず",
+         "reading": [
+            "かならず"
+         ],
+         "meaning": [
+            "必ariamente",
+            "certamente"
+         ]
+      },
+      {
+         "word": "怒る",
+         "reading": [
+            "おこる"
+         ],
+         "meaning": [
+            "ficar bravo",
+            "zangar-se"
+         ]
+      },
+      {
+         "word": "最近",
+         "reading": [
+            "さいきん"
+         ],
+         "meaning": [
+            "recentemente",
+            "ultimamente"
+         ]
+      },
+      {
+         "word": "払う",
+         "reading": [
+            "はらう"
+         ],
+         "meaning": [
+            "pagar",
+            "limpar"
+         ]
+      },
+      {
+         "word": "点",
+         "reading": [
+            "てん"
+         ],
+         "meaning": [
+            "ponto",
+            "nota"
+         ]
+      },
+      {
+         "word": "合う",
+         "reading": [
+            "あう"
+         ],
+         "meaning": [
+            "combinar",
+            "encaixar"
+         ]
+      },
+      {
+         "word": "決める",
+         "reading": [
+            "きめる"
+         ],
+         "meaning": [
+            "decidir",
+            "determinar"
+         ]
+      },
+      {
+         "word": "笑う",
+         "reading": [
+            "わらう"
+         ],
+         "meaning": [
+            "rir",
+            "sorrir"
+         ]
+      },
+      {
+         "word": "最初",
+         "reading": [
+            "さいしょ"
+         ],
+         "meaning": [
+            "primeiro",
+            "começo"
+         ]
+      },
+      {
+         "word": "反対",
+         "reading": [
+            "はんたい"
+         ],
+         "meaning": [
+            "oposto",
+            "contrário"
+         ]
+      },
+      {
+         "word": "娘",
+         "reading": [
+            "むすめ"
+         ],
+         "meaning": [
+            "filha",
+            "moça"
+         ]
+      },
+      {
+         "word": "理由",
+         "reading": [
+            "りゆう"
+         ],
+         "meaning": [
+            "motivo",
+            "razão"
+         ]
+      },
+      {
+         "word": "喜ぶ",
+         "reading": [
+            "よろこぶ"
+         ],
+         "meaning": [
+            "alegrar-se",
+            "ficar contente"
+         ]
+      },
+      {
+         "word": "昔",
+         "reading": [
+            "むかし"
+         ],
+         "meaning": [
+            "antigamente",
+            "passado"
+         ]
+      },
+      {
+         "word": "約束",
+         "reading": [
+            "やくそく"
+         ],
+         "meaning": [
+            "promessa",
+            "combinado"
+         ]
+      },
+      {
+         "word": "思い出す",
+         "reading": [
+            "おもいだす"
+         ],
+         "meaning": [
+            "lembrar",
+            "recordar"
+         ]
+      },
+      {
+         "word": "変わる",
+         "reading": [
+            "かわる"
+         ],
+         "meaning": [
+            "mudar",
+            "transformar-se"
+         ]
+      },
+      {
+         "word": "正しい",
+         "reading": [
+            "ただしい"
+         ],
+         "meaning": [
+            "correto",
+            "certo"
+         ]
+      },
+      {
+         "word": "落ちる",
+         "reading": [
+            "おちる"
+         ],
+         "meaning": [
+            "cair"
+         ]
+      },
+      {
+         "word": "場所",
+         "reading": [
+            "ばしょ"
+         ],
+         "meaning": [
+            "lugar",
+            "local"
+         ]
+      },
+      {
+         "word": "楽しむ",
+         "reading": [
+            "たのしむ"
+         ],
+         "meaning": [
+            "aproveitar",
+            "desfrutar"
+         ]
+      },
+      {
+         "word": "利用",
+         "reading": [
+            "りよう"
+         ],
+         "meaning": [
+            "uso",
+            "utilização"
+         ]
+      },
+      {
+         "word": "間に合う",
+         "reading": [
+            "まにあう"
+         ],
+         "meaning": [
+            "dar tempo",
+            "chegar a tempo"
+         ]
+      },
+      {
+         "word": "今度",
+         "reading": [
+            "こんど"
+         ],
+         "meaning": [
+            "desta vez",
+            "da próxima vez"
+         ]
+      },
+      {
+         "word": "予定",
+         "reading": [
+            "よてい"
+         ],
+         "meaning": [
+            "planejamento",
+            "agenda"
+         ]
+      },
+      {
+         "word": "訪ねる",
+         "reading": [
+            "たずねる"
+         ],
+         "meaning": [
+            "visitar",
+            "procurar"
+         ]
+      },
+      {
+         "word": "赤ん坊",
+         "reading": [
+            "あかんぼう"
+         ],
+         "meaning": [
+            "bebê"
+         ]
+      },
+      {
+         "word": "進む",
+         "reading": [
+            "すすむ"
+         ],
+         "meaning": [
+            "avançar",
+            "prosseguir"
+         ]
+      },
+      {
+         "word": "最後",
+         "reading": [
+            "さいご"
+         ],
+         "meaning": [
+            "último",
+            "final"
+         ]
+      },
+      {
+         "word": "向かう",
+         "reading": [
+            "むかう"
+         ],
+         "meaning": [
+            "dirigir-se para"
+         ]
+      },
+      {
+         "word": "通る",
+         "reading": [
+            "とおる"
+         ],
+         "meaning": [
+            "passar",
+            "atravessar"
+         ]
+      },
+      {
+         "word": "興味",
+         "reading": [
+            "きょうみ"
+         ],
+         "meaning": [
+            "interesse"
+         ]
+      },
+      {
+         "word": "時代",
+         "reading": [
+            "じだい"
+         ],
+         "meaning": [
+            "época",
+            "era"
+         ]
+      },
+      {
+         "word": "途中",
+         "reading": [
+            "とちゅう"
+         ],
+         "meaning": [
+            "no caminho",
+            "meio do percurso"
+         ]
+      },
+      {
+         "word": "返事",
+         "reading": [
+            "へんじ"
+         ],
+         "meaning": [
+            "resposta"
+         ]
+      },
+      {
+         "word": "簡単",
+         "reading": [
+            "かんたん"
+         ],
+         "meaning": [
+            "fácil",
+            "simples"
+         ]
+      },
+      {
+         "word": "深い",
+         "reading": [
+            "ふかい"
+         ],
+         "meaning": [
+            "profundo"
+         ]
+      },
+      {
+         "word": "起こす",
+         "reading": [
+            "おこす"
+         ],
+         "meaning": [
+            "acordar",
+            "causar"
+         ]
+      },
+      {
+         "word": "夫",
+         "reading": [
+            "おっと"
+         ],
+         "meaning": [
+            "marido"
+         ]
+      },
+      {
+         "word": "場合",
+         "reading": [
+            "ばあい"
+         ],
+         "meaning": [
+            "caso",
+            "situação"
+         ]
+      },
+      {
+         "word": "一度",
+         "reading": [
+            "いちど"
+         ],
+         "meaning": [
+            "uma vez"
+         ]
+      },
+      {
+         "word": "運ぶ",
+         "reading": [
+            "はこぶ"
+         ],
+         "meaning": [
+            "transportar",
+            "levar"
+         ]
+      },
+      {
+         "word": "今夜",
+         "reading": [
+            "こんや"
+         ],
+         "meaning": [
+            "esta noite"
+         ]
+      },
+      {
+         "word": "盗む",
+         "reading": [
+            "ぬすむ"
+         ],
+         "meaning": [
+            "roubar"
+         ]
+      },
+      {
+         "word": "習慣",
+         "reading": [
+            "しゅうかん"
+         ],
+         "meaning": [
+            "hábito"
+         ]
+      },
+      {
+         "word": "大抵",
+         "reading": [
+            "たいてい"
+         ],
+         "meaning": [
+            "geralmente"
+         ]
+      },
+      {
+         "word": "残る",
+         "reading": [
+            "のこる"
+         ],
+         "meaning": [
+            "restar",
+            "sobrar"
+         ]
+      },
+      {
+         "word": "上がる",
+         "reading": [
+            "あがる"
+         ],
+         "meaning": [
+            "subir",
+            "aumentar"
+         ]
+      },
+      {
+         "word": "席",
+         "reading": [
+            "せき"
+         ],
+         "meaning": [
+            "assento",
+            "lugar"
+         ]
+      },
+      {
+         "word": "値段",
+         "reading": [
+            "ねだん"
+         ],
+         "meaning": [
+            "preço"
+         ]
+      },
+      {
+         "word": "将来",
+         "reading": [
+            "しょうらい"
+         ],
+         "meaning": [
+            "futuro"
+         ]
+      },
+      {
+         "word": "優しい",
+         "reading": [
+            "やさしい"
+         ],
+         "meaning": [
+            "gentil",
+            "bondoso"
+         ]
+      },
+      {
+         "word": "致す",
+         "reading": [
+            "いたす"
+         ],
+         "meaning": [
+            "fazer"
+         ]
+      },
+      {
+         "word": "空気",
+         "reading": [
+            "くうき"
+         ],
+         "meaning": [
+            "ar"
+         ]
+      },
+      {
+         "word": "逃げる",
+         "reading": [
+            "にげる"
+         ],
+         "meaning": [
+            "fugir"
+         ]
+      },
+      {
+         "word": "役に立つ",
+         "reading": [
+            "やくにたつ"
+         ],
+         "meaning": [
+            "ser útil"
+         ]
+      },
+      {
+         "word": "機会",
+         "reading": [
+            "きかい"
+         ],
+         "meaning": [
+            "oportunidade"
+         ]
+      },
+      {
+         "word": "予約",
+         "reading": [
+            "よやく"
+         ],
+         "meaning": [
+            "reserva"
+         ]
+      },
+      {
+         "word": "原因",
+         "reading": [
+            "げんいん"
+         ],
+         "meaning": [
+            "causa",
+            "motivo"
+         ]
+      },
+      {
+         "word": "火事",
+         "reading": [
+            "かじ"
+         ],
+         "meaning": [
+            "incêndio"
+         ]
+      },
+      {
+         "word": "泥棒",
+         "reading": [
+            "どろぼう"
+         ],
+         "meaning": [
+            "ladrão"
+         ]
+      },
+      {
+         "word": "髪",
+         "reading": [
+            "かみ"
+         ],
+         "meaning": [
+            "cabelo"
+         ]
+      },
+      {
+         "word": "行う",
+         "reading": [
+            "おこなう"
+         ],
+         "meaning": [
+            "realizar",
+            "executar"
+         ]
+      },
+      {
+         "word": "代わり",
+         "reading": [
+            "かわり"
+         ],
+         "meaning": [
+            "substituição",
+            "em vez de"
+         ]
+      },
+      {
+         "word": "見つかる",
+         "reading": [
+            "みつかる"
+         ],
+         "meaning": [
+            "ser encontrado"
+         ]
+      },
+      {
+         "word": "打つ",
+         "reading": [
+            "うつ"
+         ],
+         "meaning": [
+            "bater",
+            "golpear"
+         ]
+      },
+      {
+         "word": "厳しい",
+         "reading": [
+            "きびしい"
+         ],
+         "meaning": [
+            "severo",
+            "rigoroso"
+         ]
+      },
+      {
+         "word": "増える",
+         "reading": [
+            "ふえる"
+         ],
+         "meaning": [
+            "aumentar"
+         ]
+      },
+      {
+         "word": "迎える",
+         "reading": [
+            "むかえる"
+         ],
+         "meaning": [
+            "receber",
+            "ir buscar"
+         ]
+      },
+      {
+         "word": "怖い",
+         "reading": [
+            "こわい"
+         ],
+         "meaning": [
+            "medo",
+            "assustador"
+         ]
+      },
+      {
+         "word": "紹介",
+         "reading": [
+            "しょうかい"
+         ],
+         "meaning": [
+            "apresentação",
+            "introdução"
+         ]
+      },
+      {
+         "word": "社長",
+         "reading": [
+            "しゃちょう"
+         ],
+         "meaning": [
+            "presidente da empresa"
+         ]
+      },
+      {
+         "word": "集める",
+         "reading": [
+            "あつめる"
+         ],
+         "meaning": [
+            "reunir",
+            "coletar"
+         ]
+      },
+      {
+         "word": "事務所",
+         "reading": [
+            "じむしょ"
+         ],
+         "meaning": [
+            "escritório"
+         ]
+      },
+      {
+         "word": "星",
+         "reading": [
+            "ほし"
+         ],
+         "meaning": [
+            "estrela"
+         ]
+      },
+      {
+         "word": "特に",
+         "reading": [
+            "とくに"
+         ],
+         "meaning": [
+            "especialmente"
+         ]
+      },
+      {
+         "word": "集まる",
+         "reading": [
+            "あつまる"
+         ],
+         "meaning": [
+            "reunir-se",
+            "juntar-se"
+         ]
+      },
+      {
+         "word": "比べる",
+         "reading": [
+            "くらべる"
+         ],
+         "meaning": [
+            "comparar"
+         ]
+      },
+      {
+         "word": "無理",
+         "reading": [
+            "むり"
+         ],
+         "meaning": [
+            "impossível",
+            "forçado"
+         ]
+      },
+      {
+         "word": "用意",
+         "reading": [
+            "ようい"
+         ],
+         "meaning": [
+            "preparação"
+         ]
+      },
+      {
+         "word": "落とす",
+         "reading": [
+            "おとす"
+         ],
+         "meaning": [
+            "deixar cair",
+            "perder"
+         ]
+      },
+      {
+         "word": "具合",
+         "reading": [
+            "ぐあい"
+         ],
+         "meaning": [
+            "estado",
+            "condição"
+         ]
+      },
+      {
+         "word": "壊れる",
+         "reading": [
+            "こわれる"
+         ],
+         "meaning": [
+            "quebrar-se",
+            "estragar-se"
+         ]
+      },
+      {
+         "word": "倒れる",
+         "reading": [
+            "たおれる"
+         ],
+         "meaning": [
+            "cair",
+            "desmaiar"
+         ]
+      },
+      {
+         "word": "味",
+         "reading": [
+            "あじ"
+         ],
+         "meaning": [
+            "sabor",
+            "gosto"
+         ]
+      },
+      {
+         "word": "安全",
+         "reading": [
+            "あんぜん"
+         ],
+         "meaning": [
+            "seguro",
+            "segurança"
+         ]
+      },
+      {
+         "word": "変",
+         "reading": [
+            "へん"
+         ],
+         "meaning": [
+            "estranho",
+            "esquisito"
+         ]
+      },
+      {
+         "word": "祖母",
+         "reading": [
+            "そぼ"
+         ],
+         "meaning": [
+            "avó"
+         ]
+      },
+      {
+         "word": "連絡",
+         "reading": [
+            "れんらく"
+         ],
+         "meaning": [
+            "contato",
+            "comunicação"
+         ]
+      },
+      {
+         "word": "大事",
+         "reading": [
+            "だいじ"
+         ],
+         "meaning": [
+            "importante",
+            "precioso"
+         ]
+      },
+      {
+         "word": "下がる",
+         "reading": [
+            "さがる"
+         ],
+         "meaning": [
+            "descer",
+            "cair"
+         ]
+      },
+      {
+         "word": "壊す",
+         "reading": [
+            "こわす"
+         ],
+         "meaning": [
+            "quebrar",
+            "estragar"
+         ]
+      },
+      {
+         "word": "決まる",
+         "reading": [
+            "きまる"
+         ],
+         "meaning": [
+            "ser decidido",
+            "definido"
+         ]
+      },
+      {
+         "word": "確か",
+         "reading": [
+            "たしか"
+         ],
+         "meaning": [
+            "certo",
+            "de fato"
+         ]
+      },
+      {
+         "word": "楽しみ",
+         "reading": [
+            "たのしみ"
+         ],
+         "meaning": [
+            "prazer",
+            "expectativa"
+         ]
+      },
+      {
+         "word": "汽車",
+         "reading": [
+            "きしゃ"
+         ],
+         "meaning": [
+            "trem"
+         ]
+      },
+      {
+         "word": "隅",
+         "reading": [
+            "すみ"
+         ],
+         "meaning": [
+            "canto",
+            "esquina"
+         ]
+      },
+      {
+         "word": "可笑しい",
+         "reading": [
+            "おかしい"
+         ],
+         "meaning": [
+            "engraçado",
+            "estranho"
+         ]
+      },
+      {
+         "word": "競争",
+         "reading": [
+            "きょうそう"
+         ],
+         "meaning": [
+            "competição"
+         ]
+      },
+      {
+         "word": "入院",
+         "reading": [
+            "にゅういん"
+         ],
+         "meaning": [
+            "internação hospitalar"
+         ]
+      },
+      {
+         "word": "形",
+         "reading": [
+            "かたち"
+         ],
+         "meaning": [
+            "forma"
+         ]
+      },
+      {
+         "word": "留守",
+         "reading": [
+            "るす"
+         ],
+         "meaning": [
+            "ausência",
+            "casa vazia"
+         ]
+      },
+      {
+         "word": "景色",
+         "reading": [
+            "けしき"
+         ],
+         "meaning": [
+            "paisagem"
+         ]
+      },
+      {
+         "word": "仕方",
+         "reading": [
+            "しかた"
+         ],
+         "meaning": [
+            "jeito",
+            "maneira"
+         ]
+      },
+      {
+         "word": "首",
+         "reading": [
+            "くび"
+         ],
+         "meaning": [
+            "pescoço"
+         ]
+      },
+      {
+         "word": "君",
+         "reading": [
+            "きみ"
+         ],
+         "meaning": [
+            "você",
+            "querido"
+         ]
+      },
+      {
+         "word": "血",
+         "reading": [
+            "ち"
+         ],
+         "meaning": [
+            "sangue"
+         ]
+      },
+      {
+         "word": "以内",
+         "reading": [
+            "いない"
+         ],
+         "meaning": [
+            "dentro de"
+         ]
+      },
+      {
+         "word": "例えば",
+         "reading": [
+            "たとえば"
+         ],
+         "meaning": [
+            "por exemplo"
+         ]
+      },
+      {
+         "word": "別れる",
+         "reading": [
+            "わかれる"
+         ],
+         "meaning": [
+            "separar-se",
+            "terminar"
+         ]
+      },
+      {
+         "word": "棚",
+         "reading": [
+            "たな"
+         ],
+         "meaning": [
+            "prateleira"
+         ]
+      },
+      {
+         "word": "申し上げる",
+         "reading": [
+            "もうしあげる"
+         ],
+         "meaning": [
+            "dizer",
+            "oferecer"
+         ]
+      },
+      {
+         "word": "引っ越す",
+         "reading": [
+            "ひっこす"
+         ],
+         "meaning": [
+            "mudar de casa"
+         ]
+      },
+      {
+         "word": "複雑",
+         "reading": [
+            "ふくざつ"
+         ],
+         "meaning": [
+            "complexo"
+         ]
+      },
+      {
+         "word": "品物",
+         "reading": [
+            "しなもの"
+         ],
+         "meaning": [
+            "mercadoria",
+            "item"
+         ]
+      },
+      {
+         "word": "技術",
+         "reading": [
+            "ぎじゅつ"
+         ],
+         "meaning": [
+            "técnica",
+            "tecnologia"
+         ]
+      },
+      {
+         "word": "ご存知",
+         "reading": [
+            "ごぞんじ"
+         ],
+         "meaning": [
+            "conhecimento",
+            "saber"
+         ]
+      },
+      {
+         "word": "草",
+         "reading": [
+            "くさ"
+         ],
+         "meaning": [
+            "grama",
+            "erva"
+         ]
+      },
+      {
+         "word": "以下",
+         "reading": [
+            "いか"
+         ],
+         "meaning": [
+            "abaixo de",
+            "a seguir"
+         ]
+      },
+      {
+         "word": "倍",
+         "reading": [
+            "ばい"
+         ],
+         "meaning": [
+            "dobro",
+            "vezes"
+         ]
+      },
+      {
+         "word": "倍",
+         "reading": [
+            "ばい"
+         ],
+         "meaning": [
+            "dobro",
+            "vezes"
+         ]
+      },
+      {
+         "word": "港",
+         "reading": [
+            "みなと"
+         ],
+         "meaning": [
+            "porto"
+         ]
+      },
+      {
+         "word": "安心",
+         "reading": [
+            "あんしん"
+         ],
+         "meaning": [
+            "tranquilidade",
+            "segurança"
+         ]
+      },
+      {
+         "word": "大体",
+         "reading": [
+            "だいたい"
+         ],
+         "meaning": [
+            "aproximadamente",
+            "em geral"
+         ]
+      },
+      {
+         "word": "線",
+         "reading": [
+            "せん"
+         ],
+         "meaning": [
+            "linha"
+         ]
+      },
+      {
+         "word": "下げる",
+         "reading": [
+            "さげる"
+         ],
+         "meaning": [
+            "baixar",
+            "abaixar"
+         ]
+      },
+      {
+         "word": "虫",
+         "reading": [
+            "むし"
+         ],
+         "meaning": [
+            "inseto"
+         ]
+      },
+      {
+         "word": "小鳥",
+         "reading": [
+            "ことり"
+         ],
+         "meaning": [
+            "passarinho"
+         ]
+      },
+      {
+         "word": "高校生",
+         "reading": [
+            "こうこうせい"
+         ],
+         "meaning": [
+            "estudante do ensino médio"
+         ]
+      },
+      {
+         "word": "乗り換える",
+         "reading": [
+            "のりかえる"
+         ],
+         "meaning": [
+            "trocar de condução",
+            "transferir"
+         ]
+      },
+      {
+         "word": "枝",
+         "reading": [
+            "えだ"
+         ],
+         "meaning": [
+            "galho",
+            "ramo"
+         ]
+      },
+      {
+         "word": "寺",
+         "reading": [
+            "てら"
+         ],
+         "meaning": [
+            "templo budista"
+         ]
+      },
+      {
+         "word": "店員",
+         "reading": [
+            "てんいん"
+         ],
+         "meaning": [
+            "vendedor",
+            "atendente"
+         ]
+      },
+      {
+         "word": "通う",
+         "reading": [
+            "かよう"
+         ],
+         "meaning": [
+            "frequentar",
+            "ir e voltar"
+         ]
+      },
+      {
+         "word": "終わり",
+         "reading": [
+            "おわり"
+         ],
+         "meaning": [
+            "Fim",
+            "Termino"
+         ]
+      },
+      {
+         "word": "着物",
+         "reading": [
+            "きもの"
+         ],
+         "meaning": [
+            "quimono"
+         ]
+      },
+      {
+         "word": "帰り",
+         "reading": [
+            "かえり"
+         ],
+         "meaning": [
+            "volta",
+            "retorno"
+         ]
+      },
+      {
+         "word": "騒ぐ",
+         "reading": [
+            "さわぐ"
+         ],
+         "meaning": [
+            "fazer barulho",
+            "agitar-se"
+         ]
+      },
+      {
+         "word": "柔らかい",
+         "reading": [
+            "やわらかい"
+         ],
+         "meaning": [
+            "macio",
+            "suave"
+         ]
+      },
+      {
+         "word": "丁寧",
+         "reading": [
+            "ていねい"
+         ],
+         "meaning": [
+            "educado",
+            "cuidadoso"
+         ]
+      },
+      {
+         "word": "丁寧",
+         "reading": [
+            "ていねい"
+         ],
+         "meaning": [
+            "educado",
+            "cuidadoso"
+         ]
+      },
+      {
+         "word": "裏",
+         "reading": [
+            "うら"
+         ],
+         "meaning": [
+            "verso",
+            "parte de trás"
+         ]
+      },
+      {
+         "word": "真ん中",
+         "reading": [
+            "まんなか"
+         ],
+         "meaning": [
+            "meio",
+            "centro"
+         ]
+      },
+      {
+         "word": "冷える",
+         "reading": [
+            "ひえる"
+         ],
+         "meaning": [
+            "esfriar"
+         ]
+      },
+      {
+         "word": "飾る",
+         "reading": [
+            "かざる"
+         ],
+         "meaning": [
+            "decorar"
+         ]
+      },
+      {
+         "word": "遠慮",
+         "reading": [
+            "えんりょ"
+         ],
+         "meaning": [
+            "reserva",
+            "moderação"
+         ]
+      },
+      {
+         "word": "表",
+         "reading": [
+            "おもて"
+         ],
+         "meaning": [
+            "frente",
+            "superfície"
+         ]
+      },
+      {
+         "word": "都合",
+         "reading": [
+            "つごう"
+         ],
+         "meaning": [
+            "conveniência",
+            "circunstância"
+         ]
+      },
+      {
+         "word": "暮れる",
+         "reading": [
+            "くれる"
+         ],
+         "meaning": [
+            "anoitecer",
+            "terminar o dia"
+         ]
+      },
+      {
+         "word": "昼間",
+         "reading": [
+            "ひるま"
+         ],
+         "meaning": [
+            "durante o dia"
+         ]
+      },
+      {
+         "word": "部長",
+         "reading": [
+            "ぶちょう"
+         ],
+         "meaning": [
+            "chefe de departamento"
+         ]
+      },
+      {
+         "word": "急",
+         "reading": [
+            "きゅう"
+         ],
+         "meaning": [
+            "urgente",
+            "súbito"
+         ]
+      },
+      {
+         "word": "引き出し",
+         "reading": [
+            "ひきだし"
+         ],
+         "meaning": [
+            "gaveta"
+         ]
+      },
+      {
+         "word": "久しぶり",
+         "reading": [
+            "ひさしぶり"
+         ],
+         "meaning": [
+            "depois de muito tempo"
+         ]
+      },
+      {
+         "word": "会場",
+         "reading": [
+            "かいじょう"
+         ],
+         "meaning": [
+            "local do evento"
+         ]
+      },
+      {
+         "word": "急行",
+         "reading": [
+            "きゅうこう"
+         ],
+         "meaning": [
+            "expresso"
+         ]
+      },
+      {
+         "word": "地理",
+         "reading": [
+            "ちり"
+         ],
+         "meaning": [
+            "geografia"
+         ]
+      },
+      {
+         "word": "電灯",
+         "reading": [
+            "でんとう"
+         ],
+         "meaning": [
+            "lâmpada",
+            "luz elétrica"
+         ]
+      },
+      {
+         "word": "踊り",
+         "reading": [
+            "おどり"
+         ],
+         "meaning": [
+            "dança"
+         ]
+      },
+      {
+         "word": "又は",
+         "reading": [
+            "または"
+         ],
+         "meaning": [
+            "ou",
+            "alternativamente"
+         ]
+      },
+      {
+         "word": "細かい",
+         "reading": [
+            "こまかい"
+         ],
+         "meaning": [
+            "pequeno",
+            "minucioso"
+         ]
+      },
+      {
+         "word": "適当",
+         "reading": [
+            "てきとう"
+         ],
+         "meaning": [
+            "apropriado",
+            "adequado"
+         ]
+      },
+      {
+         "word": "課長",
+         "reading": [
+            "かちょう"
+         ],
+         "meaning": [
+            "chefe de seção"
+         ]
+      },
+      {
+         "word": "盛ん",
+         "reading": [
+            "さかん"
+         ],
+         "meaning": [
+            "vigoroso",
+            "intenso"
+         ]
+      },
+      {
+         "word": "引き出す",
+         "reading": [
+            "ひきだす"
+         ],
+         "meaning": [
+            "retirar",
+            "sacar"
+         ]
+      },
+      {
+         "word": "暖房",
+         "reading": [
+            "だんぼう"
+         ],
+         "meaning": [
+            "aquecimento"
+         ]
+      },
+      {
+         "word": "割合",
+         "reading": [
+            "わりあい"
+         ],
+         "meaning": [
+            "proporção",
+            "relativamente"
+         ]
+      },
+      {
+         "word": "申す",
+         "reading": [
+            "もうす"
+         ],
+         "meaning": [
+            "dizer"
+         ]
+      },
+      {
+         "word": "退院",
+         "reading": [
+            "たいいん"
+         ],
+         "meaning": [
+            "alta hospitalar"
+         ]
+      },
+      {
+         "word": "売り場",
+         "reading": [
+            "うりば"
+         ],
+         "meaning": [
+            "setor de vendas"
+         ]
+      },
+      {
+         "word": "食料品",
+         "reading": [
+            "しょくりょうひん"
+         ],
+         "meaning": [
+            "mantimentos",
+            "alimentos"
+         ]
+      },
+      {
+         "word": "新聞社",
+         "reading": [
+            "しんぶんしゃ"
+         ],
+         "meaning": [
+            "empresa jornalística"
+         ]
+      },
+      {
+         "word": "苦い",
+         "reading": [
+            "にがい"
+         ],
+         "meaning": [
+            "amargo"
+         ]
+      },
+      {
+         "word": "受付",
+         "reading": [
+            "うけつけ"
+         ],
+         "meaning": [
+            "recepção",
+            "balcão"
+         ]
+      },
+      {
+         "word": "講堂",
+         "reading": [
+            "こうどう"
+         ],
+         "meaning": [
+            "auditório"
+         ]
+      },
+      {
+         "word": "不便",
+         "reading": [
+            "ふべん"
+         ],
+         "meaning": [
+            "inconveniente"
+         ]
+      },
+      {
+         "word": "下宿",
+         "reading": [
+            "げしゅく"
+         ],
+         "meaning": [
+            "pensão",
+            "alojamento"
+         ]
+      },
+      {
+         "word": "写す",
+         "reading": [
+            "うつす"
+         ],
+         "meaning": [
+            "copiar",
+            "reproduzir"
+         ]
+      },
+      {
+         "word": "湯",
+         "reading": [
+            "ゆ"
+         ],
+         "meaning": [
+            "água quente",
+            "banho"
+         ]
+      },
+      {
+         "word": "屋上",
+         "reading": [
+            "おくじょう"
+         ],
+         "meaning": [
+            "terraço",
+            "topo do prédio"
+         ]
+      },
+      {
+         "word": "屋上",
+         "reading": [
+            "おくじょう"
+         ],
+         "meaning": [
+            "terraço",
+            "topo do prédio"
+         ]
+      },
+      {
+         "word": "下着",
+         "reading": [
+            "したぎ"
+         ],
+         "meaning": [
+            "roupa íntima"
+         ]
+      },
+      {
+         "word": "冷房",
+         "reading": [
+            "れいぼう"
+         ],
+         "meaning": [
+            "ar condicionado"
+         ]
+      },
+      {
+         "word": "畳",
+         "reading": [
+            "たたみ"
+         ],
+         "meaning": [
+            "tatame"
+         ]
+      },
+      {
+         "word": "お嬢さん",
+         "reading": [
+            "おじょうさん"
+         ],
+         "meaning": [
+            "moça",
+            "senhorita"
+         ]
+      },
+      {
+         "word": "沸かす",
+         "reading": [
+            "わかす"
+         ],
+         "meaning": [
+            "ferver",
+            "aquecer"
+         ]
+      },
+      {
+         "word": "漬ける",
+         "reading": [
+            "つける"
+         ],
+         "meaning": [
+            "deixar de molho",
+            "conservar"
+         ]
+      },
+      {
+         "word": "特急",
+         "reading": [
+            "とっきゅう"
+         ],
+         "meaning": [
+            "trem expresso"
+         ]
+      },
+      {
+         "word": "呉れる",
+         "reading": [
+            "くれる"
+         ],
+         "meaning": [
+            "dar",
+            "conceder"
+         ]
+      },
+      {
+         "word": "過ぎる",
+         "reading": [
+            "すぎる"
+         ],
+         "meaning": [
+            "passar",
+            "demais"
+         ]
+      },
+      {
+         "word": "積もり",
+         "reading": [
+            "つもり"
+         ],
+         "meaning": [
+            "intenção",
+            "plano"
+         ]
+      },
+      {
+         "word": "殆ど",
+         "reading": [
+            "ほとんど"
+         ],
+         "meaning": [
+            "quase todo",
+            "quase"
+         ]
+      },
+      {
+         "word": "止める",
+         "reading": [
+            "やめる"
+         ],
+         "meaning": [
+            "parar",
+            "desistir"
+         ]
+      },
+      {
+         "word": "酷い",
+         "reading": [
+            "ひどい"
+         ],
+         "meaning": [
+            "terrível",
+            "cruel"
+         ]
+      },
+      {
+         "word": "遅れる",
+         "reading": [
+            "おくれる"
+         ],
+         "meaning": [
+            "atrasar-se"
+         ]
+      },
+      {
+         "word": "続ける",
+         "reading": [
+            "つづける"
+         ],
+         "meaning": [
+            "continuar"
+         ]
+      },
+      {
+         "word": "手伝う",
+         "reading": [
+            "てつだう"
+         ],
+         "meaning": [
+            "ajudar"
+         ]
+      },
+      {
+         "word": "見つける",
+         "reading": [
+            "みつける"
+         ],
+         "meaning": [
+            "encontrar",
+            "achar"
+         ]
+      },
+      {
+         "word": "驚く",
+         "reading": [
+            "おどろく"
+         ],
+         "meaning": [
+            "surpreender-se"
+         ]
+      },
+      {
+         "word": "開く",
+         "reading": [
+            "ひらく"
+         ],
+         "meaning": [
+            "abrir"
+         ]
+      },
+      {
+         "word": "眠る",
+         "reading": [
+            "ねむる"
+         ],
+         "meaning": [
+            "dormir"
+         ]
+      },
+      {
+         "word": "勝つ",
+         "reading": [
+            "かつ"
+         ],
+         "meaning": [
+            "vencer"
+         ]
+      },
+      {
+         "word": "聞こえる",
+         "reading": [
+            "きこえる"
+         ],
+         "meaning": [
+            "ser ouvido",
+            "parecer audível"
+         ]
+      },
+      {
+         "word": "尋ねる",
+         "reading": [
+            "たずねる"
+         ],
+         "meaning": [
+            "perguntar",
+            "visitar"
+         ]
+      },
+      {
+         "word": "慣れる",
+         "reading": [
+            "なれる"
+         ],
+         "meaning": [
+            "acostumar-se"
+         ]
+      },
+      {
+         "word": "泣く",
+         "reading": [
+            "なく"
+         ],
+         "meaning": [
+            "chorar"
+         ]
+      },
+      {
+         "word": "似る",
+         "reading": [
+            "にる"
+         ],
+         "meaning": [
+            "parecer-se"
+         ]
+      },
+      {
+         "word": "屹度",
+         "reading": [
+            "きっと"
+         ],
+         "meaning": [
+            "certamente"
+         ]
+      },
+      {
+         "word": "戻る",
+         "reading": [
+            "もどる"
+         ],
+         "meaning": [
+            "voltar"
+         ]
+      },
+      {
+         "word": "調べる",
+         "reading": [
+            "しらべる"
+         ],
+         "meaning": [
+            "investigar",
+            "verificar"
+         ]
+      },
+      {
+         "word": "伝える",
+         "reading": [
+            "つたえる"
+         ],
+         "meaning": [
+            "transmitir",
+            "comunicar"
+         ]
+      },
+      {
+         "word": "筈",
+         "reading": [
+            "はず"
+         ],
+         "meaning": [
+            "deve ser",
+            "esperado"
+         ]
+      },
+      {
+         "word": "無くなる",
+         "reading": [
+            "なくなる"
+         ],
+         "meaning": [
+            "desaparecer",
+            "acabar"
+         ]
+      },
+      {
+         "word": "動く",
+         "reading": [
+            "うごく"
+         ],
+         "meaning": [
+            "mover-se"
+         ]
+      },
+      {
+         "word": "知らせる",
+         "reading": [
+            "しらせる"
+         ],
+         "meaning": [
+            "avisar",
+            "informar"
+         ]
+      },
+      {
+         "word": "続く",
+         "reading": [
+            "つづく"
+         ],
+         "meaning": [
+            "continuar"
+         ]
+      },
+      {
+         "word": "別",
+         "reading": [
+            "べつ"
+         ],
+         "meaning": [
+            "separado",
+            "diferente"
+         ]
+      },
+      {
+         "word": "鳴る",
+         "reading": [
+            "なる"
+         ],
+         "meaning": [
+            "tocar",
+            "soar"
+         ]
+      },
+      {
+         "word": "市",
+         "reading": [
+            "し"
+         ],
+         "meaning": [
+            "cidade"
+         ]
+      },
+      {
+         "word": "負ける",
+         "reading": [
+            "まける"
+         ],
+         "meaning": [
+            "perder"
+         ]
+      },
+      {
+         "word": "悲しい",
+         "reading": [
+            "かなしい"
+         ],
+         "meaning": [
+            "triste"
+         ]
+      },
+      {
+         "word": "亡くなる",
+         "reading": [
+            "なくなる"
+         ],
+         "meaning": [
+            "falecer"
+         ]
+      },
+      {
+         "word": "以外",
+         "reading": [
+            "いがい"
+         ],
+         "meaning": [
+            "exceto"
+         ]
+      },
+      {
+         "word": "直す",
+         "reading": [
+            "なおす"
+         ],
+         "meaning": [
+            "consertar",
+            "corrigir"
+         ]
+      },
+      {
+         "word": "暫く",
+         "reading": [
+            "しばらく"
+         ],
+         "meaning": [
+            "um instante",
+            "por um tempo"
+         ]
+      },
+      {
+         "word": "回る",
+         "reading": [
+            "まわる"
+         ],
+         "meaning": [
+            "girar",
+            "passar por"
+         ]
+      },
+      {
+         "word": "間違える",
+         "reading": [
+            "まちがえる"
+         ],
+         "meaning": [
+            "enganar-se",
+            "errar"
+         ]
+      },
+      {
+         "word": "捨てる",
+         "reading": [
+            "すてる"
+         ],
+         "meaning": [
+            "jogar fora",
+            "abandonar"
+         ]
+      },
+      {
+         "word": "確り",
+         "reading": [
+            "しっかり"
+         ],
+         "meaning": [
+            "firmemente",
+            "com firmeza"
+         ]
+      },
+      {
+         "word": "育てる",
+         "reading": [
+            "そだてる"
+         ],
+         "meaning": [
+            "criar",
+            "educar"
+         ]
+      },
+      {
+         "word": "褒める",
+         "reading": [
+            "ほめる"
+         ],
+         "meaning": [
+            "elogiar"
+         ]
+      },
+      {
+         "word": "石",
+         "reading": [
+            "いし"
+         ],
+         "meaning": [
+            "pedra"
+         ]
+      },
+      {
+         "word": "恥ずかしい",
+         "reading": [
+            "はずかしい"
+         ],
+         "meaning": [
+            "envergonhado"
+         ]
+      },
+      {
+         "word": "塗る",
+         "reading": [
+            "ぬる"
+         ],
+         "meaning": [
+            "pintar",
+            "passar"
+         ]
+      },
+      {
+         "word": "泊まる",
+         "reading": [
+            "とまる"
+         ],
+         "meaning": [
+            "hospedar-se"
+         ]
+      },
+      {
+         "word": "片付ける",
+         "reading": [
+            "かたづける"
+         ],
+         "meaning": [
+            "arrumar",
+            "organizar"
+         ]
+      },
+      {
+         "word": "止む",
+         "reading": [
+            "やむ"
+         ],
+         "meaning": [
+            "parar"
+         ]
+      },
+      {
+         "word": "遠く",
+         "reading": [
+            "とおく"
+         ],
+         "meaning": [
+            "longe"
+         ]
+      },
+      {
+         "word": "済む",
+         "reading": [
+            "すむ"
+         ],
+         "meaning": [
+            "terminar",
+            "resolver-se"
+         ]
+      },
+      {
+         "word": "到頭",
+         "reading": [
+            "とうとう"
+         ],
+         "meaning": [
+            "finalmente"
+         ]
+      },
+      {
+         "word": "捕まえる",
+         "reading": [
+            "つかまえる"
+         ],
+         "meaning": [
+            "capturar",
+            "prender"
+         ]
+      },
+      {
+         "word": "踊る",
+         "reading": [
+            "おどる"
+         ],
+         "meaning": [
+            "dançar"
+         ]
+      },
+      {
+         "word": "足りる",
+         "reading": [
+            "たりる"
+         ],
+         "meaning": [
+            "ser suficiente"
+         ]
+      },
+      {
+         "word": "治る",
+         "reading": [
+            "なおる"
+         ],
+         "meaning": [
+            "curar",
+            "sarar"
+         ]
+      },
+      {
+         "word": "為さる",
+         "reading": [
+            "なさる"
+         ],
+         "meaning": [
+            "fazer"
+         ]
+      },
+      {
+         "word": "硬い",
+         "reading": [
+            "かたい"
+         ],
+         "meaning": [
+            "duro",
+            "rígido"
+         ]
+      },
+      {
+         "word": "建てる",
+         "reading": [
+            "たてる"
+         ],
+         "meaning": [
+            "construir"
+         ]
+      },
+      {
+         "word": "凄い",
+         "reading": [
+            "すごい"
+         ],
+         "meaning": [
+            "incrível",
+            "terrível"
+         ]
+      },
+      {
+         "word": "謝る",
+         "reading": [
+            "あやまる"
+         ],
+         "meaning": [
+            "pedir desculpas"
+         ]
+      },
+      {
+         "word": "此れから",
+         "reading": [
+            "これから"
+         ],
+         "meaning": [
+            "a partir de agora"
+         ]
+      },
+      {
+         "word": "立てる",
+         "reading": [
+            "たてる"
+         ],
+         "meaning": [
+            "levantar",
+            "erguer"
+         ]
+      },
+      {
+         "word": "寂しい",
+         "reading": [
+            "さびしい"
+         ],
+         "meaning": [
+            "solitário",
+            "triste"
+         ]
+      },
+      {
+         "word": "濡れる",
+         "reading": [
+            "ぬれる"
+         ],
+         "meaning": [
+            "molhar-se"
+         ]
+      },
+      {
+         "word": "投げる",
+         "reading": [
+            "なげる"
+         ],
+         "meaning": [
+            "jogar",
+            "arremessar"
+         ]
+      },
+      {
+         "word": "太る",
+         "reading": [
+            "ふとる"
+         ],
+         "meaning": [
+            "engordar"
+         ]
+      },
+      {
+         "word": "寄る",
+         "reading": [
+            "よる"
+         ],
+         "meaning": [
+            "passar por",
+            "aproximar-se"
+         ]
+      },
+      {
+         "word": "歯医者",
+         "reading": [
+            "はいしゃ"
+         ],
+         "meaning": [
+            "dentista"
+         ]
+      },
+      {
+         "word": "参る",
+         "reading": [
+            "まいる"
+         ],
+         "meaning": [
+            "ir",
+            "vir"
+         ]
+      },
+      {
+         "word": "召し上がる",
+         "reading": [
+            "めしあがる"
+         ],
+         "meaning": [
+            "comer",
+            "beber"
+         ]
+      },
+      {
+         "word": "珍しい",
+         "reading": [
+            "めずらしい"
+         ],
+         "meaning": [
+            "raro",
+            "incomum"
+         ]
+      },
+      {
+         "word": "揺れる",
+         "reading": [
+            "ゆれる"
+         ],
+         "meaning": [
+            "balançar"
+         ]
+      },
+      {
+         "word": "祈る",
+         "reading": [
+            "いのる"
+         ],
+         "meaning": [
+            "rezar",
+            "orar"
+         ]
+      },
+      {
+         "word": "硝子",
+         "reading": [
+            "がらす"
+         ],
+         "meaning": [
+            "vidro"
+         ]
+      },
+      {
+         "word": "込む",
+         "reading": [
+            "こむ"
+         ],
+         "meaning": [
+            "ficar cheio",
+            "entrar em"
+         ]
+      },
+      {
+         "word": "折る",
+         "reading": [
+            "おる"
+         ],
+         "meaning": [
+            "quebrar",
+            "dobrar"
+         ]
+      },
+      {
+         "word": "大学生",
+         "reading": [
+            "だいがくせい"
+         ],
+         "meaning": [
+            "estudante universitário"
+         ]
+      },
+      {
+         "word": "お礼",
+         "reading": [
+            "おれい"
+         ],
+         "meaning": [
+            "agradecimento",
+            "presente de agradecimento"
+         ]
+      },
+      {
+         "word": "眠い",
+         "reading": [
+            "ねむい"
+         ],
+         "meaning": [
+            "com sono"
+         ]
+      },
+      {
+         "word": "それ程",
+         "reading": [
+            "それほど"
+         ],
+         "meaning": [
+            "tanto",
+            "assim"
+         ]
+      },
+      {
+         "word": "偶に",
+         "reading": [
+            "たまに"
+         ],
+         "meaning": [
+            "às vezes"
+         ]
+      },
+      {
+         "word": "痩せる",
+         "reading": [
+            "やせる"
+         ],
+         "meaning": [
+            "emagrecer"
+         ]
+      },
+      {
+         "word": "噛む",
+         "reading": [
+            "かむ"
+         ],
+         "meaning": [
+            "morder",
+            "mastigar"
+         ]
+      },
+      {
+         "word": "億",
+         "reading": [
+            "おく"
+         ],
+         "meaning": [
+            "cem milhões"
+         ]
+      },
+      {
+         "word": "触る",
+         "reading": [
+            "さわる"
+         ],
+         "meaning": [
+            "tocar"
+         ]
+      },
+      {
+         "word": "瓦斯",
+         "reading": [
+            "ガス"
+         ],
+         "meaning": [
+            "gás"
+         ]
+      },
+      {
+         "word": "掏摸",
+         "reading": [
+            "すり"
+         ],
+         "meaning": [
+            "batedor de carteira"
+         ]
+      },
+      {
+         "word": "成る程",
+         "reading": [
+            "なるほど"
+         ],
+         "meaning": [
+            "entendo",
+            "realmente"
+         ]
+      },
+      {
+         "word": "拾う",
+         "reading": [
+            "ひろう"
+         ],
+         "meaning": [
+            "apanhar",
+            "recolher"
+         ]
+      },
+      {
+         "word": "焼く",
+         "reading": [
+            "やく"
+         ],
+         "meaning": [
+            "assar",
+            "queimar"
+         ]
+      },
+      {
+         "word": "滑る",
+         "reading": [
+            "すべる"
+         ],
+         "meaning": [
+            "escorregar"
+         ]
+      },
+      {
+         "word": "割れる",
+         "reading": [
+            "われる"
+         ],
+         "meaning": [
+            "quebrar-se"
+         ]
+      },
+      {
+         "word": "些とも",
+         "reading": [
+            "ちっとも"
+         ],
+         "meaning": [
+            "nem um pouco"
+         ]
+      },
+      {
+         "word": "お宅",
+         "reading": [
+            "おたく"
+         ],
+         "meaning": [
+            "sua casa",
+            "você"
+         ]
+      },
+      {
+         "word": "折れる",
+         "reading": [
+            "おれる"
+         ],
+         "meaning": [
+            "quebrar-se",
+            "dobrar-se"
+         ]
+      },
+      {
+         "word": "移る",
+         "reading": [
+            "うつる"
+         ],
+         "meaning": [
+            "mudar-se",
+            "transferir-se"
+         ]
+      },
+      {
+         "word": "光る",
+         "reading": [
+            "ひかる"
+         ],
+         "meaning": [
+            "brilhar"
+         ]
+      },
+      {
+         "word": "植える",
+         "reading": [
+            "うえる"
+         ],
+         "meaning": [
+            "plantar"
+         ]
+      },
+      {
+         "word": "差し上げる",
+         "reading": [
+            "さしあげる"
+         ],
+         "meaning": [
+            "dar",
+            "oferecer"
+         ]
+      },
+      {
+         "word": "字",
+         "reading": [
+            "じ"
+         ],
+         "meaning": [
+            "caractere",
+            "letra"
+         ]
+      },
+      {
+         "word": "焼ける",
+         "reading": [
+            "やける"
+         ],
+         "meaning": [
+            "assar",
+            "queimar-se"
+         ]
+      },
+      {
+         "word": "取り替える",
+         "reading": [
+            "とりかえる"
+         ],
+         "meaning": [
+            "trocar",
+            "substituir"
+         ]
+      },
+      {
+         "word": "釣る",
+         "reading": [
+            "つる"
+         ],
+         "meaning": [
+            "pescar",
+            "pendurar"
+         ]
+      },
+      {
+         "word": "乾く",
+         "reading": [
+            "かわく"
+         ],
+         "meaning": [
+            "secar"
+         ]
+      },
+      {
+         "word": "用事",
+         "reading": [
+            "ようじ"
+         ],
+         "meaning": [
+            "afazeres",
+            "compromisso"
+         ]
+      },
+      {
+         "word": "成るべく",
+         "reading": [
+            "なるべく"
+         ],
+         "meaning": [
+            "o máximo possível"
+         ]
+      },
+      {
+         "word": "届ける",
+         "reading": [
+            "とどける"
+         ],
+         "meaning": [
+            "entregar",
+            "enviar"
+         ]
+      },
+      {
+         "word": "苛める",
+         "reading": [
+            "いじめる"
+         ],
+         "meaning": [
+            "maltratar",
+            "intimidar"
+         ]
+      },
+      {
+         "word": "浅い",
+         "reading": [
+            "あさい"
+         ],
+         "meaning": [
+            "raso"
+         ]
+      },
+      {
+         "word": "拝見",
+         "reading": [
+            "はいけん"
+         ],
+         "meaning": [
+            "ver",
+            "olhar"
+         ]
+      },
+      {
+         "word": "床屋",
+         "reading": [
+            "とこや"
+         ],
+         "meaning": [
+            "barbeiro",
+            "barbearia"
+         ]
+      },
+      {
+         "word": "お土産",
+         "reading": [
+            "おみやげ"
+         ],
+         "meaning": [
+            "souvenir",
+            "lembrança"
+         ]
+      },
+      {
+         "word": "足す",
+         "reading": [
+            "たす"
+         ],
+         "meaning": [
+            "somar",
+            "adicionar"
+         ]
+      },
+      {
+         "word": "お釣り",
+         "reading": [
+            "おつり"
+         ],
+         "meaning": [
+            "troco"
+         ]
+      },
+      {
+         "word": "予習",
+         "reading": [
+            "よしゅう"
+         ],
+         "meaning": [
+            "preparação da lição"
+         ]
+      },
+      {
+         "word": "寝坊",
+         "reading": [
+            "ねぼう"
+         ],
+         "meaning": [
+            "dormir demais",
+            "atraso por sono"
+         ]
+      },
+      {
+         "word": "沸く",
+         "reading": [
+            "わく"
+         ],
+         "meaning": [
+            "ferver",
+            "surgir"
+         ]
+      },
+      {
+         "word": "忘れ物",
+         "reading": [
+            "わすれもの"
+         ],
+         "meaning": [
+            "coisa esquecida",
+            "esquecimento"
+         ]
+      },
+      {
+         "word": "復習",
+         "reading": [
+            "ふくしゅう"
+         ],
+         "meaning": [
+            "revisão",
+            "estudo de revisão"
+         ]
+      },
+      {
+         "word": "ご主人",
+         "reading": [
+            "ごしゅじん"
+         ],
+         "meaning": [
+            "marido",
+            "seu senhor"
+         ]
+      },
+      {
+         "word": "再来週",
+         "reading": [
+            "さらいしゅう"
+         ],
+         "meaning": [
+            "daqui a duas semanas"
+         ]
+      },
+      {
+         "word": "再来月",
+         "reading": [
+            "さらいげつ"
+         ],
+         "meaning": [
+            "mês seguinte ao próximo"
+         ]
+      },
+      {
+         "word": "付く",
+         "reading": [
+            "つく"
+         ],
+         "meaning": [
+            "grudar",
+            "ficar ligado"
+         ]
+      },
+      {
+         "word": "変える",
+         "reading": [
+            "かえる"
+         ],
+         "meaning": [
+            "mudar",
+            "trocar"
+         ]
+      },
+      {
+         "word": "阿弗利加",
+         "reading": [
+            "あふりか"
+         ],
+         "meaning": [
+            "África"
+         ]
+      },
+      {
+         "word": "斯う",
+         "reading": [
+            "こう"
+         ],
+         "meaning": [
+            "assim",
+            "deste jeito"
+         ]
+      },
+      {
+         "word": "看護師",
+         "reading": [
+            "かんごし"
+         ],
+         "meaning": [
+            "enfermeiro"
+         ]
+      },
+      {
+         "word": "降り出す",
+         "reading": [
+            "ふりだす"
+         ],
+         "meaning": [
+            "começar a chover"
+         ]
+      },
+      {
+         "word": "けど",
+         "reading": [],
+         "meaning": [
+            "mas",
+            "embora"
+         ]
+      },
+      {
+         "word": "日",
+         "reading": [
+            "ひ"
+         ],
+         "meaning": [
+            "dia",
+            "sol"
+         ]
+      },
+      {
+         "word": "大分",
+         "reading": [
+            "だいぶ"
+         ],
+         "meaning": [
+            "bastante",
+            "muito"
+         ]
+      },
+      {
+         "word": "間",
+         "reading": [
+            "あいだ"
+         ],
+         "meaning": [
+            "intervalo",
+            "entre"
+         ]
+      },
+      {
+         "word": "親",
+         "reading": [
+            "おや"
+         ],
+         "meaning": [
+            "pais"
+         ]
+      },
+      {
+         "word": "熱",
+         "reading": [
+            "ねつ"
+         ],
+         "meaning": [
+            "febre",
+            "calor"
+         ]
+      },
+      {
+         "word": "運転手",
+         "reading": [
+            "うんてんしゅ"
+         ],
+         "meaning": [
+            "motorista"
+         ]
+      },
+      {
+         "word": "木綿",
+         "reading": [
+            "もめん"
+         ],
+         "meaning": [
+            "algodão"
+         ]
+      },
+      {
+         "word": "消しゴム",
+         "reading": [
+            "けしゴム"
+         ],
+         "meaning": [
+            "borracha"
+         ]
+      },
+      {
+         "word": "テニス",
+         "reading": [],
+         "meaning": [
+            "tênis"
+         ]
+      },
+      {
+         "word": "ピアノ",
+         "reading": [],
+         "meaning": [
+            "piano"
+         ]
+      },
+      {
+         "word": "コンピュータ",
+         "reading": [],
+         "meaning": [
+            "computador"
+         ]
+      },
+      {
+         "word": "ケーキ",
+         "reading": [],
+         "meaning": [
+            "bolo"
+         ]
+      },
+      {
+         "word": "カーテン",
+         "reading": [],
+         "meaning": [
+            "cortina"
+         ]
+      },
+      {
+         "word": "ガソリン",
+         "reading": [],
+         "meaning": [
+            "gasolina"
+         ]
+      },
+      {
+         "word": "アルコール",
+         "reading": [],
+         "meaning": [
+            "álcool"
+         ]
+      },
+      {
+         "word": "サンドイッチ",
+         "reading": [],
+         "meaning": [
+            "sanduíche"
+         ]
+      },
+      {
+         "word": "オートバイ",
+         "reading": [],
+         "meaning": [
+            "motocicleta"
+         ]
+      },
+      {
+         "word": "サラダ",
+         "reading": [],
+         "meaning": [
+            "salada"
+         ]
+      },
+      {
+         "word": "ソフト",
+         "reading": [],
+         "meaning": [
+            "soft",
+            "macio",
+            "software"
+         ]
+      },
+      {
+         "word": "テキスト",
+         "reading": [],
+         "meaning": [
+            "texto"
+         ]
+      },
+      {
+         "word": "ガソリンスタンド",
+         "reading": [],
+         "meaning": [
+            "posto de gasolina"
+         ]
+      },
+      {
+         "word": "ジャム",
+         "reading": [],
+         "meaning": [
+            "geleia"
+         ]
+      },
+      {
+         "word": "ステレオ",
+         "reading": [],
+         "meaning": [
+            "estéreo"
+         ]
+      },
+      {
+         "word": "アナウンサー",
+         "reading": [],
+         "meaning": [
+            "locutor",
+            "apresentador"
+         ]
+      },
+      {
+         "word": "パート",
+         "reading": [],
+         "meaning": [
+            "meio período"
+         ]
+      },
+      {
+         "word": "アクセサリー",
+         "reading": [],
+         "meaning": [
+            "acessórios",
+            "bijuterias"
+         ]
+      },
+      {
+         "word": "エスカレーター",
+         "reading": [],
+         "meaning": [
+            "escada rolante"
+         ]
+      },
+      {
+         "word": "あっ",
+         "reading": [],
+         "meaning": [
+            "ah!"
+         ]
+      },
+      {
+         "word": "スーツケース",
+         "reading": [],
+         "meaning": [
+            "mala de viagem"
+         ]
+      },
+      {
+         "word": "ステーキ",
+         "reading": [],
+         "meaning": [
+            "bife"
+         ]
+      },
+      {
+         "word": "亜細亜",
+         "reading": [
+            "あじあ"
+         ],
+         "meaning": [
+            "Ásia"
+         ]
+      },
+      {
+         "word": "チェック",
+         "reading": [],
+         "meaning": [
+            "checagem",
+            "conferir"
+         ]
+      },
+      {
+         "word": "サンダル",
+         "reading": [],
+         "meaning": [
+            "sandálias"
+         ]
+      },
+      {
+         "word": "スクリーン",
+         "reading": [],
+         "meaning": [
+            "tela",
+            "écran"
+         ]
+      },
+      {
+         "word": "開く",
+         "reading": [
+            "ひらく"
+         ],
+         "meaning": [
+            "abrir"
+         ]
+      },
+      {
+         "word": "一杯",
+         "reading": [
+            "いっぱい"
+         ],
+         "meaning": [
+            "cheio",
+            "uma xícara"
+         ]
+      },
+      {
+         "word": "用",
+         "reading": [
+            "よう"
+         ],
+         "meaning": [
+            "uso",
+            "necessidade"
+         ]
+      },
+      {
+         "word": "レジ",
+         "reading": [],
+         "meaning": [
+            "caixa",
+            "checkout"
+         ]
+      },
+      {
+         "word": "内",
+         "reading": [
+            "うち"
+         ],
+         "meaning": [
+            "dentro",
+            "interior"
+         ]
+      },
+      {
+         "word": "訳",
+         "reading": [
+            "わけ"
+         ],
+         "meaning": [
+            "motivo",
+            "sentido"
+         ]
+      },
+      {
+         "word": "お陰",
+         "reading": [
+            "おかげ"
+         ],
+         "meaning": [
+            "graças a",
+            "favor"
+         ]
+      },
+      {
+         "word": "もう直ぐ",
+         "reading": [
+            "もうすぐ"
+         ],
+         "meaning": [
+            "logo",
+            "em breve"
+         ]
+      },
+      {
+         "word": "君",
+         "reading": [
+            "きみ"
+         ],
+         "meaning": [
+            "você",
+            "querido"
+         ]
+      },
+      {
+         "word": "包む",
+         "reading": [
+            "つつむ"
+         ],
+         "meaning": [
+            "embrulhar",
+            "envolver"
+         ]
+      },
+      {
+         "word": "毛",
+         "reading": [
+            "け"
+         ],
+         "meaning": [
+            "pelo",
+            "cabelo"
+         ]
+      },
+      {
+         "word": "泳ぎ方",
+         "reading": [
+            "およぎかた"
+         ],
+         "meaning": [
+            "modo de nadar"
+         ]
+      },
+      {
+         "word": "都",
+         "reading": [
+            "みやこ"
+         ],
+         "meaning": [
+            "capital",
+            "cidade grande"
+         ]
+      },
+      {
+         "word": "家内",
+         "reading": [
+            "かない"
+         ],
+         "meaning": [
+            "esposa",
+            "minha mulher"
+         ]
+      },
+      {
+         "word": "お見舞い",
+         "reading": [
+            "おみまい"
+         ],
+         "meaning": [
+            "visita",
+            "consolo ao doente"
+         ]
+      },
+      {
+         "word": "そう",
+         "reading": [],
+         "meaning": [
+            "assim",
+            "sim"
+         ]
+      },
+      {
+         "word": "そんな",
+         "reading": [],
+         "meaning": [
+            "tal",
+            "esse tipo de"
+         ]
+      },
+      {
+         "word": "若し",
+         "reading": [
+            "もし"
+         ],
+         "meaning": [
+            "se",
+            "caso"
+         ]
+      },
+      {
+         "word": "止める",
+         "reading": [
+            "やめる"
+         ],
+         "meaning": [
+            "parar",
+            "desistir"
+         ]
+      },
+      {
+         "word": "非常に",
+         "reading": [
+            "ひじょうに"
+         ],
+         "meaning": [
+            "muito",
+            "extremamente"
+         ]
+      },
+      {
+         "word": "だから",
+         "reading": [],
+         "meaning": [
+            "por isso",
+            "então"
+         ]
+      },
+      {
+         "word": "はっきり",
+         "reading": [],
+         "meaning": [
+            "claramente"
+         ]
+      },
+      {
+         "word": "すっかり",
+         "reading": [],
+         "meaning": [
+            "completamente"
+         ]
+      },
+      {
+         "word": "コンサート",
+         "reading": [],
+         "meaning": [
+            "concerto"
+         ]
+      },
+      {
+         "word": "漸と",
+         "reading": [
+            "やっと"
+         ],
+         "meaning": [
+            "finalmente",
+            "por fim"
+         ]
+      },
+      {
+         "word": "あんな",
+         "reading": [],
+         "meaning": [
+            "aquele tipo de",
+            "assim"
+         ]
+      },
+      {
+         "word": "プレゼント",
+         "reading": [],
+         "meaning": [
+            "presente"
+         ]
+      },
+      {
+         "word": "タイプ",
+         "reading": [],
+         "meaning": [
+            "tipo",
+            "digitação"
+         ]
+      },
+      {
+         "word": "レポート",
+         "reading": [],
+         "meaning": [
+            "relatório"
+         ]
+      },
+      {
+         "word": "仰る",
+         "reading": [
+            "おっしゃる"
+         ],
+         "meaning": [
+            "dizer"
+         ]
+      },
+      {
+         "word": "そろそろ",
+         "reading": [],
+         "meaning": [
+            "mais ou menos agora",
+            "em breve"
+         ]
+      },
+      {
+         "word": "米",
+         "reading": [
+            "こめ"
+         ],
+         "meaning": [
+            "arroz"
+         ]
+      },
+      {
+         "word": "ベル",
+         "reading": [],
+         "meaning": [
+            "sino",
+            "campainha"
+         ]
+      },
+      {
+         "word": "いらっしゃる",
+         "reading": [],
+         "meaning": [
+            "ir",
+            "vir",
+            "estar"
+         ]
+      },
+      {
+         "word": "其れで",
+         "reading": [
+            "それで"
+         ],
+         "meaning": [
+            "então",
+            "por isso"
+         ]
+      },
+      {
+         "word": "どんどん",
+         "reading": [],
+         "meaning": [
+            "cada vez mais",
+            "rapidamente"
+         ]
+      },
+      {
+         "word": "スーツ",
+         "reading": [],
+         "meaning": [
+            "terno"
+         ]
+      },
+      {
+         "word": "ワープロ",
+         "reading": [],
+         "meaning": [
+            "processador de texto"
+         ]
+      },
+      {
+         "word": "ちゃん",
+         "reading": [],
+         "meaning": [
+            "chan"
+         ]
+      },
+      {
+         "word": "汚れる",
+         "reading": [
+            "よごれる"
+         ],
+         "meaning": [
+            "sujar-se"
+         ]
+      },
+      {
+         "word": "パソコン",
+         "reading": [],
+         "meaning": [
+            "computador pessoal"
+         ]
+      },
+      {
+         "word": "ご馳走",
+         "reading": [
+            "ごちそう"
+         ],
+         "meaning": [
+            "banquete",
+            "comida deliciosa"
+         ]
+      },
+      {
+         "word": "この頃",
+         "reading": [
+            "このごろ"
+         ],
+         "meaning": [
+            "ultimamente",
+            "nos últimos tempos"
+         ]
+      },
+      {
+         "word": "ハンドバッグ",
+         "reading": [],
+         "meaning": [
+            "bolsa",
+            "bolsa de mão"
+         ]
+      },
+      {
+         "word": "すると",
+         "reading": [],
+         "meaning": [
+            "então",
+            "assim que"
+         ]
+      },
+      {
+         "word": "先",
+         "reading": [
+            "さき"
+         ],
+         "meaning": [
+            "frente",
+            "antes"
+         ]
+      },
+      {
+         "word": "其れに",
+         "reading": [
+            "それに"
+         ],
+         "meaning": [
+            "além disso"
+         ]
+      },
+      {
+         "word": "この間",
+         "reading": [
+            "このあいだ"
+         ],
+         "meaning": [
+            "outro dia",
+            "recentemente"
+         ]
+      },
+      {
+         "word": "すっと",
+         "reading": [],
+         "meaning": [
+            "de repente",
+            "suavemente"
+         ]
+      },
+      {
+         "word": "そんなに",
+         "reading": [],
+         "meaning": [
+            "tanto assim"
+         ]
+      },
+      {
+         "word": "ご覧になる",
+         "reading": [
+            "ごらんになる"
+         ],
+         "meaning": [
+            "ver",
+            "olhar"
+         ]
+      },
+      {
+         "word": "妻",
+         "reading": [
+            "つま"
+         ],
+         "meaning": [
+            "esposa"
+         ]
+      },
+      {
+         "word": "気持ち",
+         "reading": [
+            "きもち"
+         ],
+         "meaning": [
+            "sentimento",
+            "sensação"
+         ]
+      },
+      {
+         "word": "答え",
+         "reading": [
+            "こたえ"
+         ],
+         "meaning": [
+            "resposta"
+         ]
+      },
+      {
+         "word": "昼休み",
+         "reading": [
+            "ひるやすみ"
+         ],
+         "meaning": [
+            "intervalo do almoço"
+         ]
+      },
+      {
+         "word": "二階建て",
+         "reading": [
+            "にかいだて"
+         ],
+         "meaning": [
+            "de dois andares"
+         ]
+      },
+      {
+         "word": "お祝い",
+         "reading": [
+            "おいわい"
+         ],
+         "meaning": [
+            "celebração",
+            "parabéns"
+         ]
+      },
+      {
+         "word": "お出でになる",
+         "reading": [
+            "おいでになる"
+         ],
+         "meaning": [
+            "vir",
+            "ir",
+            "estar"
+         ]
+      },
+      {
+         "word": "ビル",
+         "reading": [],
+         "meaning": [
+            "prédio",
+            "edifício"
+         ]
+      },
+      {
+         "word": "お祭り",
+         "reading": [
+            "おまつり"
+         ],
+         "meaning": [
+            "festival",
+            "festa"
+         ]
+      },
+      {
+         "word": "アルバイト",
+         "reading": [],
+         "meaning": [
+            "bico",
+            "trabalho de meio período"
+         ]
+      },
+      {
+         "word": "端",
+         "reading": [
+            "はし"
+         ],
+         "meaning": [
+            "borda",
+            "extremidade"
+         ]
+      }
+   ]
+}

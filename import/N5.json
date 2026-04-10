@@ -107,7 +107,7 @@
          ],
          "meaning":[
             "Quarto",
-            "Sala"
+            "Cômodo"
          ]
       },
       {
@@ -226,8 +226,8 @@
          ],
          "meaning":[
             "Palavra",
-            "Língua",
-            "Idioma"
+            "Expressão",
+            "Linguagem"
          ]
       },
       {
@@ -236,8 +236,7 @@
             "め"
          ],
          "meaning":[
-            "Olho",
-            "Visão"
+            "Olho"
          ]
       },
       {
@@ -507,7 +506,7 @@
          "meaning":[
             "Trem",
             "Comboio",
-            "Trem eletrônico"
+            "Trem elétrico"
          ]
       },
       {
@@ -516,7 +515,8 @@
             "さんぽ"
          ],
          "meaning":[
-            "Caminhada"
+            "Caminhada",
+            "Passeio"
          ]
       },
       {
@@ -544,7 +544,8 @@
             "うた"
          ],
          "meaning":[
-            "Canção"
+            "Canção",
+            "Música"
          ]
       },
       {
@@ -603,7 +604,7 @@
          ],
          "meaning":[
             "Aula",
-            "Lição"
+            "Classe"
          ]
       },
       {
@@ -878,7 +879,7 @@
             "さとう"
          ],
          "meaning":[
-            "Açucar"
+            "Açúcar"
          ]
       },
       {
@@ -924,7 +925,8 @@
             "みみ"
          ],
          "meaning":[
-            "Olho"
+            "Orelha",
+            "Ouvido"
          ]
       },
       {
@@ -979,9 +981,9 @@
             "かてい"
          ],
          "meaning":[
-            "Casa",
             "Lar",
-            "Família"
+            "Família",
+            "Ambiente familiar"
          ]
       },
       {
@@ -990,7 +992,8 @@
             "やさい"
          ],
          "meaning":[
-            "Vegetal"
+            "Vegetal",
+            "Legume"
          ]
       },
       {
@@ -999,7 +1002,8 @@
             "ふろ"
          ],
          "meaning":[
-            "Banheiro"
+            "Banho",
+            "Banheira"
          ]
       },
       {
@@ -1018,7 +1022,7 @@
             "ちかてつ"
          ],
          "meaning":[
-            "Metro"
+            "Metrô"
          ]
       },
       {
@@ -1045,7 +1049,8 @@
             "ひる"
          ],
          "meaning":[
-            "Meio-dia"
+            "Meio-dia",
+            "Periodo da tarde"
          ]
       },
       {
@@ -1083,7 +1088,8 @@
          ],
          "meaning":[
             "Geladeira",
-            "Frigorífico"
+            "Frigorífico",
+            "Refrigerador"
          ]
       },
       {
@@ -1177,7 +1183,9 @@
             "へん"
          ],
          "meaning":[
-            "Área"
+            "Área",
+            "Redondezas",
+            "Arredores"
          ]
       },
       {
@@ -1226,7 +1234,8 @@
          ],
          "meaning":[
             "Bife",
-            "Carne de vaca"
+            "Carne de vaca",
+            "Carne bovina"
          ]
       },
       {
@@ -1246,7 +1255,7 @@
          ],
          "meaning":[
             "Tigela",
-            "Bacia de chá"
+            "Tigela de arroz"
          ]
       },
       {
