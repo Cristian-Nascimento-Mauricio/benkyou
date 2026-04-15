@@ -7,11 +7,16 @@ function normalizeText(text) {
     .toLowerCase()
     .normalize("NFD")
     .replace(/\s+/g, " ")
+    .replace(/-/g, " ")
     .replace(/[\u0300-\u036f]/g, "");
 }
 
 function convertRomajiToHiragana(event) {
   event.target.value = convertRomajiToJapanCaracter('hiragana',event.target.value);
+}
+
+function reloadDeck(){
+  requestAPI("/api/reloadDeck",'GET',null,5000)
 }
 
 
@@ -25,9 +30,15 @@ export async function init(content) {
   const ratioRange = document.getElementById("ratio-range");
   const buttonsLevel = document.querySelectorAll(".button-level");
 
+  const btnReloadDeck = document.getElementById("btn-reload-deck")
+
   const btnOpenConfig = document.getElementById("btn-open-config");
   const popupConfig = document.getElementById("popup-config");  
 
+
+  btnReloadDeck.addEventListener('click', ()=> {
+    reloadDeck()
+  })
 
   btnOpenConfig.addEventListener("click", async () => {
     const data = await requestAPI("/api/get_config_of_select_card", "GET",null ,null);
