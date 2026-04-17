@@ -412,11 +412,10 @@ export function convertRomajiToJapanCaracter(keyboard, text) {
     .map((part) => {
       const p = part.toLowerCase();
 
-      // ✅ só dispara se for kka, ssa, tta, ppa... (C C + vogal)
-      const m = p.match(/^([bcdfghjklmpqrstvwxyz])\1[aiueo]/);
+      const m = p.match(/^([bcdfghjklmpqrstvwxyz])\1/);
 
       if (m && p[0] !== "n") {
-        const rest = p.slice(1); // kka -> ka
+        const rest = p.slice(1); // kkyo -> kyo
         return "っ" + (romajiToHiraganaMap[rest] || rest);
       }
 
