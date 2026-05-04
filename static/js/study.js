@@ -281,7 +281,6 @@ export async function init(content) {
       btnValidateAnswer.disabled = true;
       closePopup();
 
-      // Remove este listener após uso
       this.removeEventListener("click", handleConfirm);
     });
   }
