@@ -265,18 +265,11 @@ export async function init(content) {
       }
 
       try {
-        const response = await fetch("api/answer", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(sendAnswer),
-        });
+        const response = await requestAPI("/api/my_answer", "POST", sendAnswer, 5000 );
 
-        if (response.ok) {
-          btnSend.classList.remove("bg-blue-300", "bg-red-300");
-          btnSend.classList.add("bg-green-300");
-        }
+        btnSend.classList.remove("bg-blue-300", "bg-red-300");
+        btnSend.classList.add("bg-green-300");
+        
       } catch (error) {
         console.error("Erro ao enviar resposta alternativa:", error);
       }
