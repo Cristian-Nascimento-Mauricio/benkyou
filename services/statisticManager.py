@@ -2,6 +2,7 @@ from repositories.cardRepository import cardRepository
 from repositories.currentCardRepository import currentCardRepository
 from repositories.attemptRepository import attemptRepository
 from datetime import date, timedelta,datetime
+import statistics
 
 class statisticManager:
     def __init__(self,path):
@@ -9,14 +10,25 @@ class statisticManager:
         self.repoCurrentCard = currentCardRepository(path)
         self.repoAttempt = attemptRepository(path)
 
-    def get_statistics(self,category):
-        if category == 'ALL':
-            return { 
-                "percent":self.repoAttempt.get_all_attempts_statistics(), 
-                "count":self.repoAttempt.get_cout()
-            }
+
+    def get_statistics(self, category: str):
+        med_list = self.repoAttempt.get_med(category)
+        average = self.repoAttempt.get_average(category)
+        count = self.repoAttempt.get_count(category)
+
+        if not med_list:
+            med = None
+            mode = None
         else:
-            return None    
+            med = statistics.median(med_list)
+            mode = statistics.multimode(med_list)[0]
+
+        return {
+            "med": med,
+            "mode": mode,
+            "average": average,
+            "count": count
+        }
 
     def get_attempt(self,category):
         if category == "ALL":

@@ -19,7 +19,7 @@ cardManager = cardManager("./db/database.db")
 statisticManager = statisticManager("./db/database.db")
 
 n = defaultVocabularyRegister("./import","./db/database.db")
-n.openJsonFile()
+n.open_json_file()
 
 @app.route("/")
 @app.route("/study")
@@ -48,12 +48,14 @@ def administration():
 @app.route("/statistic")
 def statistic():
     statisticGrafic = statisticManager.lastActivity(7)
+    measures = statisticManager.get_statistics("ALL")
 
     if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
         return {
             'html':render_template("components/statistic.html"),
             'module':"static/js/statistic.js",
-            'content':{'statistics':statisticGrafic }
+            'content':{'statistics':statisticGrafic 
+                       ,'measures':measures}
         }
 
     return render_template("index.html",path="static")

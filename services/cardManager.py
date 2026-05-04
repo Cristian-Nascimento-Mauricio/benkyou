@@ -10,6 +10,17 @@ class cardManager:
         self.repoCurrentCard = currentCardRepository(path)
         self.repoAttempt = attemptRepository(path)
 
+
+    def reload_deck(self):
+        self.repoCurrentCard.delete_all()
+
+        range = self.configManager.get_range()
+        categories = self.configManager.get_levels()
+        listId = self.repoCard.selectCards(10,categories, range)
+               
+        for id in listId:
+            self.repoCurrentCard.create(id)
+
     def lenCurrent(self):
         return self.repoCurrentCard.len_current()
     
@@ -19,18 +30,17 @@ class cardManager:
 
         if cardId is not None:
             myCard = self.repoCurrentCard.get_already_learned(cardId)
-            print(myCard)
             if myCard["count"] >= 10 and myCard["porcent"] >= range:
                 self.repoCurrentCard.delete(cardId)
-                return
 
         for card in cards:
+            print(card)
             if card['average'] >= (2.5/3) and card['count'] >= 3:
+                print("delete")
                 self.repoCurrentCard.delete(card['card_id'])
 
     def addCardToCurrentCard(self):
         count = self.lenCurrent()
-        print("count: ", count)
         if(count >= 10):
             return 
 
@@ -64,7 +74,6 @@ class cardManager:
  
     def getCardToStudy(self,lastID):
         count = self.repoCurrentCard.len_current()
-        print("test: ", count)
 
         if(count <= 0):
             self.addCardToCurrentCard()

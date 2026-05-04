@@ -302,8 +302,31 @@ async function renderGrafic(canvas, ctx, tooltip) {
   };
 }
 
-export async function init(content) {
+async function setMeasure(value,element) {
+  const valueFormat = (value * 100).toFixed(1)
+  element.classList.remove('text-green-600', 'text-yellow-600', 'text-red-600')
 
+  
+  if(value == null) {
+    element.classList.add('text-gray-600')
+    element.textContent = `-`
+    return
+  }
+
+  if(valueFormat >= 75){
+    element.classList.add('text-green-600')
+  } else if (valueFormat < 75 || valueFormat >= 50){
+    element.classList.add('text-yellow-600')
+  } else if (valueFormat < 50){
+    element.classList.add('text-red-600')
+  } 
+
+  element.textContent = `${valueFormat}%`
+
+}
+
+
+export async function init(content) {
 
   const canvas = document.getElementById("dualChart");
   const ctx = canvas.getContext("2d");
@@ -352,7 +375,10 @@ export async function init(content) {
   const inFilter = document.getElementById('in-filter')
   const btnFilter = document.getElementById('btn-filter')
 
-  const outPercentCorrect = document.getElementById('out-percent-correct')
+  const outAverage = document.getElementById('out-average')
+  const outMedian = document.getElementById('out-median')
+  const outMode = document.getElementById('out-mode')
+
   const outQuantityAttempts = document.getElementById('out-quantity-attempts')
 
 
@@ -375,30 +401,28 @@ export async function init(content) {
     event.target.value = convertRomajiToJapanCaracter(optionsKeyboard.value, event.target.value)
   })
 
-  optionsCategoryStatistic.addEventListener('change', async (event)=> {
-    const dataStatic = await requestAPI('/api/statistic/attempt?category=ALL',"GET",null,10000)
-    const numberFormat = (dataStatic.percent * 100).toFixed(1)
-    const quantityFormat = dataStatic.count.toLocaleString('pt-br')
+    setMeasure(content.measures.average ,outAverage)
+    setMeasure(content.measures.med,outMedian)
+    setMeasure(content.measures.mode,outMode)
 
+  optionsCategoryStatistic.addEventListener('change', async (event)=> {
+    const dataStatic = await requestAPI(`/api/statistic/attempt?category=${event.target.value}`,"GET",null,10000)
+    const averageFormat = (dataStatic.average * 100).toFixed(1)
+    const medFormat = (dataStatic.med * 100).toFixed(1)
+    const modeFormat = (dataStatic.mode * 100).toFixed(1)
+    const quantityFormat = dataStatic.count.toLocaleString('pt-br')
 
     outQuantityAttempts.textContent = quantityFormat
 
-    if(numberFormat >= 75){
-      outPercentCorrect.classList.add('text-green-600')
-    } else if (numberFormat < 75 || numberFormat >= 50){
-      outPercentCorrect.classList.add('text-yellow-600')
-    } else if (numberFormat < 50){
-      outPercentCorrect.classList.add('text-red-600')
-    } else {
-      outPercentCorrect.classList.add('text-gray-600')
-      return
-    }
-    outPercentCorrect.textContent = `${numberFormat}%`
+    setMeasure(dataStatic.average,outAverage)
+    setMeasure(dataStatic.med,outMedian)
+    setMeasure(dataStatic.mode,outMode)
+
+
   })
 
   optionsCategory.addEventListener('change', async (event)=> {
     data = await requestAPI(`/api/statistic/card?category=${event.target.value}`,"GET",null,10000)
-    console.log(data)
     renderTable(tableBodyCardsStatistic,data)
   })
 

@@ -10,6 +10,17 @@ class currentCardRepository:
         conn.execute("PRAGMA foreign_keys = ON")
         return conn
     
+    def delete_deck():
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute("DELET * FROM currentCard")
+                        
+        except sqlite3.Error as e:
+            print(f"Erro ao pegar a id: {e}")
+            return False            
+
+
     def get_randon_card_in_currentCard(self,lastID:int = -1):
         try:
             with self._get_connection() as conn:
@@ -43,7 +54,7 @@ class currentCardRepository:
                             FROM attempt
                         ) last_attempts ON cc.card_id = last_attempts.card_id 
                             AND last_attempts.rn <= 3
-                        WHERE cc.created_at < last_attempts.created_at
+                        WHERE cc.created_at <= last_attempts.created_at
                         GROUP BY cc.card_id
                         ORDER BY average ASC;
                 ''')

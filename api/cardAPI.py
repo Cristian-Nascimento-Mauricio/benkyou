@@ -68,6 +68,14 @@ class cardAPI:
             }), 200
             return jsonify({"cards": cards})
         
+        @app.route("/api/reloadDeck")
+        def reload_deck():
+            self.cardManager.reload_deck()
+
+            return jsonify({
+                    "message": "Deck recarregado com sucesso"
+            }), 200
+
         @app.route("/api/card", methods=['PUT'])
         def update_card():
             data = request.get_json()

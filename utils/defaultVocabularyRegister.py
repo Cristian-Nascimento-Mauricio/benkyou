@@ -11,7 +11,7 @@ class  defaultVocabularyRegister:
         self.cardRepository = cardRepository(pathDB)
         pass
 
-    def openJsonFile(self):
+    def open_json_file(self):
         for file in self.getFile():
             with open(file, "r", encoding="utf-8") as f:
                 data = json.load(f)

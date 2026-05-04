@@ -51,38 +51,77 @@ class attemptRepository:
             return None
     
 
-    def get_cout(self):
-        try:
-            with self._get_connection() as conn:
-                cursor = conn.cursor()
-                cursor.execute("SELECT COUNT(*) FROM attempt")
-                count = cursor.fetchone()[0]
-                return count
-        except sqlite3.Error as e:
-            print(f"Erro ao contar tentativas: {e}")
-            return 0
-
-    def get_all_attempts_statistics(self):
+    def get_med(self, category: str):
         try:
             with self._get_connection() as conn:
                 cursor = conn.cursor()
                 cursor.execute(
                     """
+                    SELECT (n.n1 + COALESCE(n.n2, n.n1)) / (n.c * 2.0) AS s
+                    FROM (
+                        SELECT
+                            attempt.card_id,
+                            SUM(attempt.mean) AS n1,
+                            SUM(attempt.read) AS n2,
+                            COUNT(attempt.card_id) AS c
+                        FROM attempt
+                        JOIN card ON card.id = attempt.card_id
+                        WHERE (? = 'ALL' OR card.category = ?)
+                        GROUP BY attempt.card_id
+                    ) AS n
+                    ORDER BY s ASC
+                    """,
+                    (category, category)
+                )
+                rows = [row[0] for row in cursor.fetchall()]
+                return rows
+        except sqlite3.Error as e:
+            print(f"Erro ao pegar mediana: {e}")
+            return []
+
+    def get_count(self, category: str):
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+
+                query = """
+                    SELECT COUNT(*) 
+                    FROM card
+                    JOIN attempt ON card.id = attempt.card_id
+                    WHERE (? = 'ALL' OR card.category = ?)
+                """
+
+                cursor.execute(query, (category, category))
+                return cursor.fetchone()[0]
+
+        except sqlite3.Error as e:
+            print(f"Erro ao contar tentativas: {e}")
+            return 0
+
+    def get_average(self, category: str):
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+
+                query = """
                     SELECT
                         (
                             SUM(attempt.mean)
                             + SUM(COALESCE(attempt.read, attempt.mean))
                         ) / (COUNT(attempt.id) * 2.0) AS percent
                     FROM attempt
-                    """
-                )
+                    JOIN card ON card.id = attempt.card_id
+                    WHERE (? = 'ALL' OR card.category = ?)
+                """
+
+                cursor.execute(query, (category, category))
                 result = cursor.fetchone()
-                print(result)
-                return result[0] if result else None
-                
+
+                return  result[0] if result else None
+
         except sqlite3.Error as e:
             print(f"Erro ao buscar estatísticas: {e}")
-            return {}
+            return 0
 
     # READ - Buscar tentativa por ID
     def get_attempt_by_id(self, attempt_id: int) -> Optional[Dict[str, Any]]:
