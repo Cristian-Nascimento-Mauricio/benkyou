@@ -4,54 +4,53 @@
         <img src="/static/SVG/config.svg" class="w-6 h-6" alt="Configurações">
     </button>
 
-    <span id="popup-config"
-        class="flex flex-col hidden p-3 sm:p-4 w-[calc(100vw-2rem)] sm:w-72 max-w-xs max-h-[80vh] overflow-y-auto gap-3 rounded-md shadow-xl absolute top-12 right-0 bg-white z-30 border border-neutral-200">
-        <label class="flex items-center gap-2 select-none text-sm font-medium text-heading">
-            <input data-level="N5" type="checkbox"
-                class="button-level w-4 h-4 accent-green-600 border-default-medium rounded-xs focus:ring-green-500 dark:focus:ring-green-600 ring-offset-neutral-primary focus:ring-2">
-            Vocabulário - N5
-        </label>
-        <label class="flex items-center gap-2 select-none text-sm font-medium text-heading">
-            <input data-level="N4" type="checkbox"
-                class="button-level w-4 h-4 accent-green-600 border-default-medium rounded-xs focus:ring-green-500 dark:focus:ring-green-600 ring-offset-neutral-primary focus:ring-2">
-            Vocabulário - N4
-        </label>
-        <label class="flex items-center gap-2 select-none text-sm font-medium text-heading">
-            <input data-level="N3" type="checkbox"
-                class="button-level w-4 h-4 accent-green-600 border-default-medium rounded-xs focus:ring-green-500 dark:focus:ring-green-600 ring-offset-neutral-primary focus:ring-2">
-            Vocabulário - N3
-        </label>
-        <label class="flex items-center gap-2 select-none text-sm font-medium text-heading">
-            <input data-level="N2" type="checkbox"
-                class="button-level w-4 h-4 accent-green-600 border-default-medium rounded-xs focus:ring-green-500 dark:focus:ring-green-600 ring-offset-neutral-primary focus:ring-2">
-            Vocabulário - N2
-        </label>
-        <label class="flex items-center gap-2 select-none text-sm font-medium text-heading">
-            <input data-level="N1" type="checkbox"
-                class="button-level w-4 h-4 accent-green-600 border-default-medium rounded-xs focus:ring-green-500 dark:focus:ring-green-600 ring-offset-neutral-primary focus:ring-2">
-            Vocabulário - N1
+    <span id="popup-config" class="hidden flex flex-col gap-2 p-2 sm:p-4 
+           w-[90vw] max-w-[260px] sm:w-72 
+           max-h-[75vh] overflow-y-auto
+           rounded-md shadow-xl absolute top-12 right-2 sm:right-0
+           bg-white z-30 border border-neutral-200 text-sm">
+
+        <label class="flex items-center gap-2">
+            <input data-level="N5" type="checkbox" class="button-level w-4 h-4 accent-green-600">
+            N5
         </label>
 
-        <span class="flex flex-col sm:flex-row sm:items-center w-full gap-2 pt-1">
-            <p class="shrink-0">Filtro:</p>
-            <div class="flex items-center gap-2 w-full">
+        <label class="flex items-center gap-2">
+            <input data-level="N4" type="checkbox" class="button-level w-4 h-4 accent-green-600">
+            N4
+        </label>
+
+        <label class="flex items-center gap-2">
+            <input data-level="N3" type="checkbox" class="button-level w-4 h-4 accent-green-600">
+            N3
+        </label>
+
+        <label class="flex items-center gap-2">
+            <input data-level="N2" type="checkbox" class="button-level w-4 h-4 accent-green-600">
+            N2
+        </label>
+
+        <label class="flex items-center gap-2">
+            <input data-level="N1" type="checkbox" class="button-level w-4 h-4 accent-green-600">
+            N1
+        </label>
+
+        <span class="flex flex-col gap-1 pt-1">
+            <p class="text-xs">Filtro:</p>
+            <div class="flex items-center gap-2">
                 <input id="ratio-range" type="range" min="0" max="1" step="0.01" value="0.75"
-                    class="w-full h-1 accent-red-600 cursor-pointer"
-                    oninput="
-                        if (this.value < 0.5) {
-                            this.value = 0.5;
-                        }
-                        valueLabel.textContent = Number(this.value).toFixed(2)">
-                <small id="valueLabel" class="text-xs text-slate-600 shrink-0">0.75</small>
+                    class="w-full h-1 accent-red-600 cursor-pointer" oninput="
+                    if (this.value < 0.5) this.value = 0.5;
+                    valueLabel.textContent = Number(this.value).toFixed(2)">
+                <small id="valueLabel" class="text-xs text-slate-600">0.75</small>
             </div>
         </span>
 
-        <span class="flex items-center w-full p-1">
-            <button id="btn-reload-deck"
-                class="w-full p-2 m-1 shadow-md bg-blue-400 rounded-md text-2xl hover:brightness-95 active:scale-95 transition">
-                ⟲
-            </button>
-        </span>
+        <button id="btn-reload-deck"
+            class="w-full p-2 mt-1 shadow-md bg-blue-400 rounded-md text-lg hover:brightness-95 active:scale-95 transition">
+            ⟲
+        </button>
+
     </span>
 </div>
 
@@ -93,7 +92,8 @@
     <div class="fixed inset-0 bg-black/75"></div>
 
     <div class="relative p-3 sm:p-4 w-full h-full flex items-center justify-center">
-        <div class="relative bg-white rounded-md border border-default shadow-sm p-4 sm:p-5 w-[min(100%-1rem,32rem)] mx-auto">
+        <div
+            class="relative bg-white rounded-md border border-default shadow-sm p-4 sm:p-5 w-[min(100%-1rem,32rem)] mx-auto">
 
             <button id="btn-close" type="button"
                 class="absolute top-3 right-2.5 text-body hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center">

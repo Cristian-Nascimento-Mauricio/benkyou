@@ -1,4 +1,8 @@
-import { convertRomajiToJapanCaracter, requestAPI, triggerAlert } from "./exportFunc.js";
+import {
+  convertRomajiToJapanCaracter,
+  requestAPI,
+  triggerAlert,
+} from "./exportFunc.js";
 
 function renderTable(table, rows, batchSize = 50) {
   let index = 0;
@@ -56,375 +60,173 @@ function renderTable(table, rows, batchSize = 50) {
   requestIdleCallback(work);
 }
 
-async function renderGrafic(canvas, ctx, tooltip) {
-  let currentRange = 30;
+async function setMeasure(value, element) {
+  const valueFormat = (value * 100).toFixed(1);
+  element.classList.remove("text-green-600", "text-yellow-600", "text-red-600");
 
-  let chartState = {
-    pointsA: [],
-    pointsB: [],
-    labels: [],
-    displayedA: [],
-    displayedB: [],
-  };
-
-  const colorA = "#1e293b"; // dark (Tentativas)
-  const colorB = "#93c5fd"; // light (Acertos)
-
-  /* =======================
-     HIGH DPI
-  ======================= */
-  function resizeCanvas() {
-    const DPR = window.devicePixelRatio || 1;
-    const rect = canvas.getBoundingClientRect();
-    canvas.width = Math.round(rect.width * DPR);
-    canvas.height = Math.round(rect.height * DPR);
-    canvas.style.width = rect.width + "px";
-    canvas.style.height = rect.height + "px";
-    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
-    redraw();
-  }
-  window.addEventListener("resize", resizeCanvas);
-  resizeCanvas();
-
-  function clear() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  if (value == null) {
+    element.classList.add("text-gray-600");
+    element.textContent = `-`;
+    return;
   }
 
-  function redraw() {
-    if (!chartState.displayedA || !chartState.displayedB) return;
-    draw(chartState.displayedA, chartState.displayedB);
+  if (valueFormat >= 75) {
+    element.classList.add("text-green-600");
+  } else if (valueFormat < 75 || valueFormat >= 50) {
+    element.classList.add("text-yellow-600");
+  } else if (valueFormat < 50) {
+    element.classList.add("text-red-600");
   }
 
-  /* =======================
-     DRAW (STACKED BARS)
-  ======================= */
-  function draw(valuesA, valuesB) {
-    clear();
+  element.textContent = `${valueFormat}%`;
+}
 
-    const padding = { top: 24, right: 20, bottom: 40, left: 48 };
-    const w = canvas.clientWidth - padding.left - padding.right;
-    const h = canvas.clientHeight - padding.top - padding.bottom;
+async function setGraphic(graphic,data) {
 
-    // number of groups
-    const n = Math.max(valuesA.length, valuesB.length);
-    if (n === 0) return;
+  const d = new Date();
 
-    // totals per group for stacked scale
-    const totals = new Array(n).fill(0).map((_, i) => {
-      const a = valuesA[i] != null ? valuesA[i] : 0;
-      const b = valuesB[i] != null ? valuesB[i] : 0;
-      return a + b;
-    });
-    const nonNullTotals = totals.filter(v => v != null);
-    const maxTotal = nonNullTotals.length ? Math.max(...nonNullTotals) : 1;
-    const minVal = 0;
-    const range = maxTotal === minVal ? 1 : maxTotal - minVal;
+  const attempts = data.map((item) => item.attempt);
+  const dates =  data.map((item) => new Date(item.day).toLocaleDateString("pt-br", { day: "2-digit", month: "2-digit" }).toString());
+  const attemptsErros = data.map((item) => (item.mean + item.read) / 2);
 
-    /* ===== GRID + Y LABELS ===== */
-    ctx.font = "12px system-ui";
-    ctx.fillStyle = "#64748b";
-    ctx.textAlign = "right";
-    ctx.textBaseline = "middle";
-    ctx.strokeStyle = "rgba(15,23,42,0.06)";
-    ctx.lineWidth = 1;
+  console.log(attempts);
+  console.log(attemptsErros);
+  console.log(dates);
 
-    const yTicks = 4;
-    for (let i = 0; i <= yTicks; i++) {
-      const y = padding.top + (h / yTicks) * i;
-      ctx.beginPath();
-      ctx.moveTo(padding.left, y);
-      ctx.lineTo(padding.left + w, y);
-      ctx.stroke();
-
-      const val = Math.round(maxTotal - (i / yTicks) * (maxTotal - minVal));
-      ctx.fillText(val, padding.left - 10, y);
-    }
-
-    /* ===== BAR SIZING WITH DENSITY CONTROL ===== */
-    const MIN_BAR_WIDTH = 18; // minimum readable bar width
-    const MIN_GAP = 6; // minimum left/right gap per group
-
-    let groupWidth = w / n;
-    // prefer barWidth to be a fraction of groupWidth
-    let barWidth = groupWidth * 0.7;
-
-    if (barWidth < MIN_BAR_WIDTH) {
-      barWidth = MIN_BAR_WIDTH;
-      groupWidth = barWidth + MIN_GAP * 2;
-    }
-
-    const totalChartWidth = groupWidth * n;
-    const offsetX = totalChartWidth < w ? (w - totalChartWidth) / 2 : 0;
-    const barGap = (groupWidth - barWidth) / 2; // computed gap to center bar in group
-
-    function valueToY(v) {
-      return padding.top + h - ((v - minVal) / range) * h;
-    }
-
-    const pointsA = [];
-    const pointsB = [];
-    const labels = [];
-
-    /* ===== DRAW STACKED BARS ===== */
-    for (let i = 0; i < n; i++) {
-      const baseX = padding.left + offsetX + i * groupWidth;
-      const centerX = baseX + groupWidth / 2;
-
-      const vA = valuesA[i] != null ? valuesA[i] : null; // Tentativas (top)
-      const vB = valuesB[i] != null ? valuesB[i] : null; // Acertos (bottom)
-
-      if (vA == null && vB == null) {
-        pointsA[i] = null;
-        pointsB[i] = null;
-        labels.push(`${n - i}d`);
-        continue;
-      }
-
-      // draw from baseline upward
-      let currentY = padding.top + h;
-
-      // bottom segment -> Acertos (colorB)
-      if (vB != null && vB !== 0) {
-        const yB = valueToY(vB);
-        const hB = padding.top + h - yB;
-
-        ctx.fillStyle = colorB;
-        ctx.fillRect(baseX + barGap, currentY - hB, barWidth, hB);
-
-        // move currentY to top of this segment
-        currentY -= hB;
-        pointsB[i] = { x: centerX, y: currentY, v: vB, idx: i };
-      } else {
-        pointsB[i] = null;
-      }
-
-      // top segment -> Tentativas (colorA)
-      if (vA != null && vA !== 0) {
-        const yA = valueToY(vA);
-        const hA = padding.top + h - yA;
-
-        ctx.fillStyle = colorA;
-        ctx.fillRect(baseX + barGap, currentY - hA, barWidth, hA);
-
-        currentY -= hA;
-        pointsA[i] = { x: centerX, y: currentY, v: vA, idx: i };
-      } else {
-        pointsA[i] = null;
-      }
-
-      labels.push(`${n - i}d`);
-    }
-
-    chartState.pointsA = pointsA;
-    chartState.pointsB = pointsB;
-    chartState.labels = labels;
-
-    /* ===== X LABELS ===== */
-    ctx.fillStyle = "#64748b";
-    ctx.textAlign = "center";
-    ctx.textBaseline = "top";
-
-    const stepLabel = n <= 7 ? 1 : n <= 15 ? 2 : 4;
-    for (let i = 0; i < n; i += stepLabel) {
-      const x = padding.left + offsetX + i * groupWidth + groupWidth / 2;
-      ctx.fillText(labels[i], x, padding.top + h + 10);
-    }
-  }
-
-  /* =======================
-     NORMALIZE
-  ======================= */
-  function normalizeArrays(a, b) {
-    const len = Math.min(a.length, b.length);
-    const target = len <= 7 ? 7 : len <= 15 ? 15 : 30;
-    currentRange = target;
-
-    function adjust(arr) {
-      if (arr.length > target) return arr.slice(arr.length - target);
-      if (arr.length < target) return arr.concat(Array(target - arr.length).fill(null));
-      return arr;
-    }
-
-    return [adjust(a.slice(0, len)), adjust(b.slice(0, len))];
-  }
-
-  /* =======================
-     TOOLTIP
-  ======================= */
-  canvas.addEventListener("mousemove", ev => {
-    const rect = canvas.getBoundingClientRect();
-    const x = ev.clientX - rect.left;
-
-    // find nearest index by proximity to center x positions
-    let nearestIdx = -1;
-    let minDist = Infinity;
-    const pts = chartState.pointsA.length ? chartState.pointsA : chartState.pointsB;
-    for (let i = 0; i < (chartState.pointsA.length || chartState.pointsB.length); i++) {
-      const p = chartState.pointsA[i] || chartState.pointsB[i];
-      if (!p) continue;
-      const d = Math.abs(p.x - x);
-      if (d < minDist) {
-        minDist = d;
-        nearestIdx = i;
-      }
-    }
-    if (nearestIdx === -1) return tooltip.classList.add("hidden");
-
-    const pA = chartState.pointsA[nearestIdx];
-    const pB = chartState.pointsB[nearestIdx];
-    if (!pA && !pB) return tooltip.classList.add("hidden");
-
-    tooltip.innerHTML = `
-      <div class="text-xs opacity-70">${chartState.labels[nearestIdx]}</div>
-      <div style="color:${colorA}">Developer: <b>${pA ? pA.v : "-"}</b></div>
-      <div style="color:#0b66c3">Designer: <b>${pB ? pB.v : "-"}</b></div>
-    `;
-
-    const refY = (pA || pB).y;
-    tooltip.style.left = Math.min(Math.max(x, 40), canvas.clientWidth - 40) + "px";
-    tooltip.style.top = (refY - 44) + "px";
-    tooltip.classList.remove("hidden");
+  let chart = new Chart(graphic, {
+    data: {
+      labels: dates,
+      datasets: [
+        {
+          type: "bar",
+          label: "Erros",
+          data: attemptsErros,
+          backgroundColor: "rgba(76, 175, 80, 0.7)",
+          stack: "resultado",
+        },
+        {
+          type: "bar",
+          label: "Tentativas",
+          data: attempts,
+          backgroundColor: "rgba(255, 152, 0, 0.7)",
+          stack: "resultado",
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      interaction: { mode: "index", intersect: false },
+      scales: {
+        x: { stacked: true },
+        y: { stacked: true, beginAtZero: true },
+      },
+    },
   });
 
-  canvas.addEventListener("mouseleave", () => tooltip.classList.add("hidden"));
-
-  /* =======================
-     PUBLIC API
-  ======================= */
-  window.createDualLineChart = function (canvasId, dataA, dataB) {
-    const c = document.getElementById(canvasId);
-    if (!c) return;
-
-    const [A, B] = normalizeArrays(dataA, dataB);
-    chartState.displayedA = A;
-    chartState.displayedB = B;
-    redraw();
-  };
+  return chart;
 }
 
-async function setMeasure(value,element) {
-  const valueFormat = (value * 100).toFixed(1)
-  element.classList.remove('text-green-600', 'text-yellow-600', 'text-red-600')
-
-  
-  if(value == null) {
-    element.classList.add('text-gray-600')
-    element.textContent = `-`
-    return
-  }
-
-  if(valueFormat >= 75){
-    element.classList.add('text-green-600')
-  } else if (valueFormat < 75 || valueFormat >= 50){
-    element.classList.add('text-yellow-600')
-  } else if (valueFormat < 50){
-    element.classList.add('text-red-600')
-  } 
-
-  element.textContent = `${valueFormat}%`
-
+async function updateGraphic(chart, date) {
+    const dataStatic = await requestAPI(`/api/card/statistic/activity?day=${date}`, 'GET', null, 10000);
+    console.log(dataStatic);
+    chart.data.labels = dataStatic.map((item) => new Date(item.day).toLocaleDateString("pt-br", { day: "2-digit", month: "2-digit" }).toString());
+    chart.data.datasets[0].data = dataStatic.map((item) => item.attempt);
+    chart.data.datasets[1].data = dataStatic.map((item) => (item.mean + item.read) / 2);
+    chart.update();
 }
-
 
 export async function init(content) {
 
-  const canvas = document.getElementById("dualChart");
-  const ctx = canvas.getContext("2d");
-  const tooltip = document.getElementById("tooltip");
-
-  const b7 = document.getElementById("b7");
-  const b15 = document.getElementById("b15");
-  const b30 = document.getElementById("b30");
-
-  renderGrafic(canvas, ctx, tooltip);
-  const arr1 = content.statistics.map(item => item.attempt)
-  const arr2 = content.statistics.map(item => Math.round( (item.read + item.mean)/2 ))
-
-  createDualLineChart("dualChart", arr1, arr2);
-
-  b7.addEventListener("click", async () => {
-    const list = await requestAPI("/api/card/statistic/activity?day=7", "GET", null, 10000)
-    const arry = list.map(item => item.attempt)
-    const arr2 = list.map(item => Math.round( (item.read + item.mean)/2 ))
-    
-    createDualLineChart("dualChart", arry, arr2);
-  });
-  b15.addEventListener("click", async () => {
-    const list = await requestAPI("/api/card/statistic/activity?day=15", "GET", null, 10000)
-    const kk = list.map(item => item.attempt)
-    const kkk = list.map(item => Math.round( (item.read + item.mean)/2 ))
-
-    createDualLineChart("dualChart", kk, kkk);
-  });
-  b30.addEventListener("click", async  () => {
-    const list = await requestAPI("/api/card/statistic/activity?day=30", "GET", null, 10000)
-
-    const arry = list.map(item => item.attempt)
-    const arr2 = list.map(item => Math.round( (item.read + item.mean)/2 ))
-
-    createDualLineChart("dualChart", arry, arr2);
-  });
-
+  console.log(content);
+  const graphic = document.getElementById("graphic");
 
   const tableBodyCardsStatistic = document.getElementById("cards-statistic-table-body");
 
-  const optionsCategory = document.getElementById('options-category')
-  const optionsKeyboard = document.getElementById('options-keyboard')
-  const optionsCategoryStatistic = document.getElementById('options-category-statistic')
+  const optionsCategory = document.getElementById("options-category");
+  const optionsKeyboard = document.getElementById("options-keyboard");
+  const optionsCategoryStatistic = document.getElementById("options-category-statistic");
 
-  const inFilter = document.getElementById('in-filter')
-  const btnFilter = document.getElementById('btn-filter')
-
-  const outAverage = document.getElementById('out-average')
-  const outMedian = document.getElementById('out-median')
-  const outMode = document.getElementById('out-mode')
-
-  const outQuantityAttempts = document.getElementById('out-quantity-attempts')
+  const btn7days = document.getElementById("btn-7-days");
+  const btn15days = document.getElementById("btn-15-days");
+  const btn30days = document.getElementById("btn-30-days");
 
 
-  let data = []
 
-  btnFilter.addEventListener('click',()=> {
+  const inFilter = document.getElementById("in-filter");
+  const btnFilter = document.getElementById("btn-filter");
 
-    triggerAlert('okay','INFOR',1000)
+  const outAverage = document.getElementById("out-average");
+  const outMedian = document.getElementById("out-median");
+  const outMode = document.getElementById("out-mode");
+
+  const outQuantityAttempts = document.getElementById("out-quantity-attempts");
+
+  let data = [];
+
+  let chart= await setGraphic(graphic,content.statistics);
+
+  btn7days.addEventListener("click", async () => {
+    updateGraphic(chart, 7);
+  })
+
+  btn15days.addEventListener("click", async () => {
+    updateGraphic(chart, 15);
+  })
+
+  btn30days.addEventListener("click", async () => {
+    updateGraphic(chart, 30);
+  } )
+
+
+  btnFilter.addEventListener("click", () => {
+    triggerAlert("okay", "INFOR", 1000);
     renderTable(
       tableBodyCardsStatistic,
-      data.filter(item =>
-        item.word
-          .toLowerCase()
-          .includes(inFilter.value.trim().toLowerCase())
-      )
-    );  
-  })
+      data.filter((item) =>
+        item.word.toLowerCase().includes(inFilter.value.trim().toLowerCase()),
+      ),
+    );
+  });
 
-  inFilter.addEventListener('input', (event) => {
-    event.target.value = convertRomajiToJapanCaracter(optionsKeyboard.value, event.target.value)
-  })
+  inFilter.addEventListener("input", (event) => {
+    event.target.value = convertRomajiToJapanCaracter(
+      optionsKeyboard.value,
+      event.target.value,
+    );
+  });
 
-    setMeasure(content.measures.average ,outAverage)
-    setMeasure(content.measures.med,outMedian)
-    setMeasure(content.measures.mode,outMode)
+  setMeasure(content.measures.average, outAverage);
+  setMeasure(content.measures.med, outMedian);
+  setMeasure(content.measures.mode, outMode);
 
-  optionsCategoryStatistic.addEventListener('change', async (event)=> {
-    const dataStatic = await requestAPI(`/api/statistic/attempt?category=${event.target.value}`,"GET",null,10000)
-    const averageFormat = (dataStatic.average * 100).toFixed(1)
-    const medFormat = (dataStatic.med * 100).toFixed(1)
-    const modeFormat = (dataStatic.mode * 100).toFixed(1)
-    const quantityFormat = dataStatic.count.toLocaleString('pt-br')
+  optionsCategoryStatistic.addEventListener("change", async (event) => {
+    const dataStatic = await requestAPI(
+      `/api/statistic/attempt?category=${event.target.value}`,
+      "GET",
+      null,
+      10000,
+    );
+    const averageFormat = (dataStatic.average * 100).toFixed(1);
+    const medFormat = (dataStatic.med * 100).toFixed(1);
+    const modeFormat = (dataStatic.mode * 100).toFixed(1);
+    const quantityFormat = dataStatic.count.toLocaleString("pt-br");
 
-    outQuantityAttempts.textContent = quantityFormat
+    outQuantityAttempts.textContent = quantityFormat;
 
-    setMeasure(dataStatic.average,outAverage)
-    setMeasure(dataStatic.med,outMedian)
-    setMeasure(dataStatic.mode,outMode)
+    setMeasure(dataStatic.average, outAverage);
+    setMeasure(dataStatic.med, outMedian);
+    setMeasure(dataStatic.mode, outMode);
+  });
 
-
-  })
-
-  optionsCategory.addEventListener('change', async (event)=> {
-    data = await requestAPI(`/api/statistic/card?category=${event.target.value}`,"GET",null,10000)
-    renderTable(tableBodyCardsStatistic,data)
-  })
+  optionsCategory.addEventListener("change", async (event) => {
+    data = await requestAPI(
+      `/api/statistic/card?category=${event.target.value}`,
+      "GET",
+      null,
+      10000,
+    );
+    renderTable(tableBodyCardsStatistic, data);
+  });
 
   return {
     destroy: async function () {},

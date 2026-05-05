@@ -229,17 +229,8 @@ function openModal(popupModal, rendCard) {
           category: modalElements.selectUpdateCategory.value,
         };
 
-        fetch("/api/card", {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(cardUpdated),
-        }).then((res) => {
-          if (res.status === 200) {
-            closeModal();
-          }
-        });
+        requestAPI(`/api/card/${cardUpdated}`, "PUT", cardUpdated, 5000)
+        closeModal();
       });
     }
 
@@ -452,35 +443,10 @@ export async function init() {
 
 
   function deleteCard(id) {
-    if (confirm("Tem certeza que deseja excluir este card?")) {
-      fetch(`/api/card/${id}`, {
-        method: "DELETE",
-      })
-        .then(async (res) => {
-          const data = await res.json();
-          const p = document.createElement("p");
 
-          if (res.ok) {
-            const tr = document.getElementById(String(id));
-            if (tr) tr.remove();
-            p.innerText = data.message || "Card excluído com sucesso!";
-            p.className = "text-green-600";
-          } else {
-            p.innerText = data.error || "Erro ao excluir card";
-            p.className = "text-red-600";
-          }
-
-          elements.toast.appendChild(p);
-          setTimeout(() => elements.toast.replaceChildren(), 3000);
-        })
-        .catch((error) => {
-          const p = document.createElement("p");
-          p.innerText = "Erro na requisição";
-          p.className = "text-red-600";
-          elements.toast.appendChild(p);
-          setTimeout(() => elements.toast.replaceChildren(), 3000);
-        });
-    }
+    requestAPI(`/api/card/${id}`, "GET", null, 5000)
+   
+    
   }
 
   function clearForm() {
@@ -541,33 +507,7 @@ export async function init() {
       return;
     }
 
-    fetch("api/card", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(card),
-    })
-      .then((res) => {
-        const p = document.createElement("p");
-
-        if (res.status === 201) {
-          p.innerText = "Card criado com sucesso!";
-          p.className = "text-green-600";
-          clearForm();
-        } else {
-          p.innerText = "Erro na criação do card!";
-          p.className = "text-red-600";
-        }
-
-        elements.toast.appendChild(p);
-        setTimeout(() => elements.toast.replaceChildren(), 5 * 1000);
-
-        // Recarrega a lista de cards
-      })
-      .catch((error) => {
-        console.error("Erro ao criar card:", error);
-      });
+    requestAPI("/api/card", "POST", card, 5000)
   });
 
 

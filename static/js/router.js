@@ -3,7 +3,6 @@ const statistic = document.getElementById("statistic");
 const adm = document.getElementById("administration");
 const route = document.getElementById("route");
 
-
 const scriptManager = {
   current: null,
   destroyer:null,
@@ -59,7 +58,7 @@ const router = {
         await this.loadPage(path);
       }
     } catch (e) {
-      this.showError();
+      this.showError(e);
     }
     this.disabled=false
 
@@ -90,10 +89,10 @@ const router = {
 
   },
 
-  showError() {
+  showError(e) {
     route.innerHTML = `
       <div style="padding:2rem;text-align:center">
-        <h3>Erro ao carregar página</h3>
+        <h3>${e}</h3>
       </div>
     `;
   }
