@@ -229,7 +229,7 @@ function openModal(popupModal, rendCard) {
           category: modalElements.selectUpdateCategory.value,
         };
 
-        requestAPI(`/api/card/${cardUpdated}`, "PUT", cardUpdated, 5000)
+        requestAPI(`/api/card`, "PUT", cardUpdated, 5000)
         closeModal();
       });
     }

@@ -94,8 +94,11 @@ class cardAPI:
 
             self.cardManager.addNewCorrectAnswer(data)
             
-            return '',200
 
+            return jsonify({
+                    "message": "Nova resposta correta adicionada com sucesso",
+                    "card": data
+            }), 200
         @app.route("/api/card/<int:card_id>", methods=['DELETE'])
         def delete_card(card_id):
     

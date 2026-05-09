@@ -195,6 +195,7 @@ export async function init(content) {
     );
   });
 
+  outQuantityAttempts.textContent = content.measures.count.toLocaleString("pt-br");
   setMeasure(content.measures.average, outAverage);
   setMeasure(content.measures.med, outMedian);
   setMeasure(content.measures.mode, outMode);

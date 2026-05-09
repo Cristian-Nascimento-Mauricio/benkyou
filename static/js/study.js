@@ -265,7 +265,7 @@ export async function init(content) {
       }
 
       try {
-        const response = await requestAPI("/api/my_answer", "POST", sendAnswer, 5000 );
+        const response = await requestAPI("/api/answer", "POST", sendAnswer, 5000 );
 
         btnSend.classList.remove("bg-blue-300", "bg-red-300");
         btnSend.classList.add("bg-green-300");
